@@ -25,14 +25,14 @@
     float: left;
     display: block;
     width: 100%;
-    height: 800px;
+    height: 855px;
     background: url(../images/IMG_20200915_155804.jpg) no-repeat;
     background-size: 100% 100%;
 }
 .body > .background-image {
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 855px;
 }
 .blur {    
     -webkit-filter: blur(10px);
@@ -89,7 +89,8 @@
     display: block;
     width: 50px;
     height: 32px;
-    text-align: right;
+    text-align: left;
+    margin-left: 12px;
 }
 .body-form > .lo_form_center table tr .td_right{
     float: left;
@@ -133,27 +134,35 @@
     top: 75%;
     left: 70%;
     float: left;
-    width: 100%;
     height: 200px;
     color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-.footer > .footer-first {
-    float: left;
+.footer .footer-line{
+    margin-left: 50px;
 }
-.footer > .footer-first ul{
-    margin-top: 2ch;
+.footer .footer-line h4{
+    margin-bottom: 10px;
 }
-.footer > .footer-second{
-    float: left;
-    margin-left: 8ch;
-}
-.footer > .footer-second ul{
-    margin-top: 2ch;
-}
-.footer > .footer-third{
-    float: left;
-    margin-left: 8ch;
-}
-.footer > .footer-third ul{
-    margin-top: 2ch;
-}
+/*.footer > .footer-first {*/
+/*    float: left;*/
+/*}*/
+/*.footer > .footer-first ul{*/
+/*    margin-top: 2ch;*/
+/*}*/
+/*.footer > .footer-second{*/
+/*    float: left;*/
+/*    margin-left: 8ch;*/
+/*}*/
+/*.footer > .footer-second ul{*/
+/*    margin-top: 2ch;*/
+/*}*/
+/*.footer > .footer-third{*/
+/*    float: left;*/
+/*    margin-left: 8ch;*/
+/*}*/
+/*.footer > .footer-third ul{*/
+/*    margin-top: 2ch;*/
+/*}*/
