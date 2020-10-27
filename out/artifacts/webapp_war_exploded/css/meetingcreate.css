@@ -1,0 +1,104 @@
+.header{
+    height: 80px;
+    background-color: rgb(46,95,208);
+}
+.header .header-logo {
+    float: left;
+    display: block;
+    width: 126px;
+    height: 70px;
+    margin: 5px 0px 5px 100px;
+}
+.header .header-title{
+    float: left;
+    display:block;
+    width: 50%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 3ch;
+    text-align: center;
+    letter-spacing: 1.45em;
+    color: black;
+}
+.joinbody{
+    display: block;
+    width: 330px;
+    margin: 0 auto;
+    /* background: cyan; */
+}
+.creatbody{
+    /* background-color: cyan; */
+    width: 550px;
+    margin: auto;
+}
+
+   /*设置元素字体大小 */
+   .switch{
+    position: relative;
+    line-height: 24px;
+    color: #fff;
+   }
+   .switch .open,.switch .close{
+        position: absolute;
+        top: 0px;
+        left: 8px;
+        font-size: 12px;
+        cursor: pointer;
+   }
+   .switch .close{
+        left:28px; 
+   }
+    /*label标签模拟按钮  */
+    .switch_btn {
+        display: block;
+        width: 48px;
+        height: 24px;
+        background: #a1a1a1;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+
+    /*设置伪类,来实现模拟滑块滑动*/
+
+    .switch_btn:after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background: #fff;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        -webkit-transform:translateZ(0);    
+        transform:translateZ(0);
+        -webkit-transition: all .3s ease;  
+        transition: all .3s ease;
+        z-index: 2;
+    }
+
+    .switch_btn:active:after {
+        width: 24px;
+    }
+    /*根据checkbox状态实现滑动*/
+    .chk_move{
+        height:10px;
+        width:10px;
+        display: none;
+    }
+
+    .chk_move:checked+label {
+        background: #028ead;
+    }
+
+    .chk_move:checked+label:after {
+        left: 26px;
+    }
+
+    .chk_move:checked+label:active:after {
+        left: 30px;
+    }

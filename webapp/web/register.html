@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册账号</title>
+    <link rel="stylesheet" href="css/register.css">
+    <script src="./js/jquery-3.3.1.js"></script>
+    <!-- <script src="/login/common.css"></script> -->
+
+    <script>
+        //检查用户名
+        function checkUsername() {
+            //1.获取用户名值
+            var username = $("#username").val();
+            //2.定义正则
+            var reg_username = /^\w{3,20}$/;
+
+            //3.判断，给出提示信息
+            var flag = reg_username.test(username);
+            if (flag) {
+                //用户名合法
+                $("#username").css("border", "");
+            } else {
+                //用户名非法,加一个红色边框
+                $("#username").css("border", "1px solid red");
+            }
+
+            return flag;
+        }
+        //检查密码
+        function checkPassword() {
+            //1.获取密码值
+            var password = $("#password").val();
+            //2.定义正则
+            var reg_password = /^\w{3,20}$/;
+
+            //3.判断，给出提示信息
+            var flag = reg_password.test(password);
+            if (flag) {
+                //密码合法
+                $("#password").css("border", "");
+            } else {
+                //密码非法,加一个红色边框
+                $("#password").css("border", "1px solid red");
+            }
+            return flag;
+        }
+
+        //验证密码
+        function checkPasswordok() {
+            var passwordok = $("#passwordok").val();
+            var flag = (passwordok == password.value);
+            if (flag) {
+                $("#passwordok").css("border", "");
+            } else {
+                $("#passwordok").css("border", "1px solid red");
+
+            }
+            return flag;
+        }
+        //检查密码
+        function checkPhoneNumber() {
+            //1.获取密码值
+            var phonenumber = $("#phonenumber").val();
+            //2.定义正则
+            var reg_phonenumber = /^1[3-9][0-9]{9}$/;
+
+            //3.判断，给出提示信息
+            var flag = reg_phonenumber.test(phonenumber);
+            if (flag) {
+                //密码合法
+                $("#phonenumber").css("border", "");
+            } else {
+                //密码非法,加一个红色边框
+                $("#phonenumber").css("border", "1px solid red");
+            }
+            return flag;
+        }
+          //检查密码
+          function checkMail() {
+            //1.获取密码值
+            var mail = $("#mail").val();
+            //2.定义正则
+            var reg_mail = /^\w{3,}(\.\w+)*@[A-z0-9]+(\.[A-z]{2,5}){1,2}$/;
+
+            //3.判断，给出提示信息
+            var flag = reg_mail.test(mail);
+            if (flag) {
+                //密码合法
+                $("#mail").css("border", "");
+            } else {
+                //密码非法,加一个红色边框
+                $("#mail").css("border", "1px solid red");
+            }
+            return flag;
+        }
+        window.onload = function () {
+            var sendbtn = document.getElementById("sendbtn");
+            //alert(sendbtn);
+            sendbtn.onclick = function () {
+                // alert(1);
+                if (!checkUsername()) {
+                    alert("姓名要3到20个字符");
+                   return false;
+                }
+                if (!checkPassword()) {
+                    alert("密码3到20位");
+                    return false;
+                }
+                if (!checkPasswordok()) {
+                    alert("再次输入的密码与密码不匹配");
+                    return false;
+                }
+                if (!checkPhoneNumber()) {
+                    alert("电话号码格式不对");
+                    return false;
+                }
+                if (!checkMail()) {
+                    alert("邮箱地址格式不对");
+                    return false;
+                }
+            };
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/logo2.a2ebc408.png" alt="logo" class="header-logo">
+        <div class="header-title">科云评审系统用户注册</div>
+    </div>
+    <div class="body">
+        <div class="registerbox">
+            <form id="registerForm" action="http://localhost:8080/webapp_war_exploded/registerServlet" method="post">
+                用户名：
+                <input type="text" name="username"id="username" placeholder="3到10位字符">
+                <br />
+                密&nbsp&nbsp&nbsp码：
+                <input type="text" name="password" id="password" placeholder="3到10位密码">
+                <br />
+                密&nbsp&nbsp&nbsp码：
+                <input type="text" name="passwordok"id="passwordok" placeholder="再次输入密码">
+                <br />
+                企业名：
+                <input type="text" name="companyname"id="companyname" placeholder="输入企业名">
+                <br />
+                手机号：
+                <input type="text" name="phonenumber"id="phonenumber" placeholder="输入手机号">
+                邮&nbsp&nbsp&nbsp箱：
+                <input type="text" name="mail"id="mail" placeholder="请输入邮箱地址">
+                <br />
+                <button type="submit" id="sendbtn">注册</button>
+                注册完毕：<a href="./index.html">立即登录</a>
+                <br />
+                <br />
+                注册成功会跳转至登录页面，否则说明用户名已被使用，
+                将停留在本页面，请尝试注册不同的用户名.
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
