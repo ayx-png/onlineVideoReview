@@ -110,7 +110,7 @@
                         </tr>
                     </table>
                 </form>
-                <button type="button" class="submit" id="create">完成检测，下一步</button>
+                <button type="button" class="submit" id="create"><a href="./meetingcreate.html">完成检测，下一步</a></button>
             </div>
 
         </div>
@@ -122,7 +122,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-    <script src="./js/pretest.js"></script>
+    <script src="./js/pre-test.js"></script>
     <script src="./js/fileSaver.js"></script>
     <script>
         //网络环境检测
@@ -345,14 +345,6 @@
             var req = new XMLHttpRequest();
             req.open("POST", "com.spinsoft.bip.frame.utils.image.saveMp4.biz.ext");
             req.send(data);
-        }
-
-    </script>
-    <script>
-        var createbtn = document.getElementById("create");
-        createbtn.onclick = function () {
-            // alert(0);
-            window.location.href = "./meetingcreate.html";
         }
 
     </script>
