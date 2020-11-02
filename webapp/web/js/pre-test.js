@@ -1,3 +1,17 @@
+//网络环境检测1
+
+// var downspeed = navigator.connection.downlink * 1024 / 8;
+//     function measureBW () {
+//         return navigator.connection.downlink* 1024 / 8;
+//     }
+
+//    $(function(){
+//        setInterval(function(){
+//            var downspeed = measureBW() ;
+//            document.getElementById('network-downspeed').innerHTML = "网速为" + downspeed + "KB/s"+navigator.onLine;
+//         }, 500);
+//     })
+//     console.log(navigator.connection);
 // -------------------------- 当前网速检测 --------------------------------
 
 let times1 = 0;//用来计数图片下载次数，防止缓存过多
@@ -30,20 +44,20 @@ function getSpeed(){
 
 // ------------------------ 浏览器版本检测 -------------------------
 //获取浏览器信息
-var browser = getBrowserInfo();
+let browser = getBrowserInfo();
 //根据正则将所有数字、‘.’‘/’全部去掉，剩下浏览器名
-var b_name = (browser + "").replace(/[0-9./]/ig, "");
+let b_name = (browser + "").replace(/[0-9./]/ig, "");
 //根据正则将所有非数字全部去掉，剩下版本
-var b_version = parseInt((browser + "").replace(/[^0-9.]/ig, ""));
+let b_version = parseInt((browser + "").replace(/[^0-9.]/ig, ""));
 console.log("正在使用" + b_name + "浏览器，" + "版本是" + b_version);
 document.getElementById('b-information').innerHTML = b_name + "浏览器，" + "版本是" + b_version;
 //摄像头检测
-var mediaStream;
-var recorderFile;
-var stopRecordCallback;
-var openBtn = document.getElementById("openCamera");
-var startBtn = document.getElementById("start-recording");
-var saveBtn = document.getElementById("save-recording");
+let mediaStream;
+let recorderFile;
+let stopRecordCallback;
+let openBtn = document.getElementById("openCamera");
+let startBtn = document.getElementById("start-recording");
+let saveBtn = document.getElementById("save-recording");
 openBtn.onclick = function () {
     this.disabled = true;
     startBtn.disabled = false;
@@ -61,19 +75,19 @@ saveBtn.onclick = function () {
     // alert('Drop WebM file on Chrome or Firefox. Both can play entire file. VLC player or other players may not work.');
 };
 
-var mediaRecorder;
-var videosContainer = document.getElementById('videos-container');
+let mediaRecorder;
+let videosContainer = document.getElementById('videos-container');
 
 function openCamera() {
-    var len = videosContainer.childNodes.length;
-    for (var i = 0; i < len; i++) {
+    let len = videosContainer.childNodes.length;
+    for (let i = 0; i < len; i++) {
         videosContainer.removeChild(videosContainer.childNodes[i]);
     }
 
-    var video = document.createElement('video');
+    let video = document.createElement('video');
 
-    var videoWidth = 320;
-    var videoHeight = 240;
+    let videoWidth = 320;
+    let videoHeight = 240;
 
     video.controls = false;
     video.muted = true;
@@ -87,7 +101,7 @@ function openCamera() {
             console.log();
             mediaRecorder = new MediaRecorder(stream);
             mediaStream = stream;
-            var chunks = [], startTime = 0;
+            let chunks = [], startTime = 0;
             video.srcObject = stream;
             video.play();
 

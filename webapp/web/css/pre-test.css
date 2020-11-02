@@ -60,6 +60,20 @@
     margin-top:10px; 
     margin-right: 20px;
 }
+.body .body-camera .experiment1{
+    width:322px;
+    height:240px;
+    border:1px solid blue;
+}
+.body .body-camera .experiment1 #videos-container{
+    width:322px;
+    height:240px;
+}
+.body .body-camera .experiment2 {
+    text-align:center;
+    border:none;
+    margin-top:10px;
+}
  .body-form > .test_form_text{
     width: 800px;
     height: 150px;

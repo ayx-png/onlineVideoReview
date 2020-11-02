@@ -5,6 +5,8 @@ import service.UserService;
 import service.impl.UserServiceImpl;
 
 import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -36,4 +38,10 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
+
+//    @Override
+//    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        super.service(req, resp);
+//    }
+
 }

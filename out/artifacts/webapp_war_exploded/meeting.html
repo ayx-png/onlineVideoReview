@@ -99,7 +99,7 @@
   <script src="./js/AgoraRTCSDK-3.2.1.js"></script>
   <script>
     // console.log("agora sdk version: " + AgoraRTC.VERSION + " compatible: " + AgoraRTC.checkSystemRequirements());
-    var resolutions = [//{}定义一个对象，[]定义一个数组
+    let resolutions = [//{}定义一个对象，[]定义一个数组
       {
         name: "default",
         value: "default",
@@ -128,7 +128,7 @@
       //          o.m();    // 1
       M.toast({ html: options.text, classes: options.classes })
     }
-    var Toast = {
+    let Toast = {
       //     x => x * x
       // 相当于：
       // function (x) {
@@ -155,7 +155,7 @@
     }
     //验证器
     function validator(formData, fields) {
-      var keys = Object.keys(formData)
+      let keys = Object.keys(formData)
       for (let key of keys) {
         if (fields.indexOf(key) != -1) {
           if (!formData[key]) {
@@ -168,11 +168,11 @@
     }
     //序列化数据
     function serializeformData() {
-      var formData = $("#form").serializeArray()
-      var obj = {}
-      for (var item of formData) {
-        var key = item.name
-        var val = item.value
+      let formData = $("#form").serializeArray()
+      let obj = {}
+      for (let item of formData) {
+        let key = item.name
+        let val = item.value
         // console.log(key,val)appID 
         // meeting.html:164 channel 
         // meeting.html:164 token 
@@ -233,13 +233,13 @@
               kind: item.kind,
             }
           })
-        var videos = []
-        var audios = []
-        for (var i = 0; i < items.length; i++) {
-          var item = items[i]
+        let videos = []
+        let audios = []
+        for (let i = 0; i < items.length; i++) {
+          let item = items[i]
           if ("videoinput" == item.kind) {
-            var name = item.label
-            var value = item.deviceId
+            let name = item.label
+            let value = item.deviceId
             if (!name) {
               name = "camera-" + videos.length
             }
@@ -250,8 +250,8 @@
             })
           }
           if ("audioinput" == item.kind) {
-            var name = item.label
-            var value = item.deviceId
+            let name = item.label
+            let value = item.deviceId
             if (!name) {
               name = "microphone-" + audios.length
             }
@@ -268,7 +268,7 @@
 
 
     // 定义trc
-    var rtc = {
+    let rtc = {
       client: null,
       joined: false,
       published: false,
@@ -302,7 +302,7 @@
       })
       // Occurs when the peer user leaves the channel; for example, the peer user calls Client.leave.
       rtc.client.on("peer-leave", function (evt) {
-        var id = evt.uid;
+        let id = evt.uid;
         console.log("id", evt)
         let streams = rtc.remoteStreams.filter(e => id !== e.getId())
         let peerStream = rtc.remoteStreams.find(e => id === e.getId())
@@ -323,8 +323,8 @@
       })
       // Occurs when the remote stream is added.
       rtc.client.on("stream-added", function (evt) {
-        var remoteStream = evt.stream
-        var id = remoteStream.getId()
+        let remoteStream = evt.stream
+        let id = remoteStream.getId()
         Toast.info("stream-added uid: " + id)
         if (id !== rtc.params.uid) {
           rtc.client.subscribe(remoteStream, function (err) {
@@ -335,8 +335,8 @@
       })
       // Occurs when a user subscribes to a remote stream.
       rtc.client.on("stream-subscribed", function (evt) {
-        var remoteStream = evt.stream
-        var id = remoteStream.getId()
+        let remoteStream = evt.stream
+        let id = remoteStream.getId()
         rtc.remoteStreams.push(remoteStream)
         addView(id)
         remoteStream.play("remote_video_" + id)
@@ -345,8 +345,8 @@
       })
       // Occurs when the remote stream is removed; for example, a peer user calls Client.unpublish.
       rtc.client.on("stream-removed", function (evt) {
-        var remoteStream = evt.stream
-        var id = remoteStream.getId()
+        let remoteStream = evt.stream
+        let id = remoteStream.getId()
         Toast.info("stream-removed uid: " + id)
         if (remoteStream.isPlaying()) {
           remoteStream.stop()
