@@ -1,7 +1,6 @@
 package web;
 
-import com.sun.javaws.IconUtil;
-import pojo.User;
+import model.User;
 import service.UserService;
 import service.impl.UserServiceImpl;
 

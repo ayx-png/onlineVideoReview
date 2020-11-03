@@ -1,5 +1,10 @@
 package service;
-import pojo.User;
+import model.User;
+
+/**
+ * 业务逻辑
+ */
+
 public interface UserService {
     /**
      * 注册用户

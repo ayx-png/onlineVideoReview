@@ -1,8 +1,8 @@
 package service.impl;
 
-import dao.UserDao;
-import dao.impl.UserDaoImpl;
-import pojo.User;
+import mapper.UserDao;
+import mapper.impl.UserDaoImpl;
+import model.User;
 import service.UserService;
 
 public class UserServiceImpl implements UserService {

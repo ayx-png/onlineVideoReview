@@ -71,7 +71,6 @@
     float: right;
     padding-top:20px;
 }
-
 .body-form > .lo_form_center table{
     vertical-align: top;
     text-align: center;
@@ -111,23 +110,31 @@
     height: 40px;
     padding-top: 2px;
 }
-.body-form > .lo_form_center .td_mm {
-    display: block;
-    width: 80px;
-    height: 28px;
-    margin-top: 32px;
-    margin-left: 85px;
-    text-align: center;
-}
+/*.body-form > .lo_form_center .td_submit{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
 .body-form > .lo_form_center .td_submit .submit{
     display: block;
     width: 80px;
     height: 28px;
-    margin-left: 85px;
-    margin-top: 12px;
+    margin-left: 75px;
+    margin-top: 5px;
     text-align: center;
     background-color: rgb(187,201,217);
     border-radius:2px;
+}
+.body-form .lo_form_center .td_submit #errorMsg{
+    color: red;
+    margin-left: 75px;
+}
+.body-form > .lo_form_center .td_mm {
+    display: block;
+    width: 80px;
+    height: 28px;
+    margin-top: 50px;
+    margin-left: 75px;
+    text-align: center;
 }
 .footer {
     position: absolute;

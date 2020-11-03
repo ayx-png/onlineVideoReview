@@ -1,11 +1,8 @@
 package test;
 
-import dao.UserDao;
-import dao.impl.UserDaoImpl;
+import mapper.UserDao;
+import mapper.impl.UserDaoImpl;
 import org.junit.jupiter.api.Test;
-import pojo.User;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class UserDaoTest {
     UserDao userDao=new UserDaoImpl();

@@ -1,11 +1,9 @@
 package test;
 
 import org.junit.jupiter.api.Test;
-import pojo.User;
+import model.User;
 import service.UserService;
 import service.impl.UserServiceImpl;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class UserServiceImplTest {
     UserService userService=new UserServiceImpl();

@@ -1,12 +1,10 @@
 package web;
 
-import pojo.User;
+import model.User;
 import service.UserService;
 import service.impl.UserServiceImpl;
 
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -30,7 +28,8 @@ public class LoginServlet extends HttpServlet {
         } else {
             // 登录 成功
             //跳到成功页面pre-test.html
-            request.getRequestDispatcher("/pre-test.html").forward(request, response);
+            //request.getRequestDispatcher("/pre-test.html").forward(request, response);
+            response.sendRedirect("./pre-test.html");
         }
 
     }
