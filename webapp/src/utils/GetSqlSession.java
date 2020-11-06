@@ -22,7 +22,7 @@ public class GetSqlSession {
         try {
             // 获得mybatis的环境配置文件
             String resource = "mybatis-config.xml";
-            // 以流的方式获取recource(mybatis的环境配置文件)
+            // 以流的方式获取resource(mybatis的环境配置文件)
             input = Resources.getResourceAsStream(resource);
             // 创建会话工厂
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(input);
@@ -35,4 +35,13 @@ public class GetSqlSession {
         }
     }
 
+    /**
+     * 测试mybatis是否部署成功
+     * @param args
+     */
+    /*
+    public static void main(String[] args){
+        System.out.println(createSqlSession());
+    }
+    */
 }

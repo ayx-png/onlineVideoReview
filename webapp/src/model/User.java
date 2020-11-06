@@ -12,12 +12,14 @@ public class User {
 
     }
 
+
     public User(Integer id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;
     }
 
+    /*User参数的 getter 和 setter方法*/
     public Integer getId() {
         return id;
     }

@@ -9,16 +9,6 @@
     height: 70px;
     margin: 5px 0px 5px 100px;
 }
-
-.body {
-    position: relative;
-    float: left;
-    display: block;
-    width: 100%;
-    height: 848px;
-    background: url(../images/IMG_20200915_155804.jpg) no-repeat;
-    background-size: 100% 100%;
-}
 .header .header-title {
     float: left;
     display: block;
@@ -29,15 +19,23 @@
     text-align: center;
     letter-spacing: 1.45em;
     color: white;
-
+}
+.body {
+    position: relative;
+    float: left;
+    display: block;
+    width: 100%;
+    height: 848px;
+    background: url(../images/IMG_20200915_155804.jpg) no-repeat;
+    background-size: 100% 100%;
 }
 .body > .background-image {
     position: relative;
     width: 100%;
     height: 848px;
 }
-.registerbox {
-    width: 250px;
+.body .registerbox {
+    width: 257px;
     margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -45,4 +43,9 @@
 }
 .body .registerbox input{
     float: right;
+}
+.body .registerbox .errorMsg{
+    width: 257px;
+    color: #ff0000;
+    text-align: center;
 }

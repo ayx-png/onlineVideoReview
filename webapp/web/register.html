@@ -24,26 +24,29 @@
         <div class="registerbox">
             <form id="registerForm" action="https://localhost:8443/onlineMeeting/registerServlet" method="post">
                 用户名：
-                <input type="text" name="username"id="username" placeholder="3到10位字符">
-                <br />
+                <input type="text" name="username" id="username" placeholder="3到10位字符">
+                <br>
                 密&nbsp&nbsp&nbsp码：
                 <input type="text" name="password" id="password" placeholder="3到10位密码">
-                <br />
-                密&nbsp&nbsp&nbsp码：
-                <input type="text" name="passwordok"id="passwordok" placeholder="再次输入密码">
-                <br />
+                <br>
+                密码确认：
+                <input type="text" name="passwordConf" id="passwordConf" placeholder="再次输入密码">
+                <br>
                 企业名：
-                <input type="text" name="companyname"id="companyname" placeholder="输入企业名">
-                <br />
+                <input type="text" name="companyName" id="companyName" placeholder="输入企业名">
+                <br>
                 手机号：
-                <input type="text" name="phonenumber"id="phonenumber" placeholder="输入手机号">
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="输入手机号">
                 邮&nbsp&nbsp&nbsp箱：
-                <input type="text" name="mail"id="mail" placeholder="请输入邮箱地址">
-                <br />
-                <button type="submit" id="sendbtn">注册</button>
+                <input type="text" name="mail" id="mail" placeholder="请输入邮箱地址">
+                <br>
+                <button type="submit" id="registerBtn">注册</button>
                 注册完毕：<a href="./index.html">立即登录</a>
-                <br />
-                <br />
+                <br>
+                <br>
+                <div class="errorMsg">
+                    <span id="err"></span> <br>
+                </div>
                 注册成功会跳转至登录页面，否则说明用户名已被使用，
                 将停留在本页面，请尝试注册不同的用户名.
             </form>

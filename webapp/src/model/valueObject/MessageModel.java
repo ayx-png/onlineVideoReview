@@ -1,10 +1,13 @@
 package model.valueObject;
 
 /**
- * 消息响应模型
- *  状态码：1(成功) or 0(失败)
- *  提示信息：字符串
- *  回显数据：object对象
+ * 消息响应模型对象 （数据响应）
+ *      状态码：
+ *          1(成功) or 0(失败)
+ *      提示信息：
+ *          字符串
+ *      回显数据：
+ *          object对象
  *
  */
 public class MessageModel {
@@ -17,6 +20,7 @@ public class MessageModel {
         return code;
     }
 
+    /* MessageModel的 getter和setter 方法 */
     public void setCode(Integer code) {
         this.code = code;
     }

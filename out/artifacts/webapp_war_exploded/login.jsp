@@ -1,5 +1,11 @@
-<!DOCTYPE html>
-<html lang="zh">
+<%--
+  Created by IntelliJ IDEA
+  User: admin
+  Date: 2020/11/6
+  Time: 15:21
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +14,6 @@
     <title>科云会议系统</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/login.css">
-<!--    <script src="./js/jquery-3.3.1.js"></script>-->
     <script src="./js/jquery-3.5.1.js"></script>
     <script src="./js/login.js"></script>
     <!-- Bootstrap -->
@@ -40,7 +45,7 @@
             </div>
             <!--用户名密码输入框-->
             <div class="lo_form_center">
-                <form id="loginForm" action="https://localhost:8443/onlineMeeting/LoginServlet" method="post">
+                <form id="loginForm" action="https://localhost:8443/onlineMeeting/login" method="post">
                     <!--<input type="hidden" name="action" value="login">-->
                     <table style="margin-top: 25px;">
                         <tr>
@@ -48,7 +53,7 @@
                                 <label for="username">用户名</label>
                             </td>
                             <td class="td_right">
-                                <input type="text" id="username" name="username" placeholder="请输入账号">
+                                <input type="text" id="username" name="username" placeholder="请输入账号" value="${messageModel.object.username}">
                             </td>
                         </tr>
                         <tr>
@@ -56,12 +61,12 @@
                                 <label for="password">密码</label>
                             </td>
                             <td class="td_right">
-                                <input type="password" id="password" name="password" placeholder="请输入密码">
+                                <input type="password" id="password" name="password" placeholder="请输入密码" value="${messageModel.object.password}">
                             </td>
                         </tr>
                         <tr>
                             <td class="td_submit">
-                                <span id="errorMsg"></span>
+                                <span id="errorMsg">${messageModel.msg}</span>
                                 <button type="button" class="submit" id="enter">登&nbsp&nbsp&nbsp&nbsp录</button>
                             </td>
                         </tr>
@@ -110,9 +115,9 @@
 
     </div>
 
-    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-    <!--    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>-->
-    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-    <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>-->
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<!--    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>-->
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>-->
 </body>
 </html>

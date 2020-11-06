@@ -1,5 +1,5 @@
 用户登录
-    1. 数据库创建对应的用户表  users（MYSQL）
+    1. 数据库创建对应的用户表  td_user（MYSQL）
 
     2. 前台页面  login.html(login.jsp)
         登录页面 JS校验
