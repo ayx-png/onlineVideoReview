@@ -27,6 +27,5 @@ public interface UserMapper {
      * @param user
      * @return
      */
-    public int saveUser(User user);
-
+    public int insertUser(User user);
 }

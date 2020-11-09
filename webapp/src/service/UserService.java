@@ -64,6 +64,7 @@ public class UserService{
             // 如果不相等，状态码、提示信息、回显数据设置到消息模型对象中，返回消息模型对象
             messageModel.setCode(0);
             messageModel.setMsg("用户密码不正确！");
+            return messageModel;
         }
 
         // 5. 登陆成功，将成功状态、提示信息、用户对象设置消息模型对象，返回return

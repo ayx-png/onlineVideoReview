@@ -1,4 +1,4 @@
-<%--
+<%@ page import="model.User" %><%--
   Created by IntelliJ IDEA
   User: admin
   Date: 2020/11/6
@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>科云会议系统</title>
+    <title>用户登录</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/login.css">
     <script src="./js/jquery-3.5.1.js"></script>
@@ -37,6 +37,8 @@
     <!----------------  登录表单  ------------------>
     <div class="body">
         <img src="./images/IMG_20200915_155804.jpg" alt="background-image" class="background-image blur">
+
+        <!------------------- 登录表-------------->
         <div class="body-form">
             <!--登录文字标题-->
             <div class="lo_form_left">
@@ -45,6 +47,10 @@
             </div>
             <!--用户名密码输入框-->
             <div class="lo_form_center">
+                <!---------------- 注册信息 -------------------->
+                <div class="registerMsg">
+                    ${message}
+                </div>
                 <form id="loginForm" action="https://localhost:8443/onlineMeeting/login" method="post">
                     <!--<input type="hidden" name="action" value="login">-->
                     <table style="margin-top: 25px;">
@@ -83,7 +89,7 @@
             <div class="lo_form_right">
                 <p>
                     没有账号？
-                    <a href="./register.html">立即注册</a>
+                    <a href="register.jsp">立即注册</a>
                 </p>
             </div>
         </div>

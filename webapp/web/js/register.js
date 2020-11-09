@@ -13,7 +13,7 @@ function checkUsername() {
     } else {
         //用户名非法,加一个红色边框
         $("#username").css("border", "1px solid red");
-        $("#err").html("姓名要3到20个字符");
+        $("#err").html("用户名保持3到20个字符");
     }
     return flag;
 }
@@ -32,7 +32,7 @@ function checkPassword() {
     } else {
         //密码非法,加一个红色边框
         $("#password").css("border", "1px solid red");
-        $("#err").html("密码要3到20位");
+        $("#err").html("密码保持3到20位");
     }
     return flag;
 }
@@ -42,16 +42,27 @@ function checkPasswordConf() {
     //判断确认密码和密码是否一致
     if( $("#passwordConf").val() != $("#password").val() ){
         $("#err").html("密码不一致");
-        return;
+        return false;
     }
     return true;
+}
+// 验证企业名
+function checkCompanyName() {
+    let companyName = $("#companyName").val();
+    if(companyName == null || companyName.trim() === ""){
+        $("#companyName").css("border", "1px solid red");
+        $("#err").html("企业名不能为空");
+        return false;
+    }
+    return true;
+
 }
 //验证手机号
 function checkPhoneNumber() {
     //1.获取手机号
     let phoneNumber = $("#phoneNumber").val();
     //2.定义正则
-    let reg_phoneNumber = /^1[3-9][0-9]{9}$/;
+    let reg_phoneNumber = /^1(3([0-35-9]\d|4[1-8])|4[14-9]\d|5([0-35689]\d|7[1-79])|66\d|7[2-35-8]\d|8\d{2}|9[13589]\d)\d{7}$/;
 
     //3.判断，给出提示信息
     let flag = reg_phoneNumber.test(phoneNumber);
@@ -70,7 +81,7 @@ function checkMail() {
     //1.获取邮箱
     let mail = $("#mail").val();
     //2.定义正则
-    let reg_mail = /^\w{3,}(\.\w+)*@[A-z0-9]+(\.[A-z]{2,5}){1,2}$/;
+    let reg_mail = /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/;
 
     //3.判断，给出提示信息
     let flag = reg_mail.test(mail);
@@ -80,7 +91,7 @@ function checkMail() {
     } else {
         //密码非法,加一个红色边框
         $("#mail").css("border", "1px solid red");
-        $("#err").html("邮件格式不正确");
+        $("#err").html("请输入有效邮箱");
     }
     return flag;
 }
@@ -92,7 +103,10 @@ $(document).ready(function (){
         if (!checkPassword()) {
             return;
         }
-        if (!checkPasswordok()) {
+        if (!checkPasswordConf()) {
+            return;
+        }
+        if(!checkCompanyName()) {
             return;
         }
         if (!checkPhoneNumber()) {

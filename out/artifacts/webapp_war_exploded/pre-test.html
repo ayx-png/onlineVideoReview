@@ -38,13 +38,14 @@
                 <p>开放时间：长期有效</p>
                 <p>测试说明：为保证参与会议的质量，本次测试将依次针对网络质量、浏览器版本、摄像头、麦克风等进行测试，请按相关提示进行测试！</p>
             </div>
-            <!----------------摄像头测试------------------>
+            <!----------------打开摄像头------------------>
             <div class="body-camera">
                 <section class="experiment1">
                     <div id="videos-container"></div>
                 </section>
                 <section class="experiment2">
                     <button id="openCamera">打开摄像头</button>
+                    <button id="closeCamera">关闭摄像头</button>
                     <button id="start-recording" disabled> </button>
                     <button id="save-recording" disabled> </button>
                     <!--<a href="javascript:void(0)" onclick="send()">发送</a>-->
@@ -61,7 +62,7 @@
                                 <p>网络质量检测</p>
                             </td>
                             <td>
-                                <div class="network-speed">问题说明：<br>
+                                <div class="network-speed"><b>问题说明：</b><br>
                                     目前检测到网络质量：<p id="network-downspeed"></p>
                                 </div>
                             </td>
@@ -72,7 +73,7 @@
                                 <p>浏览器版本检测</p>
                             </td>
                             <td>
-                                <div>问题说明：<br>
+                                <div><b>问题说明：</b><br>
                                     目前检测到浏览器是<p id="b-information"></p>，若不是最新版本可能不支持视频会议，请升级浏览器版本
 。                                </div>
                             </td>
@@ -83,7 +84,7 @@
                                 <p>调试摄像头</p>
                             </td>
                             <td>
-                                <p>问题说明：<br>
+                                <p><b>问题说明：</b><br>
                                     目前检测到摄像头未开，请点击右上角方框--打开摄像头文字--以启动摄像头。
                                 </p>
                             </td>
@@ -94,7 +95,7 @@
                                 <p>调试麦克风</p>
                             </td>
                             <td>
-                                <p>问题说明：<br>
+                                <p><b>问题说明：</b><br>
                                     目前检测到未开麦克风，请*********；
                                 </p>
                             </td>

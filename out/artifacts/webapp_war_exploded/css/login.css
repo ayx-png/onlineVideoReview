@@ -34,11 +34,16 @@
     width: 100%;
     height: 855px;
 }
-.blur {    
+.blur {
     -webkit-filter: blur(10px);
        -moz-filter: blur(10px);
-        -ms-filter: blur(10px);    
-            filter: blur(10px);    
+        -ms-filter: blur(10px);
+            filter: blur(10px);
+}
+.body .registerMsg{
+    margin: 0 auto;
+    color: red;
+    font-size: larger;
 }
 .body .body-form{
     position: absolute;
@@ -132,7 +137,7 @@
     display: block;
     width: 80px;
     height: 28px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 75px;
     text-align: center;
 }

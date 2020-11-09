@@ -34,7 +34,7 @@
         <div class="loginRegister">
             <a href="login.jsp"><input type="button" value="登录"></a>
             <span>/</span>
-            <a href="register.html"><input type="button" value="注册"></a>
+            <a href="register.jsp"><input type="button" value="注册"></a>
         </div>
     </div>
     <div class="body">
