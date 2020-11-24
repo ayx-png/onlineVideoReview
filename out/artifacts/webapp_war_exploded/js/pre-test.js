@@ -94,19 +94,40 @@ function getBrowserInfo() {
     }
 }
 
-// ------------------------ 摄像头检测 ----------------------------
+// ------------------------ 摄像头打开与关闭 ----------------------------
 let mediaStream;
 let recorderFile;
 let stopRecordCallback;
 let openBtn = document.getElementById("openCamera");
-let startBtn = document.getElementById("start-recording");
-let saveBtn = document.getElementById("save-recording");
+let closeBtn = document.getElementById("closeCamera");
+let microphoneBtn = document.getElementById("microphone");
+// let startBtn = document.getElementById("start-recording");
+// let saveBtn = document.getElementById("save-recording");
 openBtn.onclick = function () {
-    this.disabled = true;   // 打开摄像头按钮禁用
-    startBtn.disabled = false;      //开始录制按钮解除禁用
-    openCamera();   // 打开摄像头
+    // this.disabled = true;   // 打开摄像头按钮禁用
+    // startBtn.disabled = false;      //开始录制按钮解除禁用
+    openCamera(true, false);   // 打开摄像头
 };
-
+closeBtn.onclick = function () {
+    // this.disabled = true;
+    closeCamera();
+}
+// ----------------- 麦克风 关&&闭 --------------
+microphoneBtn.onclick = function (){    // I标签不能点击
+    let icon = microphoneBtn.childNodes[0];
+    icon.classList.toggle("icon-ziyuan");
+    icon.classList.toggle("icon-ziyuan1");
+    if(icon.classList.contains("icon-ziyuan1")){
+        // icon.classList.remove("icon-ziyuan1");
+        // icon.classList.add("icon-ziyuan");
+        openMicrophone(false, true);
+    }else{
+        // icon.classList.remove("icon-ziyuan");
+        // icon.classList.add("icon-ziyuan1");
+        closeMicrophone();
+    }
+}
+/*
 startBtn.onclick = function () {
     this.disabled = true;
     startRecord();
@@ -116,11 +137,29 @@ saveBtn.onclick = function () {
     saver();
     // alert('Drop WebM file on Chrome or Firefox. Both can play entire file. VLC player or other players may not work.');
 };
+ */
 
 let mediaRecorder;
 let videosContainer = document.getElementById('videos-container');
-
-function openCamera() {
+// ------------- 摄像头状态检测 -----------------
+cameraStatus();
+function cameraStatus(){
+    if(videosContainer.childNodes){
+        let cameraMsg = document.getElementsByClassName("cameraStatus");
+        cameraMsg.innerHTML = "目前检测到摄像头已打开，可点击右上角方框下--关闭摄像头文字--以关闭摄像头。"
+    }
+}
+// ------------- 麦克风状态检测 -----------------
+microphoneStatus();
+function microphoneStatus(){
+    let iconfont = microphoneBtn.childNodes[0];
+    if(iconfont.classList.contains("icon-ziyuan1")){
+        let microphoneMsg = document.getElementsByClassName("microphoneStatus");
+        microphoneMsg.innerHTML = "目前检测到麦克风已打开，可点击上方--麦克风图标--以关闭麦克风。"
+    }
+}
+//---------------打开摄像头----------------------
+function openCamera(videoEnable, audioEnable) {
     let len = videosContainer.childNodes.length;
     for (let i = 0; i < len; i++) { // 删除视频框的子节点
         videosContainer.removeChild(videosContainer.childNodes[i]);
@@ -135,8 +174,7 @@ function openCamera() {
     video.width = videoWidth;
     video.height = videoHeight;
 
-    //
-    MediaUtils.getUserMedia(true, false, function (err, stream) {
+    MediaUtils.getUserMedia(videoEnable, audioEnable, function (err, stream) {
         if (err) {
             throw err;
         } else {
@@ -145,18 +183,21 @@ function openCamera() {
             mediaRecorder = new MediaRecorder(stream);
             mediaStream = stream;
             let chunks = [], startTime = 0;
-            video.srcObject = stream;
+            video.srcObject = stream;     // HTMLMediaElement接口的srcObject属性设定或返回一个对象，
+                                            // 这个对象提供了一个与HTMLMediaElement关联的媒体源，
+                                             // 这个对象通常是MediaStream，但根据规范可以是MediaSource，Blob或者File
             video.play();
 
             videosContainer.appendChild(video);
-            mediaRecorder.ondataavailable = function (e) {
+            mediaRecorder.ondataavailable = function (e) {  // The dataavailable event is fired when the MediaRecorder
+                                                            // delivers media data to your application for its use.
                 mediaRecorder.blobs.push(e.data);
                 chunks.push(e.data);
             };
             mediaRecorder.blobs = [];
 
             mediaRecorder.onstop = function (e) {
-                recorderFile = new Blob(chunks, { 'type': mediaRecorder.mimeType });
+                recorderFile = new Blob(chunks, { 'type': mediaRecorder.mimeType });    // chunks为Blob的数据数组
                 chunks = [];
                 if (null != stopRecordCallback) {
                     stopRecordCallback();
@@ -166,7 +207,66 @@ function openCamera() {
     });
 }
 
+//---------------------关闭摄像头-----------------
+function closeCamera() { // 删除摄像头容器内的所有节点
+    let len = videosContainer.childNodes.length;
+    for (let i = 0; i < len; i++) { // 删除视频框的子节点
+        videosContainer.removeChild(videosContainer.childNodes[i]);
+    }
+}
+
+// ------------ 打开麦克风 ------------------
+let microphoneContainer = document.getElementsByClassName("microphone-container");
+function openMicrophone(videoEnable, audioEnable){
+    let audio = document.createElement("audio");
+    audio.width = 100 + "px";
+    audio.height = 20 + "px";
+    audio.muted = true;
+    audio.controls = true;
+
+    MediaUtils.getUserMedia(videoEnable, audioEnable, function (err, stream) {
+        if (err) {
+            throw err;
+        } else {
+            // 通过 MediaRecorder 记录获取到的媒体流
+            console.log();
+            mediaRecorder = new MediaRecorder(stream);
+            mediaStream = stream;
+            let chunks = [], startTime = 0;
+            audio.srcObject = stream;     // HTMLMediaElement接口的srcObject属性设定或返回一个对象，
+            // 这个对象提供了一个与HTMLMediaElement关联的媒体源，
+            // 这个对象通常是MediaStream，但根据规范可以是MediaSource，Blob或者File
+            audio.play();
+
+            microphoneContainer.appendChild(audio);
+            mediaRecorder.ondataavailable = function (e) {  // The dataavailable event is fired when the MediaRecorder
+                // delivers media data to your application for its use.
+                mediaRecorder.blobs.push(e.data);
+                chunks.push(e.data);
+            };
+            mediaRecorder.blobs = [];
+
+            mediaRecorder.onstop = function (e) {
+                recorderFile = new Blob(chunks, { 'type': mediaRecorder.mimeType });    // chunks为Blob的数据数组
+                chunks = [];
+                if (null != stopRecordCallback) {
+                    stopRecordCallback();
+                }
+            };
+        }
+    });
+}
+
+// ------------- 关闭麦克风 -----------------------
+function closeMicrophone(){
+    let len = microphoneContainer.childNodes.length;
+    for (let i = 0; i < len; i++) { // 删除音频框的子节点
+        microphoneContainer.removeChild(microphoneContainer.childNodes[i]);
+    }
+}
+
 // 停止录制
+/*
 function stopRecord(callback) {
     stopRecordCallback = callback;
     // 终止录制器
@@ -174,6 +274,7 @@ function stopRecord(callback) {
     // 关闭媒体流
     MediaUtils.closeStream(mediaStream);
 }
+ */
 
 let MediaUtils = {
     /**
@@ -221,6 +322,7 @@ let MediaUtils = {
      * 关闭媒体流
      * @param stream {MediaStream} - 需要关闭的流
      */
+    /*
     closeStream: function (stream) {
         if (typeof stream.stop === 'function') {
             stream.stop();
@@ -241,8 +343,9 @@ let MediaUtils = {
             }
         }
     }
+    */
 };
-
+/*
 function startRecord() {
     mediaRecorder.start();
     setTimeout(function () {
@@ -275,7 +378,7 @@ function send() {
     req.open("POST", "com.spinsoft.bip.frame.utils.image.saveMp4.biz.ext");
     req.send(data);
 }
-
+ */
 
 //--------------网速实时刷新--------------------
 /*

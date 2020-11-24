@@ -46,12 +46,12 @@
                 <section class="experiment2">
                     <button id="openCamera">打开摄像头</button>
                     <button id="closeCamera">关闭摄像头</button>
-                    <button id="start-recording" disabled> </button>
-                    <button id="save-recording" disabled> </button>
-                    <!--<a href="javascript:void(0)" onclick="send()">发送</a>-->
+                    <!-- <button id="start-recording" disabled> </button>-->
+                    <!-- <button id="save-recording" disabled> </button>-->
+                    <!-- <a href="javascript:void(0)" onclick="send()">发送</a>-->
                 </section>
             </div>
-            <!----------------网速、浏览器版本测试------------------>
+            <!---------------- 网速、浏览器版本测试 ------------------>
             <div class="test_form_center">
                 <form id="testForm" action="user">
                     <!--提交处理请求的标识符-->
@@ -85,7 +85,7 @@
                             </td>
                             <td>
                                 <p><b>问题说明：</b><br>
-                                    目前检测到摄像头未开，请点击右上角方框--打开摄像头文字--以启动摄像头。
+                                    <span class="cameraStatus">目前检测到摄像头未开，请点击右上角方框下--打开摄像头文字--以启动摄像头。</span>
                                 </p>
                             </td>
                         </tr>
@@ -96,13 +96,20 @@
                             </td>
                             <td>
                                 <p><b>问题说明：</b><br>
-                                    目前检测到未开麦克风，请*********；
+                                    <!----------------- 打开麦克风 ------------------------>
+                                    <div class="body-microphone">
+                                        <section class="experiment1">
+                                            <span id="microphone"><i class="iconfont icon-ziyuan"></i></span>
+                                            <div id="microphone-container"></div>
+                                        </section>
+                                    </div>
+                                    <span class="microphoneStatus">目前检测到未开麦克风，请点击上方--麦克风按钮--以启用；</span>
                                 </p>
                             </td>
                         </tr>
                     </table>
                 </form>
-                <button type="button" class="submit" id="create"><a href="meetingCreate.jsp">完成检测，下一步</a></button>
+                <button type="button" class="submit" id="create"><a href="./meetingCreate.jsp">完成检测，下一步</a></button>
             </div>
         </div>
     </div>

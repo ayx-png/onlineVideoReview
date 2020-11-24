@@ -7,278 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onlineVideoReview.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/myservlet/Servlet1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/myservlet/Servlet2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/myservlet/ServletIOresponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/myservlet/helloservlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/servlet-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/META-INF/webapp.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PackContent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PrivilegeMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$Privileges.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/ByteBuf.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$DynamicKey5Content.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$Message.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKeyUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Packable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/PackableEx.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder$Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Utils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/MeetingCreateServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/Meeting.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/MeetingMember.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/valueObject/MessageModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mysql.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/MeetingCreateService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/RegisterService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/UpdateToken.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/getSessionTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/GetSqlSession.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/StringUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/commons-codec-1.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/commons-dbutils-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/druid-1.1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/mybatis-3.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/servlet-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/materialize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meetingCreate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/pre-test.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/error/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/images/IMG_20200915_155804.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/images/loginbg3.6b0de03a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/images/logo2.a2ebc408.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/indexTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/AgoraRTCSDK-3.2.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/fileSaver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/getParameter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/include.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/jquery-3.5.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/materialize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meetingCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/pre-test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/用户注册思路" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/用户登录思路" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/管理员创建会议思路" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/META-INF/webapp.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PackContent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PrivilegeMessage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$Privileges.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/ByteBuf.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$DynamicKey5Content.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$Message.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKeyUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Packable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/PackableEx.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder$Role.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Utils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/controller/MeetingCreateServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/controller/RegisterServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/controller/UserServlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/model/Meeting.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/model/MeetingMember.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/model/valueObject/MessageModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/mysql.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/service/MeetingCreateService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/service/RegisterService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/test/UpdateToken.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/test/getSessionTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/utils/GetSqlSession.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/webapp/utils/StringUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssl/client.cer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssl/client.jks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssl/client_trust.jks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssl/server.cer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssl/server.jks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssl/server_trust.jks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/AccessToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/ByteBuf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKeyUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/Packable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/PackableEx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/RtcTokenBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/RegisterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/UserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/model/Meeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/model/MeetingMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/model/valueObject/MessageModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/mysql.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/RegisterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/test/getSessionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/utils/GetSqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/utils/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-codec-1.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-dbutils-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/druid-1.1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/mybatis-3.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/servlet-api.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/materialize.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/meeting.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/meetingCreate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/pre-test.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/error/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/error/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/images/IMG_20200915_155804.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/images/loginbg3.6b0de03a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/images/logo2.a2ebc408.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/indexTest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/joinMeeting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/AgoraRTCSDK-3.2.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/fileSaver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/getParameter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/include.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/jquery-3.5.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/materialize.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/meeting.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/meetingCreate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/pre-test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/meeting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/meetingCreate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/meetingCreate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/pre-test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/用户注册思路" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/用户登录思路" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/管理员创建会议思路" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/webapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/pre-test.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/pre-test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/pre-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/pre-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/pre-test.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -294,7 +25,35 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/web/pre-test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/web/js/pre-test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="270" column="34" lean-forward="true" selection-start-line="270" selection-start-column="34" selection-end-line="270" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/web/css/pre-test.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -342,7 +101,6 @@
         <option value="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.fxml" />
         <option value="$PROJECT_DIR$/webapp/src/service/RegisterService.java" />
         <option value="$PROJECT_DIR$/webapp/src/model/MeetingMember.java" />
-        <option value="$PROJECT_DIR$/webapp/web/pre-test.html" />
         <option value="$PROJECT_DIR$/webapp/web/js/register.js" />
         <option value="$PROJECT_DIR$/webapp/web/joinMeeting.html" />
         <option value="$PROJECT_DIR$/webapp/web/meetingCreate.html" />
@@ -368,6 +126,9 @@
         <option value="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" />
         <option value="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" />
         <option value="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" />
+        <option value="$PROJECT_DIR$/webapp/web/js/pre-test.js" />
+        <option value="$PROJECT_DIR$/webapp/web/css/pre-test.css" />
+        <option value="$PROJECT_DIR$/webapp/web/pre-test.html" />
       </list>
     </option>
   </component>
@@ -384,8 +145,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="608" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="951" />
     <option name="width" value="978" />
     <option name="height" value="1050" />
   </component>
@@ -404,7 +165,33 @@
             </path>
             <path>
               <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+              <item name="iconfont" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -419,7 +206,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/sstir/AgoraDynamicKey/java" />
+    <property name="last_opened_file_path" value="D:/sstir/onlineMeeting_userMCC/onlineVideoReview" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -575,12 +362,12 @@
       <workItem from="1606110467519" duration="5780000" />
       <workItem from="1606116280936" duration="223000" />
       <workItem from="1606116530113" duration="6752000" />
-      <workItem from="1606180242497" duration="13099000" />
+      <workItem from="1606180242497" duration="17709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59785000" />
+    <option name="totallyTimeSpent" value="64395000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,9 +379,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14142092" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16621985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -605,7 +392,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32611832" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35642135" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19653179" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -633,20 +420,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/src/controller/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.fxml" />
     <entry file="file://$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.tld" />
     <entry file="file://$PROJECT_DIR$/webapp/web/管理员创建会议思路">
@@ -688,13 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/pre-test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="106" column="14" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -957,6 +723,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/css/pre-test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/js/pre-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="270" column="34" lean-forward="true" selection-start-line="270" selection-start-column="34" selection-end-line="270" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/pre-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
         </state>
       </provider>
     </entry>

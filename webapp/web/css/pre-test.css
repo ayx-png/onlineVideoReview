@@ -63,7 +63,7 @@
 .body .body-camera .experiment1{
     width:322px;
     height:240px;
-    border:1px solid blue;
+    border:1px solid #0000ff;
 }
 .body .body-camera .experiment1 #videos-container{
     width:322px;
@@ -79,13 +79,13 @@
     border:none;
     margin-top:10px;
 }
- .body-form > .test_form_text{
+.body-form > .test_form_text{
     width: 800px;
     height: 150px;
-	float: left;
-	padding-top:20px;
+    float: left;
+    padding-top:20px;
     padding-left: 20px;
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 .body-form > .test_form_text > h3{
     font-weight: 700;
@@ -94,7 +94,7 @@
     text-indent: 6ch;
 }
  .body-form > .test_form_center{
-	width:900px;
+	width: 800px;
 	float: left;
     margin-left: 100px;
 	box-sizing: border-box;
@@ -128,6 +128,22 @@
     display: inline;
     color: red;
     font-weight: bolder;
+}
+.body .test_form_center table .microphoneStatus{
+    font-size: 2px;
+}
+.body .body-microphone{
+    width: 120px;
+    height: 30px;
+}
+.body .body-microphone .experiment1{
+    width: 100px;
+    height: 30px;
+    /*border:1px solid #0000ff;*/
+}
+.body .body-microphone .experiment1 .microphone-container{
+    width: 80px;
+    height: 20px;
 }
 .body-form > .test_form_center .submit{
     display: block;
