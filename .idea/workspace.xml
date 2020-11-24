@@ -6,7 +6,280 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="" />
+    <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onlineVideoReview.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/myservlet/Servlet1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/myservlet/Servlet2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/myservlet/ServletIOresponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/classes/myservlet/helloservlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/web_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/META-INF/webapp.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PackContent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PrivilegeMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$Privileges.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/ByteBuf.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$DynamicKey5Content.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$Message.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKeyUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Packable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/PackableEx.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder$Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/MeetingCreateServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/Meeting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/MeetingMember.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/valueObject/MessageModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mysql.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/MeetingCreateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/RegisterService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/UpdateToken.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/getSessionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/GetSqlSession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/commons-codec-1.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/commons-dbutils-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/druid-1.1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/mybatis-3.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/materialize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meetingCreate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/pre-test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/error/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/images/IMG_20200915_155804.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/images/loginbg3.6b0de03a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/images/logo2.a2ebc408.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/indexTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/AgoraRTCSDK-3.2.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/fileSaver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/getParameter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/include.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/jquery-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/materialize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meetingCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/pre-test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/用户注册思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/用户登录思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/管理员创建会议思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/META-INF/webapp.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PackContent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PrivilegeMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$Privileges.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/ByteBuf.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$DynamicKey5Content.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$Message.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKeyUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Packable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/PackableEx.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder$Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Utils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/controller/MeetingCreateServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/controller/RegisterServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/controller/UserServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/model/Meeting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/model/MeetingMember.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/model/valueObject/MessageModel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/mysql.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/service/MeetingCreateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/service/RegisterService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/test/UpdateToken.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/test/getSessionTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/utils/GetSqlSession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/webapp/utils/StringUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssl/client.cer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssl/client.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssl/client_trust.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssl/server.cer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssl/server.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssl/server_trust.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/AccessToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/ByteBuf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKeyUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/Packable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/PackableEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/RtcTokenBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/model/Meeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/model/MeetingMember.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/model/valueObject/MessageModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/mysql.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/RegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/test/getSessionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/utils/GetSqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/utils/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-codec-1.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-dbutils-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/druid-1.1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/mybatis-3.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/mysql-connector-java-8.0.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/materialize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/meeting.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/meetingCreate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/pre-test.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/register.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/error/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/images/IMG_20200915_155804.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/images/loginbg3.6b0de03a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/images/logo2.a2ebc408.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/indexTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/joinMeeting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/AgoraRTCSDK-3.2.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/fileSaver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/getParameter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/include.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/jquery-3.5.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/materialize.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/meeting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/meetingCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/pre-test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/meeting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/meetingCreate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/meetingCreate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/pre-test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/用户注册思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/用户登录思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/管理员创建会议思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/webapp.iml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +323,9 @@
       <find>joinBody</find>
       <find>System.out.println</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -113,6 +389,7 @@
     <option name="width" value="978" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -139,6 +416,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="D:/sstir/AgoraDynamicKey/java" />
@@ -297,12 +575,12 @@
       <workItem from="1606110467519" duration="5780000" />
       <workItem from="1606116280936" duration="223000" />
       <workItem from="1606116530113" duration="6752000" />
-      <workItem from="1606180242497" duration="12851000" />
+      <workItem from="1606180242497" duration="13099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59537000" />
+    <option name="totallyTimeSpent" value="59785000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
