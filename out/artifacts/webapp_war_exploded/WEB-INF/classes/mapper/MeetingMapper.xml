@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 首先来解析 namespace: 命名空间,此属性通常用来映射Dao层接口. -->
+<mapper namespace="mapper.MeetingMapper">
+    <!-- 查找会议 -->
+    <select id="queryMeetingByAdmin" parameterType="String" resultType="model.Meeting">
+        select * from meetings_table where admin = #{admin}
+    </select>
+    <!-- 添加会议 -->
+    <insert id="insertMeeting" parameterType="model.Meeting" useGeneratedKeys="true" keyProperty="meetingID">
+        insert into meetings_table(admin, topic, memberNum, timeInMinutes, appID, appCertificate, token)
+            value(#{admin}, #{topic}, #{memberNum}, #{timeInMinutes}, #{appID}, #{appCertificate}, #{token})
+    </insert>
+    <!-- 更新meeting的token值 -->
+    <update id="updateMeeting" parameterType="model.Meeting">
+        update meetings_table
+            set token = #{token} where meetingID = #{meetingID}
+    </update>
+</mapper>
