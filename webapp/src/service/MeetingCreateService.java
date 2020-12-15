@@ -37,7 +37,7 @@ public class MeetingCreateService {
 
         // 回现对象
         Meeting m = new Meeting();
-        m.setAdminID(admin);
+        m.setAdmin(admin);
         m.setTopic(topic);
         m.setMemberNum(memberNum);
         m.setTimeInMinutes(hour * 60 + minute);
@@ -73,13 +73,13 @@ public class MeetingCreateService {
         }
 
         // 4.将会议信息存入数据库表并获取会议ID
+        System.out.println(user.getId());
+        m.setAdminID(user.getId());
         String tmpToken = "";
         m.setToken(tmpToken);
         meetingMapper.insertMeeting(m);
         System.out.println(m);
         session.commit();
-//        Meeting meetingForID = meetingMapper.queryMeetingByAdmin(admin);
-//        Integer meetingID = meetingForID.getMeetingID();
 
         // 5. 生成会议token并更新至会议对象
         RtcTokenBuilder token = new RtcTokenBuilder();
@@ -87,6 +87,7 @@ public class MeetingCreateService {
         String channel = Integer.toString(m.getMeetingID());
         String result = token.buildTokenWithUid(m.getAppID(), m.getAppCertificate(), channel, user.getId(), RtcTokenBuilder.Role.Role_Publisher, timestamp);
         System.out.println("token:" + result);
+        System.out.println("channel:" + channel);
         System.out.println("meeting before:" + m.getToken());
         m.setToken(result);
         // 更新数据库会议条目

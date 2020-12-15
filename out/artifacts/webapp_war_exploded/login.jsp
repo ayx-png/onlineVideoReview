@@ -1,4 +1,4 @@
-<%@ page import="model.User" %><%--
+<%--
   Created by IntelliJ IDEA
   User: admin
   Date: 2020/11/6
@@ -16,14 +16,6 @@
     <link rel="stylesheet" href="css/login.css">
     <script src="./js/jquery-3.5.1.js"></script>
     <script src="./js/login.js"></script>
-    <!-- Bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
-    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
-    <!-- [if lt IE 9]> -->
-    <!--      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>-->
-    <!--      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>-->
-    <!-- [endif]  -->
 </head>
 <body>
     <!----------------  网站标题  ------------------>
@@ -51,7 +43,7 @@
                 <div class="registerMsg">
                     ${message}
                 </div>
-                <form id="loginForm" action="http://localhost:8080/onlineMeeting/login" method="post">
+                <form id="loginForm" action="login" method="post">
                     <!--<input type="hidden" name="action" value="login">-->
                     <table style="margin-top: 25px;">
                         <tr>

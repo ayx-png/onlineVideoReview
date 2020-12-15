@@ -6,6 +6,7 @@ package model;
 public class Meeting {
     private Integer meetingID;  // channelName
     private String  admin;
+    private Integer adminID;
     private String topic;
     private Integer memberNum;
     private Integer timeInMinutes;
@@ -20,9 +21,10 @@ public class Meeting {
 
     }
 
-    public Meeting(String admin, String topic, Integer memberNum, Integer timeInMinutes){
-        this.meetingID = meetingID;
+    public Meeting(String admin, Integer adminID, String topic, Integer memberNum, Integer timeInMinutes){
+//        this.meetingID = meetingID;
         this.admin = admin;
+        this.adminID = adminID;
         this.topic = topic;
         this.memberNum = memberNum;
         this.timeInMinutes = timeInMinutes;
@@ -37,6 +39,7 @@ public class Meeting {
 
     public Integer getMeetingID() { return meetingID; }
     public String getAdmin() { return admin; }
+    public Integer getAdminID() { return adminID; }
     public String getTopic() { return topic; }
     public Integer getMemberNum() { return memberNum; }
     public Integer getTimeInMinutes() { return timeInMinutes; }
@@ -46,9 +49,10 @@ public class Meeting {
     /*    public Integer getMinute() { return minute; }
         public Boolean getAudio() { return audio; }
         public Boolean getVideo() { return video; }
-    */
-    public void setMeetingID(Integer meetingID) { this.meetingID = meetingID; }
-    public void setAdminID(String admin) { this.admin = admin; }
+
+    public void setMeetingID(Integer meetingID) { this.meetingID = meetingID; }*/
+    public void setAdmin(String admin) { this.admin = admin; }
+    public void setAdminID(Integer adminID) { this.adminID = adminID; }
     public void setTopic(String topic) { this.topic = topic; }
     public void setMemberNum(Integer memberNum) { this.memberNum = memberNum; }
     public void setTimeInMinutes(Integer timeInMinutes) { this.timeInMinutes = timeInMinutes; }

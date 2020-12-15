@@ -13,4 +13,14 @@
         insert into users_table(username, password, companyName, phoneNumber, mail)
             values(#{username}, #{password}, #{companyName}, #{phoneNumber}, #{mail})
     </insert>
+    <!-- 更新用户信息 -->
+    <update id="updateUser" parameterType="model.User">
+        update users_table
+            set phoneNumber = #{phoneNumber}, mail = #{mail}, companyName = #{companyName} where username = #{username}
+    </update>
+    <!-- 修改用户密码 -->
+    <update id="updateUserPass" parameterType="model.User">
+        update users_table
+            set password = #{password} where username = #{username}
+    </update>
 </mapper>

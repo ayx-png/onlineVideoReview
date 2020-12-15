@@ -1,515 +1,192 @@
-// console.log("agora sdk version: " + AgoraRTC.VERSION + " compatible: " + AgoraRTC.checkSystemRequirements());
-let resolutions = [//{}定义一个对象，[]定义一个数组
-    {
-        name: "default",
-        value: "default",
-    },
-    {
-        name: "480p",
-        value: "480p",
-    },
-    {
-        name: "720p",
-        value: "720p",
-    },
-    {
-        name: "1080p",
-        value: "1080p"
-    }
-]
-//报错使用
-function Toastify(options) {//m指的是调用该方法的对象
-    //         function test(){
-    //           alert(this.x);
-    //          }
-    //          let o = {};
-    //          o.x = 1;
-    //          o.m = test;
-    //          o.m();    // 1
-    M.toast({ html: options.text, classes: options.classes })
+
+let xhr = new XMLHttpRequest();
+
+xhr.open("GET", 'http://localhost:8080/onlineMeeting/getMeetingMsg');
+xhr.responseType = 'json';
+xhr.send();
+
+xhr.onerror = function (){
+    console.log("会议信息请求失败")
 }
-let Toast = {
-    //     x => x * x
-    // 相当于：
-    // function (x) {
-    //     return x * x;
-    // }
-    info: (msg) => {
-        Toastify({
-            text: msg,
-            classes: "info-toast"
-        })
-    },
-    notice: (msg) => {
-        Toastify({
-            text: msg,
-            classes: "notice-toast"
-        })
-    },
-    error: (msg) => {
-        Toastify({
-            text: msg,
-            classes: "error-toast"
-        })
-    }
-}
-//验证器
-function validator(formData, fields) {
-    let keys = Object.keys(formData)
-    for (let key of keys) {
-        if (fields.indexOf(key) != -1) {
-            if (!formData[key]) {
-                Toast.error("Please Enter " + key)
-                return false
-            }
-        }
-    }
-    return true
-}
-//序列化数据
-function serializeformData() {
-    let formData = $("#form").serializeArray()
-    let obj = {}
-    for (let item of formData) {
-        let key = item.name
-        let val = item.value
-        // console.log(key,val)appID
-        // meeting.html:164 channel
-        // meeting.html:164 token
-        // meeting.html:164 uid
-        // meeting.html:164 mode live
-        // meeting.html:164 codec h264
-        obj[key] = val
-    }
-
-    return obj
-}
-function addView(id, show) {
-    if (!$("#" + id)[0]) {
-        $("<div/>", {
-            id: "remote_video_panel_" + id,
-            class: "video-view",
-        }).appendTo("#video")
-
-        $("<div/>", {
-            id: "remote_video_" + id,
-            class: "video-placeholder",
-        }).appendTo("#remote_video_panel_" + id)
-
-        $("<div/>", {
-            id: "remote_video_info_" + id,
-            class: "video-profile " + (show ? "" : "hide"),
-        }).appendTo("#remote_video_panel_" + id)
-
-        $("<div/>", {
-            id: "video_autoplay_" + id,
-            class: "autoplay-fallback hide",
-        }).appendTo("#remote_video_panel_" + id)
-    }
-}
-function removeView(id) {
-    if ($("#remote_video_panel_" + id)[0]) {
-        $("#remote_video_panel_" + id).remove()
-    }
-}
-//     <ul>
-//    <li>list item 1</li>
-//    <li>list item 2</li>
-//    <li class="third-item">list item 3</li>
-//    <li>list item 4</li>
-//    <li>list item 5</li>
-// </ul>
-// 如果我们从项目三开始，则能够找到其后出现的元素：list item 3变红
-// $('li.third-item').next().css('background-color', 'red');
-function getDevices(next) {
-    AgoraRTC.getDevices(function (items) {
-        items.filter(function (item) {
-            return ["audioinput", "videoinput"].indexOf(item.kind) !== -1
-        })
-            .map(function (item) {
-                return {
-                    name: item.label,
-                    value: item.deviceId,
-                    kind: item.kind,
-                }
-            })
-        let videos = []
-        let audios = []
-        for (let i = 0; i < items.length; i++) {
-            let item = items[i]
-            if ("videoinput" == item.kind) {
-                let name = item.label
-                let value = item.deviceId
-                if (!name) {
-                    name = "camera-" + videos.length
-                }
-                videos.push({
-                    name: name,
-                    value: value,
-                    kind: item.kind
-                })
-            }
-            if ("audioinput" == item.kind) {
-                let name = item.label
-                let value = item.deviceId
-                if (!name) {
-                    name = "microphone-" + audios.length
-                }
-                audios.push({
-                    name: name,
-                    value: value,
-                    kind: item.kind
-                })
-            }
-        }
-        next({ videos: videos, audios: audios })
-    })
-}
-
-
-// 定义trc
-let rtc = {
-    client: null,
-    joined: false,
-    published: false,
-    localStream: null,
-    remoteStreams: [],
-    params: {}
-}
-function handleEvents(rtc) {
-    // $('#select-tracker').on('input',function () {});
-    // 当input框内容发生变化时，动态触发function()，
-
-    // 1).on(events,[selector],[data],fn)
-
-    // events:一个或多个用空格分隔的事件类型和可选的命名空间，如"click"或"keydown.myPlugin" 。
-
-    // selector:一个选择器字符串用于过滤器的触发事件的选择器元素的后代。如果选择的< null或省略，当它到达选定的元素，事件总是触发。
-
-    // data:当一个事件被触发时要传递event.data给事件处理函数。
-
-    // fn:该事件被触发时执行的函数。 false 值也可以做一个函数的简写，返回false。
-
-    // 2).on(events-map,[selector],[data])
-    // events-map:个用字符串表示的，一个或多个空格分隔的事件类型和可选的命名空间，值表示事件绑定的处理函数。
-
-    // selector:一个选择器字符串过滤选定的元素，该选择器的后裔元素将调用处理程序。如果选择是空或被忽略，当它到达选定的元素，事件总是触发。
-
-    // data:当一个事件被触发时要传递event.data给事件处理函数。
-    // Occurs when an error message is reported and requires error handling.
-    rtc.client.on("error", (err) => {
-        console.log(err)
-    })
-    // Occurs when the peer user leaves the channel; for example, the peer user calls Client.leave.
-    rtc.client.on("peer-leave", function (evt) {
-        let id = evt.uid;
-        console.log("id", evt)
-        let streams = rtc.remoteStreams.filter(e => id !== e.getId())
-        let peerStream = rtc.remoteStreams.find(e => id === e.getId())
-        if (peerStream && peerStream.isPlaying()) {
-            peerStream.stop()
-        }
-        rtc.remoteStreams = streams
-        if (id !== rtc.params.uid) {
-            removeView(id)
-        }
-        Toast.notice("peer leave")
-        console.log("peer-leave", id)
-    })
-    // Occurs when the local stream is published.
-    rtc.client.on("stream-published", function (evt) {
-        Toast.notice("stream published success")
-        console.log("stream-published")
-    })
-    // Occurs when the remote stream is added.
-    rtc.client.on("stream-added", function (evt) {
-        let remoteStream = evt.stream
-        let id = remoteStream.getId()
-        Toast.info("stream-added uid: " + id)
-        if (id !== rtc.params.uid) {
-            rtc.client.subscribe(remoteStream, function (err) {
-                console.log("stream subscribe failed", err)
-            })
-        }
-        console.log("stream-added remote-uid: ", id)
-    })
-    // Occurs when a user subscribes to a remote stream.
-    rtc.client.on("stream-subscribed", function (evt) {
-        let remoteStream = evt.stream
-        let id = remoteStream.getId()
-        rtc.remoteStreams.push(remoteStream)
-        addView(id)
-        remoteStream.play("remote_video_" + id)
-        Toast.info("stream-subscribed remote-uid: " + id)
-        console.log("stream-subscribed remote-uid: ", id)
-    })
-    // Occurs when the remote stream is removed; for example, a peer user calls Client.unpublish.
-    rtc.client.on("stream-removed", function (evt) {
-        let remoteStream = evt.stream
-        let id = remoteStream.getId()
-        Toast.info("stream-removed uid: " + id)
-        if (remoteStream.isPlaying()) {
-            remoteStream.stop()
-        }
-        rtc.remoteStreams = rtc.remoteStreams.filter(function (stream) {
-            return stream.getId() !== id
-        })
-        removeView(id)
-        console.log("stream-removed remote-uid: ", id)
-    })
-    rtc.client.on("onTokenPrivilegeWillExpire", function () {
-        // After requesting a new token
-        // rtc.client.renewToken(token);
-        Toast.info("onTokenPrivilegeWillExpire")
-        console.log("onTokenPrivilegeWillExpire")
-    })
-    rtc.client.on("onTokenPrivilegeDidExpire", function () {
-        // After requesting a new token
-        // client.renewToken(token);
-        Toast.info("onTokenPrivilegeDidExpire")
-        console.log("onTokenPrivilegeDidExpire")
-    })
-}
-
-/**
- * rtc: rtc object
- * option: {
- *  mode: string, "live" | "rtc"
- *  codec: string, "h264" | "vp8"
- *  appID: string
- *  channel: string, channel name
- *  uid: number
- *  token; string,
- * }
- **/
-function join(rtc, option) {
-    if (rtc.joined) {
-        Toast.error("Your already joined")
+xhr.onload = function () {
+    if(xhr.status !== 200){
+        alert('Error' + xhr.status);
         return;
     }
+    let meetingInfo = xhr.response;
+    let appID = String(meetingInfo.appID);
+    let channel = String(meetingInfo.meetingID);
+    let token = String(meetingInfo.token);
+    let uid = Number(meetingInfo.adminID);
+    console.log('appID' + appID);
+    console.log('token' + token);
+    console.log('channel' + channel);
+    console.log('uid' + uid);
 
-    /**
-     * A class defining the properties of the config parameter in the createClient method.
-     * Note:
-     *    Ensure that you do not leave mode and codec as empty.
-     *    Ensure that you set these properties before calling Client.join.
-     *  You could find more detail here. https://docs.agora.io/en/Video/API%20Reference/web/interfaces/agorartc.clientconfig.html
-     **/
-    rtc.client = AgoraRTC.createClient({ mode: option.mode, codec: option.codec })
+    function handler(appID, channel, token, uid){
+        let handleError = function(err){
+            console.log("Error: ", err);
+        };
 
-    rtc.params = option
+        // 定义远端视频画面的容器
+        let remoteContainer = document.getElementById("remote-container");
 
-    // handle AgoraRTC client event
-    handleEvents(rtc)
-    // init client
-    rtc.client.init(option.appID, function () {
-        console.log("init success")
-        /**
-         * Joins an AgoraRTC Channel
-         * This method joins an AgoraRTC channel.
-         * Parameters
-         * tokenOrKey: string | null
-         *    Low security requirements: Pass null as the parameter value.
-         *    High security requirements: Pass the string of the Token or Channel Key as the parameter value. See Use Security Keys for details.
-         *  channel: string
-         *    A string that provides a unique channel name for the Agora session. The length must be within 64 bytes. Supported character scopes:
-         *    26 lowercase English letters a-z
-         *    26 uppercase English letters A-Z
-         *    10 numbers 0-9
-         *    Space
-         *    "!", "#", "$", "%", "&", "(", ")", "+", "-", ":", ";", "<", "=", ".", ">", "?", "@", "[", "]", "^", "_", "{", "}", "|", "~", ","
-         *  uid: number | null
-         *    The user ID, an integer. Ensure this ID is unique. If you set the uid to null, the server assigns one and returns it in the onSuccess callback.
-         *   Note:
-         *      All users in the same channel should have the same type (number or string) of uid.
-         *      If you use a number as the user ID, it should be a 32-bit unsigned integer with a value ranging from 0 to (232-1).
-         **/
-        rtc.client.join(option.token ? option.token : null, option.channel, option.uid ? +option.uid : null, function (uid) {
-            Toast.notice("join channel: " + option.channel + " success, uid: " + uid)
-            console.log("join channel: " + option.channel + " success, uid: " + uid)
-            rtc.joined = true
+        // 将视频流添加到远端视频画面容器的函数
+        function addVideoStream(elementId){
+            // 给每个流创建一个 div
+            let streamDiv = document.createElement("div");
+            // 将 elementId 分配到 div
+            streamDiv.id = elementId;
+            // 处理镜像问题
+            streamDiv.style.transform = "rotateY(180deg)";
+            // 将 div 添加到容器
+            remoteContainer.appendChild(streamDiv);
+        }
 
-            rtc.params.uid = uid
+        // 将视频流从远端视频画面容器移除的函数
+        function removeVideoStream(elementId) {
+            let remoteDiv = document.getElementById(elementId);
+            if (remoteDiv) remoteDiv.parentNode.removeChild(remoteDiv);
+        }
 
-            // create local stream
-            rtc.localStream = AgoraRTC.createStream({
-                streamID: rtc.params.uid,
+
+        console.log('1');
+// ------------------------------- 创建客户端 -------------------------------------
+        let client = AgoraRTC.createClient({
+            mode: "rtc",
+            codec: "vp8",
+        });
+
+        client.init(appID)
+
+        console.log('2');
+        // 加入频道
+        client.join(token, channel, uid, (uid)=>{
+            // 创建本地媒体流
+            let localStream = AgoraRTC.createStream({
                 audio: true,
                 video: true,
-                screen: false,
-                microphoneId: option.microphoneId,
-                cameraId: option.cameraId
-            })
+            });
+            // 初始化本地流
+            localStream.init(()=>{
+                // 播放本地流
+                localStream.play("me");
+                // 发布本地流
+                client.publish(localStream, handleError);
+            }, handleError);
+        }, handleError);
 
-            // initialize local stream. Callback function executed after intitialization is done
-            rtc.localStream.init(function () {
-                console.log("init local stream success")
-                // play stream with html element id "local_stream"
-                rtc.localStream.play("local_stream")
+        console.log('3');
+        // 有远端用户发布流时进行订阅
+        client.on("stream-added", function(evt){
+            client.subscribe(evt.stream, handleError);
+        });
+        // 订阅成功后播放远端用户的流
+        client.on("stream-subscribed", function(evt){
+            let stream = evt.stream;
+            let streamId = String(stream.getId());
+            addVideoStream(streamId);
+            stream.play(streamId);
+        });
 
-                // publish local stream
-                publish(rtc)
-            }, function (err) {
-                Toast.error("stream init failed, please open console see more detail")
-                console.error("init local stream failed ", err)
-            })
-        }, function (err) {
-            Toast.error("client join failed, please open console see more detail")
-            console.error("client join failed", err)
-        })
-    }, (err) => {
-        Toast.error("client init failed, please open console see more detail")
-        console.error(err)
-    })
-}
-
-
-function publish(rtc) {
-    if (!rtc.client) {
-        Toast.error("Please Join Room First")
-        return
+        // 远端用户取消发布流时，关闭及移除对应的流。
+        client.on("stream-removed", function(evt){
+            let stream = evt.stream;
+            let streamId = String(stream.getId());
+            stream.close();
+            removeVideoStream(streamId);
+        });
+        // 远端用户离开频道时，关闭及移除对应的流。
+        client.on("peer-leave", function(evt){
+            let stream = evt.stream;
+            let streamId = String(stream.getId());
+            stream.close();
+            removeVideoStream(streamId);
+        });
     }
-    if (rtc.published) {
-        Toast.error("Your already published")
-        return
+    handler(appID, channel, token, uid);
+};
+
+// handler("730a447ceec841d28133f2415810742b", "test", "006730a447ceec841d28133f2415810742bIADSCrVWc1fgQAJrMrMhfYeANyWHUP8VfM2MawsclpM+dgx+f9jhJV2hIgC4MszOI7HNXwQAAQBTZMxfAgBTZMxfAwBTZMxfBABTZMxf", 10);
+/*
+function handler(appID, channel, token, uid) {
+    // 处理错误的函数
+    let handleError = function(err){
+        console.log("Error: ", err);
+    };
+
+    // 定义远端视频画面的容器
+    let remoteContainer = document.getElementById("remote-container");
+
+    // 将视频流添加到远端视频画面容器的函数
+    function addVideoStream(elementId){
+        // 给每个流创建一个 div
+        let streamDiv = document.createElement("div");
+        // 将 elementId 分配到 div
+        streamDiv.id = elementId;
+        // 处理镜像问题
+        streamDiv.style.transform = "rotateY(180deg)";
+        // 将 div 添加到容器
+        remoteContainer.appendChild(streamDiv);
     }
-    let oldState = rtc.published
 
-    // publish localStream
-    rtc.client.publish(rtc.localStream, function (err) {
-        rtc.published = oldState
-        console.log("publish failed")
-        Toast.error("publish failed")
-        console.error(err)
-    })
-    Toast.info("publish")
-    rtc.published = true
-}
-
-
-function unpublish(rtc) {
-    if (!rtc.client) {
-        Toast.error("Please Join Room First")
-        return
+    // 将视频流从远端视频画面容器移除的函数
+    function removeVideoStream(elementId) {
+        let remoteDiv = document.getElementById(elementId);
+        if (remoteDiv) remoteDiv.parentNode.removeChild(remoteDiv);
     }
-    if (!rtc.published) {
-        Toast.error("Your didn't publish")
-        return
-    }
-    let oldState = rtc.published
-    rtc.client.unpublish(rtc.localStream, function (err) {
-        rtc.published = oldState
-        console.log("unpublish failed")
-        Toast.error("unpublish failed")
-        console.error(err)
-    })
-    Toast.info("unpublish")
-    rtc.published = false
-}
 
-function leave(rtc) {
-    if (!rtc.client) {
-        Toast.error("Please Join First!")
-        return
-    }
-    if (!rtc.joined) {
-        Toast.error("You are not in channel")
-        return
-    }
-    /**
-     * Leaves an AgoraRTC Channel
-     * This method enables a user to leave a channel.
-     **/
-    rtc.client.leave(function () {
-        // stop stream
-        if (rtc.localStream.isPlaying()) {
-            rtc.localStream.stop()
-        }
-        // close stream
-        rtc.localStream.close()
-        for (let i = 0; i < rtc.remoteStreams.length; i++) {
-            let stream = rtc.remoteStreams.shift()
-            let id = stream.getId()
-            if (stream.isPlaying()) {
-                stream.stop()
-            }
-            removeView(id)
-        }
-        rtc.localStream = null
-        rtc.remoteStreams = []
-        rtc.client = null
-        console.log("client leaves channel success")
-        rtc.published = false
-        rtc.joined = false
-        Toast.notice("leave success")
-    }, function (err) {
-        console.log("channel leave failed")
-        Toast.error("leave success")
-        console.error(err)
-    })
-}
-// This function automatically executes when a document is ready.
-$(function () {
-    // This will fetch all the devices and will populate the UI for every device. (Audio and Video)
-    getDevices(function (devices) {
-        devices.audios.forEach(function (audio) {
-            $("<option/>", {
-                value: audio.value,
-                text: audio.name,
-            }).appendTo("#microphoneId")
-        })
-        devices.videos.forEach(function (video) {
-            $("<option/>", {
-                value: video.value,
-                text: video.name,
-            }).appendTo("#cameraId")
-        })
-        // To populate UI with different camera resolutions
-        resolutions.forEach(function (resolution) {
-            $("<option/>", {
-                value: resolution.value,
-                text: resolution.name
-            }).appendTo("#cameraResolution")
-        })
-        M.AutoInit()
-    })
 
-    let fields = ["appID", "channel"]
 
-    // This will start the join functions with all the configuration selected by the user.
-    $("#join").on("click", function (e) {
-        console.log("join")
-        e.preventDefault();
-        let params = serializeformData(); // Data is feteched and serilized from the form element.
-        if (validator(params, fields)) {
-            join(rtc, params)
-        }
-    })
-    // This publishes the video feed to Agora
-    $("#publish").on("click", function (e) {
-        console.log("publish")
-        e.preventDefault()
-        let params = serializeformData()
-        if (validator(params, fields)) {
-            publish(rtc)
-        }
+// ------------------------------- 创建客户端 -------------------------------------
+    let client = AgoraRTC.createClient({
+        mode: "rtc",
+        codec: "vp8",
     });
-    // Unpublishes the video feed from Agora
-    $("#unpublish").on("click", function (e) {
-        console.log("unpublish")
-        e.preventDefault()
-        let params = serializeformData()
-        if (validator(params, fields)) {
-            unpublish(rtc)
-        }
+
+    client.init(appID)
+
+    // 加入频道
+    client.join(token, channel, uid, (uid)=>{
+        // 创建本地媒体流
+        let localStream = AgoraRTC.createStream({
+            audio: true,
+            video: true,
+        });
+        // 初始化本地流
+        localStream.init(()=>{
+            // 播放本地流
+            localStream.play("me");
+            // 发布本地流
+            client.publish(localStream, handleError);
+        }, handleError);
+    }, handleError);
+
+    // 有远端用户发布流时进行订阅
+    client.on("stream-added", function(evt){
+        client.subscribe(evt.stream, handleError);
     });
-    // Leeaves the chanenl if someone clicks the leave button
-    $("#leave").on("click", function (e) {
-        console.log("leave")
-        e.preventDefault()
-        let params = serializeformData()
-        if (validator(params, fields)) {
-            leave(rtc)
-        }
-    })
-})
+    // 订阅成功后播放远端用户的流
+    client.on("stream-subscribed", function(evt){
+        let stream = evt.stream;
+        let streamId = String(stream.getId());
+        addVideoStream(streamId);
+        stream.play(streamId);
+    });
+
+    // 远端用户取消发布流时，关闭及移除对应的流。
+    client.on("stream-removed", function(evt){
+        let stream = evt.stream;
+        let streamId = String(stream.getId());
+        stream.close();
+        removeVideoStream(streamId);
+    });
+    // 远端用户离开频道时，关闭及移除对应的流。
+    client.on("peer-leave", function(evt){
+        let stream = evt.stream;
+        let streamId = String(stream.getId());
+        stream.close();
+        removeVideoStream(streamId);
+    });
+}
+*/

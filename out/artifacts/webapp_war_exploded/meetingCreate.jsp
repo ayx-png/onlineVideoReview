@@ -25,7 +25,7 @@
     </div>
     <!----------------  创建会议  ------------------>
     <div class="meetingBody">
-        <form id="meetingForm" action="http://localhost:8080/onlineMeeting/meetingCreate" method="post">
+        <form id="meetingForm" action="meetingCreate" method="post">
             <!------------------------ 创建会议 -------------------->
             <div class="createBody">
                 <p class="createBody_P">创建会议</p>

@@ -1,157 +1,145 @@
-.header {
-    height: 80px;
-    background-color: rgb(46,95,208);
+.header{
+    height: 0.8rem;
+    background-color: #2e5fd0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-.header .header-logo {
-    float: left;
-    display: block;
-    width: 126px;
-    height: 70px;
-    margin: 5px 0px 5px 100px;
+.header .logo img{
+    margin-left: 1rem;
+    margin-right: 1.4rem;
+    width: 1.5rem;
+    height: 0.8rem;
 }
-.header .header-title {
-    float: left;
+.header .title{
+    font-size: 0.35rem;
+    color: #ffffff;
+    letter-spacing: 0.45rem;
+}
+.content{
+    width: 100%;
+    height: auto;
+}
+.content .testBody{
+    width: 12rem;
+    height: 7.5rem;
+    margin-top: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.05rem solid #eeeeee;
+    border-radius: 0.03rem;
+}
+.content .testBody .box1{
+    margin: 0 auto;
+    height: 1rem;
+    font-size: 0.15rem;
+}
+.content .testBody .box1 .testInfo{
+    width: 10rem;
+    margin-left: 0.9rem;
+    margin-top: 0.5rem;
+}
+.content .testBody .box1 p:first-of-type{
+    font-weight: bold;
+}
+.content .testBody .box2{
+    display: flex;
+    justify-content: space-around;
+}
+.content .testBody .box2 .leftBox{
+    display: inline-block;
+    margin-top: 0;
+}
+.content .testBody .box2 .box2Left{
+    width: 4.5rem;
+    height: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.content .testBody .box2 .box2Left p{
+    font-size: 0.2rem;
+}
+.content .testBody .box2 .box2Left span{
     display: block;
-    width: 50%;
-    height: 80px;
-    line-height: 80px;
-    font-size: 3ch;
+    font-size: 0.1rem;
+}
+.content .testBody .box2 .box2Left .testBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+.content .testBody .box2 .box2Left #network-downspeed,#b-information,#cameraStatus,#microphoneStatus{
+    color: #ff0000;
+}
+.content .testBody .box2 .box2Left .testBox:last-of-type{
+    width: 7.5rem;
     text-align: center;
-    letter-spacing: 1.45em;
-    color: white;
-
 }
-.body {
-    position: relative;
-    float: left;
-    display: block;
-    width: 100%;
-    height: 855px;
-    background: url(../images/IMG_20200915_155804.jpg) no-repeat;
-    background-size: 100% 100%;
+.content .testBody .box2 .box2Left .testName{
+    display: inline-block;
+    width: 1.2rem;
 }
-.body > .background-image {
-    position: relative;
-    width: 100%;
-    height: 855px;
+.content .testBody .box2 .box2Left .testContent{
+    display: inline-block;
+    margin-left: 0.5rem;
+    width: 5rem;
 }
-.blur {    
-    -webkit-filter: blur(10px);
-       -moz-filter: blur(10px);
-        -ms-filter: blur(10px);    
-            filter: blur(10px);    
+.content .testBody .box2 .box2Left .submit{
+    width: 1.6rem;
+    height: 0.35rem;
+    margin-left: 3rem;
+    text-align: center;
+    background-color: #eeeeee;
+    border-radius: 0.02rem;
 }
-.body .body-form{
-    position: absolute;
-    top: 0;
-    left: 18%;
-    width: 1200px;
-	height: 810px;
-	background-color: #fff;
-	margin:20px auto;
-	border:8px solid #eeeeee;
-    box-sizing: border-box;
-    border-radius:6px;
+.content .testBody .box2 .box2Left .body-microphone{
+    height: 1.5rem;
 }
-.body .body-camera {
-    float:right;
-    width:322px; 
-    height:270px;
-    margin-top:10px; 
-    margin-right: 20px;
-}
-.body .body-camera .experiment1{
-    width:322px;
-    height:240px;
-    border:1px solid #0000ff;
-}
-.body .body-camera .experiment1 #videos-container{
-    width:322px;
-    height:240px;
-}
-.body .body-camera .experiment2 #openCamera,#closeCamera{
-    border: 1px solid #000000;
-    border-radius: 2px;
-    padding: 2px 5px;
-}
-.body .body-camera .experiment2 {
-    text-align:center;
-    border:none;
-    margin-top:10px;
-}
-.body-form > .test_form_text{
-    width: 800px;
-    height: 150px;
-    float: left;
-    padding-top:20px;
-    padding-left: 20px;
-    box-sizing: border-box;
-}
-.body-form > .test_form_text > h3{
-    font-weight: 700;
-}
-.body-form > .test_form_text > p{
-    text-indent: 6ch;
-}
- .body-form > .test_form_center{
-	width: 800px;
-	float: left;
-    margin-left: 100px;
-	box-sizing: border-box;
-}
-
-.body-form > .test_form_center table tr{
-    display: block;
-    width: 250px;
-    height: 32px;
-    line-height: 32px;
-    margin-top: 8px;
-    margin-bottom: 70px;
-    font-size: 2.3ch;
-}
-.body-form > .test_form_center table tr td{
-    padding: 0px 10px;
-}
-.body-form > .test_form_center table tr p{
-    width: 150px;
-}
-
-.body-form > .test_form_center table tr td:last-child p{
-    width: 500px;
-    font-size: 2px;
-}
-.body-form > .test_form_center table tr td:last-child div{
-    width: 500px;
-    font-size: 2px;
-}
-.body-form > .test_form_center table tr td:last-child div p{
+.content .testBody .box2 .box2Left .body-microphone .experiment1{
+    height: 0.5rem;
     display: inline;
-    color: red;
-    font-weight: bolder;
 }
-.body .test_form_center table .microphoneStatus{
-    font-size: 2px;
+.content .testBody .box2 .box2Left #microphone{
+    display: inline;
 }
-.body .body-microphone{
-    width: 120px;
-    height: 30px;
+.content .testBody .box2 .box2Left #microphone-container{
+    width: 2rem ;
+    height: 0.25rem;
+    display: inline;
+    /*background: red;*/
 }
-.body .body-microphone .experiment1{
-    width: 100px;
-    height: 30px;
-    /*border:1px solid #0000ff;*/
+.content .testBody .box2 .box2Left  audio{
+    width: 3rem;
+    height: 0.5rem;
 }
-.body .body-microphone .experiment1 .microphone-container{
-    width: 80px;
-    height: 20px;
+.content .testBody .box2 .rightBox{
+    width: 3rem;
+    height: 2.5rem;
+    display: inline-block;
+    /*border: 0.01rem solid #000000;*/
+    margin-left: 0.5rem;
 }
-.body-form > .test_form_center .submit{
-    display: block;
-    width: 150px;
-    height: 40px;
-    margin-left: 400px;
-    margin-top: 12px;
+.content .testBody .box2 .rightBox .body-camera{
+    height: 2.5rem;
+}
+.content .testBody .box2 .rightBox .experiment1{
+    width: 3rem;
+    height: 2.5rem;
+    border: 0.01rem solid #0000ff;
+}
+.content .testBody .box2 .rightBox .experiment1 #videos-container{
+    width: 3rem;
+    height: 2.5rem;
+}
+.content .testBody .box2 .rightBox .experiment2{
+    height: 0.5rem;
     text-align: center;
-    background-color: rgb(187,201,217);
-    border-radius:2px;
+}
+.content .testBody .box2 .rightBox .experiment2 #openCamera,#closeCamera{
+    border: 0.01rem solid #000000;
+    border-radius: 0.02rem;
+    padding: 0.02rem 0.05rem;
 }

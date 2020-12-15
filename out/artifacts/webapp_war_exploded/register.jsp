@@ -25,7 +25,7 @@
     <!---------------- 注册表单  ------------------>
     <div class="body">
     <div class="registerbox">
-        <form id="registerForm" action="http://localhost:8080/onlineMeeting/register" method="post">
+        <form id="registerForm" action="register" method="post">
             <div class="info">
                 <span>用户名：</span>
                 <input type="text" name="username" id="username" placeholder="3到10位字符">

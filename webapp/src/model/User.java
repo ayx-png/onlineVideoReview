@@ -4,7 +4,7 @@ package model;
  * User用户实体类
  */
 public class User {
-    private Integer id;
+    private int id;
     private String username;
     private String password;
     private String companyName;
@@ -15,7 +15,7 @@ public class User {
 
     }
 
-    public User(Integer id, String username, String password, String companyName, String phoneNumber, String mail) {
+    public User(int id, String username, String password, String companyName, String phoneNumber, String mail) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -25,7 +25,7 @@ public class User {
     }
 
     /*User参数的 getter 和 setter方法*/
-    public Integer getId() { return id; }
+    public int getId() { return id; }
 
     public String getUsername() { return username; }
 
@@ -37,7 +37,7 @@ public class User {
 
     public String getMail() { return mail; }
 
-    public void setId(Integer id) { this.id = id; }
+    public void setId(int id) { this.id = id; }
 
     public void setUsername(String username) { this.username = username; }
 

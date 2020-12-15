@@ -7,12 +7,189 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded2_archive.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/ChangeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/ChangePass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/GetMeetingMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/ChangeInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/ChangePassService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/GetMeetingMsgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-beanutils-1.9.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-collections-3.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-lang-2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/taglibs-standard-compat-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/infoChange.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/projectSign.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/userSpace.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/infoChange.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/infoChange.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/changeInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/rem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/userSpace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/projectSign.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/userSpace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/userSpace.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PackContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PackContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PrivilegeMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PrivilegeMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$Privileges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$Privileges.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/ByteBuf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/ByteBuf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$DynamicKey5Content.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$DynamicKey5Content.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKeyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKeyUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Packable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Packable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/PackableEx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/PackableEx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder$Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder$Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/MeetingCreateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/MeetingCreateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/Meeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/Meeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/MeetingMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/MeetingMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/valueObject/MessageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/valueObject/MessageModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/MeetingCreateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/MeetingCreateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/RegisterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/UpdateToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/UpdateToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/getSessionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/getSessionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/GetSqlSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/GetSqlSession.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/StringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/pre-test.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/pre-test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meetingCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meetingCreate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/pre-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/pre-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/用户注册思路" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/用户登录思路" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/管理员创建会议思路" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/META-INF/webapp.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PackContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PackContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PrivilegeMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PrivilegeMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$Privileges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$Privileges.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/ByteBuf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/ByteBuf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$DynamicKey5Content.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$DynamicKey5Content.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKeyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKeyUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Packable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Packable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/PackableEx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/PackableEx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder$Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder$Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Utils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/MeetingCreateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/MeetingCreateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/Meeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/Meeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/MeetingMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/MeetingMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/valueObject/MessageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/valueObject/MessageModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/MeetingCreateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/MeetingCreateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/RegisterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/test/UpdateToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/test/UpdateToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/test/getSessionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/test/getSessionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/utils/GetSqlSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/utils/GetSqlSession.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/utils/StringUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssl/client.cer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssl/client.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssl/client_trust.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssl/server.cer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssl/server.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssl/server_trust.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/AccessToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/AccessToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/ByteBuf.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/ByteBuf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey3.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey4.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey5.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKeyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKeyUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/Packable.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/Packable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/PackableEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/PackableEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/RtcTokenBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/RtcTokenBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/model/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/Meeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/model/MeetingMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/MeetingMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/css/pre-test.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/pre-test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/joinMeeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/meeting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/js/meetingCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/meetingCreate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/pre-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/meetingCreate.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meetingCreate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/meetingCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meetingCreate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/pre-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/pre-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/用户注册思路" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/用户登录思路" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/管理员创建会议思路" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/webapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/webapp.iml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,29 +203,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webapp/web/pre-test.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/web/js/meeting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            <state relative-caret-position="1159">
+              <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapp/src/model/Meeting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="49" column="81" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/web/js/pre-test.js">
+        <entry file="file://$PROJECT_DIR$/webapp/web/meetingCreate.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="513">
-              <caret line="270" column="34" lean-forward="true" selection-start-line="270" selection-start-column="34" selection-end-line="270" selection-end-column="34" />
+              <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapp/web/css/pre-test.css">
+        <entry file="file://$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+            <state relative-caret-position="456">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1273">
+              <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/test/UpdateToken.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/mysql.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/agoraMedia/RtcTokenBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1045">
+              <caret line="57" column="67" selection-start-line="56" selection-start-column="36" selection-end-line="57" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/web/meeting.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#small#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapp/src/service/GetMeetingMsgService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,14 +307,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Tag Library Descriptor" />
         <option value=" mybatis-cfg.xml" />
-        <option value="Jsp File" />
+        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Jsp File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -81,6 +331,20 @@
       <find>meetingBody</find>
       <find>joinBody</find>
       <find>System.out.println</find>
+      <find>getUserMedia</find>
+      <find>stopRecordCallback</find>
+      <find>MediaUtils</find>
+      <find>mediaStream</find>
+      <find>rootValue</find>
+      <find>column</find>
+      <find>finishBtn</find>
+      <find>320</find>
+      <find>219</find>
+      <find>mediaRecorder</find>
+      <find>videosContainer</find>
+      <find>span</find>
+      <find>microphone-container</find>
+      <find>microphone</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,7 +353,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webapp/web/login.jsp" />
         <option value="$PROJECT_DIR$/webapp/src/model/valueObject/MessageModel.java" />
         <option value="$PROJECT_DIR$/webapp/web/WEB-INF/管理员创建会议思路" />
         <option value="$PROJECT_DIR$/webapp/src/controller/meetingCreateServlet.java" />
@@ -97,7 +360,6 @@
         <option value="$PROJECT_DIR$/webapp/web/js/login.js" />
         <option value="$PROJECT_DIR$/webapp/web/管理员创建会议思路" />
         <option value="$PROJECT_DIR$/webapp/web/meetingcreate.html" />
-        <option value="$PROJECT_DIR$/webapp/src/model/User.java" />
         <option value="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.fxml" />
         <option value="$PROJECT_DIR$/webapp/src/service/RegisterService.java" />
         <option value="$PROJECT_DIR$/webapp/src/model/MeetingMember.java" />
@@ -105,11 +367,8 @@
         <option value="$PROJECT_DIR$/webapp/web/joinMeeting.html" />
         <option value="$PROJECT_DIR$/webapp/web/meetingCreate.html" />
         <option value="$PROJECT_DIR$/webapp/web/css/meetingCreate.css" />
-        <option value="$PROJECT_DIR$/webapp/web/css/common.css" />
         <option value="$PROJECT_DIR$/webapp/web/css/register.css" />
         <option value="$PROJECT_DIR$/webapp/web/register.html" />
-        <option value="$PROJECT_DIR$/webapp/web/register.jsp" />
-        <option value="$PROJECT_DIR$/webapp/web/meetingCreate.jsp" />
         <option value="$PROJECT_DIR$/webapp/web/js/meetingCreate.js" />
         <option value="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" />
         <option value="$PROJECT_DIR$/webapp/src/service/TokenCreateService.java" />
@@ -122,13 +381,26 @@
         <option value="$PROJECT_DIR$/webapp/src/agoraMedia/AccessToken.java" />
         <option value="$PROJECT_DIR$/webapp/src/agoraMedia/RtcTokenBuilder.java" />
         <option value="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" />
-        <option value="$PROJECT_DIR$/webapp/src/model/Meeting.java" />
-        <option value="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" />
         <option value="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" />
-        <option value="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" />
-        <option value="$PROJECT_DIR$/webapp/web/js/pre-test.js" />
+        <option value="$PROJECT_DIR$/webapp/web/css/common.css" />
+        <option value="$PROJECT_DIR$/webapp/web/pre-test2.html" />
+        <option value="$PROJECT_DIR$/webapp/web/css/pre-test2.css" />
+        <option value="$PROJECT_DIR$/webapp/web/index.jsp" />
+        <option value="$PROJECT_DIR$/webapp/web/js/rem.js" />
         <option value="$PROJECT_DIR$/webapp/web/css/pre-test.css" />
         <option value="$PROJECT_DIR$/webapp/web/pre-test.html" />
+        <option value="$PROJECT_DIR$/webapp/web/js/pre-test.js" />
+        <option value="$PROJECT_DIR$/webapp/web/login.jsp" />
+        <option value="$PROJECT_DIR$/webapp/web/register.jsp" />
+        <option value="$PROJECT_DIR$/webapp/web/meetingCreate.jsp" />
+        <option value="$PROJECT_DIR$/webapp/src/service/GetMeetingMsgService.java" />
+        <option value="$PROJECT_DIR$/webapp/src/controller/GetMeetingMsg.java" />
+        <option value="$PROJECT_DIR$/webapp/web/meeting.html" />
+        <option value="$PROJECT_DIR$/webapp/src/model/User.java" />
+        <option value="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" />
+        <option value="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" />
+        <option value="$PROJECT_DIR$/webapp/src/model/Meeting.java" />
+        <option value="$PROJECT_DIR$/webapp/web/js/meeting.js" />
       </list>
     </option>
   </component>
@@ -146,11 +418,15 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="951" />
-    <option name="width" value="978" />
-    <option name="height" value="1050" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1l9QyhoTNN3NYpSt1qMsjeFK8VQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -166,32 +442,24 @@
             <path>
               <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="agoraMedia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-              <item name="iconfont" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onlineVideoReview-newdDB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -201,40 +469,40 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/sstir/onlineMeeting_userMCC/onlineVideoReview" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webapp/web/fonts" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\我拥有它\Desktop\onlineVideoReview-newdDB\webapp\src\agoraMedia" />
+      <recent name="$PROJECT_DIR$/webapp/web/fonts" />
+      <recent name="$PROJECT_DIR$/webapp/web/css" />
+      <recent name="$PROJECT_DIR$/webapp/web" />
+      <recent name="C:\Users\我拥有它\Desktop\onlineVideoReview-newdDB\webapp\web\WEB-INF\lib" />
+      <recent name="C:\Users\我拥有它\Desktop\onlineVideoReview-newdDB\webapp\web" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\我拥有它\Desktop\onlineVideoReview-newdDB\webapp\web" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.20">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.40">
     <configuration name="RtcTokenBuilderSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="service.RtcTokenBuilderSample" />
       <module name="webapp" />
@@ -261,8 +529,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.40" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/onlineMeeting/index.jsp" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="webapp:war exploded">
@@ -312,6 +594,21 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -334,6 +631,11 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.RtcTokenBuilderSample" />
+      <item itemvalue="Application.UpdateToken" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.40" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.UpdateToken" />
@@ -341,6 +643,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -363,11 +666,30 @@
       <workItem from="1606116280936" duration="223000" />
       <workItem from="1606116530113" duration="6752000" />
       <workItem from="1606180242497" duration="17709000" />
+      <workItem from="1606266834670" duration="21585000" />
+      <workItem from="1606714232995" duration="6627000" />
+      <workItem from="1606785121088" duration="5397000" />
+      <workItem from="1606800691069" duration="11400000" />
+      <workItem from="1606871033149" duration="17405000" />
+      <workItem from="1606891946365" duration="55000" />
+      <workItem from="1606898864063" duration="812000" />
+      <workItem from="1606901557289" duration="1499000" />
+      <workItem from="1606903100609" duration="226000" />
+      <workItem from="1607007089648" duration="533000" />
+      <workItem from="1607007655027" duration="48000" />
+      <workItem from="1607007707375" duration="185000" />
+      <workItem from="1607057223026" duration="12064000" />
+      <workItem from="1607071306737" duration="2567000" />
+      <workItem from="1607073951526" duration="598000" />
+      <workItem from="1607227016129" duration="1059000" />
+      <workItem from="1607228301903" duration="1632000" />
+      <workItem from="1607908108161" duration="17681000" />
+      <workItem from="1607993960095" duration="16334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64395000" />
+    <option name="totallyTimeSpent" value="129401000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,9 +701,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16621985" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15733737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -391,20 +713,20 @@
       <window_info id="Learn" order="7" />
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32611832" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.19653179" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3251445" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49798927" weight="0.29026845" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32756132" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32756132" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32756132" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32550335" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32550335" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32550335" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5020107" side_tool="true" weight="0.29190752" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32900432" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32756132" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32550335" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32550335" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -417,150 +739,24 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.fxml" />
-    <entry file="file://$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.tld" />
-    <entry file="file://$PROJECT_DIR$/webapp/web/管理员创建会议思路">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="45" column="39" selection-start-line="42" selection-start-column="12" selection-end-line="49" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="94" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="53" column="81" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/model/MeetingMember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/meetingCreate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6213">
-          <caret line="327" column="12" selection-start-line="327" selection-start-column="12" selection-end-line="327" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/controller/RegisterServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/css/meeting.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/css/register.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="55" column="23" lean-forward="true" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/joinMeeting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/meeting.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/用户注册思路">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="950">
-          <caret line="53" column="12" lean-forward="true" selection-start-line="53" selection-start-column="12" selection-end-line="54" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/用户登录思路">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/js/meetingCreate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/css/meetingCreate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/meetingCreate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/web/js/register.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
@@ -568,20 +764,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/service/TokenCreateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/service/RtcTokenBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="90" selection-start-line="89" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/service/TokenCreateService.java" />
+    <entry file="file://$PROJECT_DIR$/webapp/src/service/RtcTokenBuilder.java" />
     <entry file="file://$PROJECT_DIR$/webapp/src/utils/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
@@ -589,25 +773,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/service/AccessToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="71" column="38" selection-start-line="71" selection-start-column="38" selection-end-line="71" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/service/AccessToken.java" />
     <entry file="file://$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey5.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/agoraMedia/ByteBuf.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/agoraMedia/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -631,23 +802,7 @@
     <entry file="file://$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey3.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/service/RtcTokenBuilderSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/agoraMedia/RtcTokenBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-530">
-          <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/service/RtcTokenBuilderSample.java" />
     <entry file="file://$PROJECT_DIR$/webapp/src/service/RegisterService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -658,27 +813,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/model/Meeting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/test/getSessionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -689,36 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/test/UpdateToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/agoraMedia/AccessToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1697">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -726,24 +834,259 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="321" column="13" lean-forward="true" selection-start-line="321" selection-start-column="13" selection-end-line="321" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/model/MeetingMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/js/rem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webapp/web/css/pre-test.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+        <state relative-caret-position="229">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/js/include.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/js/AgoraRTCSDK-3.2.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/js/getParameter.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/js/fileSaver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/meetingCreate.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/pre-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#3;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/js/meetingCreate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/controller/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="27" column="76" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/webapp.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/onlineVideoReview.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/model/valueObject/MessageModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp/web/js/pre-test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="270" column="34" lean-forward="true" selection-start-line="270" selection-start-column="34" selection-end-line="270" selection-end-column="34" />
+        <state relative-caret-position="115">
+          <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!block;n#getSpeed#0" />
+            <element signature="n#!!block;n#getBrowserInfo#0" />
+            <element signature="n#!!block;n#openCamera#0" />
+            <element signature="n#!!block;n#closeCamera#0" />
+            <element signature="n#!!block;n#cameraStatus#0" />
+            <element signature="n#!!block;n#openMicrophone#0" />
+            <element signature="n#!!block;n#microphoneStatus#0" />
+            <element signature="e#9757#12137#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp/web/pre-test.html">
+    <entry file="file://$PROJECT_DIR$/webapp/src/agoraMedia/AccessToken.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        <state relative-caret-position="-1691">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/controller/GetMeetingMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="26" column="77" selection-start-line="26" selection-start-column="77" selection-end-line="26" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/js/meeting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/meetingCreate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/test/UpdateToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/mysql.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/agoraMedia/RtcTokenBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="57" column="67" selection-start-line="56" selection-start-column="36" selection-end-line="57" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/web/meeting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#small#0;n#h1#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/service/GetMeetingMsgService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp/src/model/Meeting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="49" column="81" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -752,12 +1095,15 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
-          <last-edited>webapp:war exploded</last-edited>
+          <artifact-editor>
+            <show-sorted>false</show-sorted>
+          </artifact-editor>
+          <last-edited>unnamed</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -822,6 +1168,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>lib2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

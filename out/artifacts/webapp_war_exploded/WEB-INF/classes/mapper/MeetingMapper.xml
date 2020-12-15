@@ -8,8 +8,8 @@
     </select>
     <!-- 添加会议 -->
     <insert id="insertMeeting" parameterType="model.Meeting" useGeneratedKeys="true" keyProperty="meetingID">
-        insert into meetings_table(admin, topic, memberNum, timeInMinutes, appID, appCertificate, token)
-            value(#{admin}, #{topic}, #{memberNum}, #{timeInMinutes}, #{appID}, #{appCertificate}, #{token})
+        insert into meetings_table(admin, adminID, topic, memberNum, timeInMinutes, appID, appCertificate, token)
+            value(#{admin}, #{adminID}, #{topic}, #{memberNum}, #{timeInMinutes}, #{appID}, #{appCertificate}, #{token})
     </insert>
     <!-- 更新meeting的token值 -->
     <update id="updateMeeting" parameterType="model.Meeting">

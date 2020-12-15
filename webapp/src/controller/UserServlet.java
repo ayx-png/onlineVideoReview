@@ -41,9 +41,9 @@ public class UserServlet extends HttpServlet {
 
         // 3. 判断消息模型状态码
         if(messageModel.getCode() == 1){ // 成功
-            //将消息模型中的用户信息设置到session作用域中，重定向到pre-test.html页面
+            //将消息模型中的用户信息设置到session作用域中，重定向到userSpace.jsp页面
             request.getSession().setAttribute("user", messageModel.getObject());
-            response.sendRedirect("pre-test.html");
+            response.sendRedirect("userSpace.jsp");
         }
         else{ // 失败
             //将消息模型对象将消息模型对象设置到request作用域中，请求跳转到登录页面,login.jsp

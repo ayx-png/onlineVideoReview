@@ -1,102 +1,44 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>会议系统</title>
-  <link rel="stylesheet" href="./css/meeting.css" />
-  <script src="./js/jquery-3.5.1.js"></script>
-  <script src="./js/materialize.min.js"></script>
-  <script src="./js/AgoraRTCSDK-3.2.1.js"></script>
+    <meta charset="UTF-8">
+    <title>会议</title>
+    <script src="./js/AgoraRTCSDK-3.2.1.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <style type="text/css">
+        *{
+            font-family: sans-serif;
+        }
+        h1,h4{
+            text-align: center;
+        }
+        #me{
+            position: relative;
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        #me video{
+            position: relative !important;
+        }
+        #remote-container{
+            display: flex;
+        }
+        #remote-container video{
+            height: auto;
+            position: relative !important;
+        }
+    </style>
 </head>
-
-<body class="system">
-  <div class="nav-bar">
-    <h5>基础交流</h5>
-  </div>
-  <form id="form" class="mainform">
-    <div class="enter-form">
-      <div class="enter-card" style="margin-top: 0px; margin-bottom: 0px;">
-        <div class="input-field">
-          <label for="appID" class="active">App ID</label>
-          <input type="text" placeholder="App ID" name="appID">
-        </div>
-        <div class="input-field">
-          <label for="channel" class="active">Channel</label>
-          <input type="text" placeholder="channel" name="channel">
-        </div>
-        <div class="input-field">
-          <label for="token" class="active">Token</label>
-          <input type="text" placeholder="token" name="token">
-        </div>
-        <div class="buttonclass">
-          <button class="basic-button" id="join">JOIN</button>
-          <button class="basic-button" id="leave">LEAVE</button>
-          <button class="basic-button" id="pulish">PUBLISH</button>
-          <button class="basic-button" id="unpulish">UNPUBLISH</button>
-        </div>
-      </div>
-      <div class="setting-card" style="margin-top: .4rem; border: 1px ">
-        <li>
-          <div class="collapsible-header">
-            <h6 class="center-align">ADVANCED SETTING</h6>
-          </div>
-          <div class="collapsible-body">
-            <div class="input-field">
-              <label for="UID" class="active">UID</label>
-              <input type="number" placeholder="UID" name="uid">
-            </div>
-            <div class="input-field">
-              <label for="cameraId">CAMERA</label>
-              <select name="cameraId" id="cameraId"></select>
-            </div>
-            <div class="input-field">
-              <label for="micophoneId">MICROPHONE</label>
-              <select name="micophoneId" id="microphoneId"></select>
-            </div>
-            <div class="input-field">
-              <label for="cameraResolution" class="active">CAMERA RESOLUTION</label>
-              <select name="cameraResolution" id="cameraResolution"></select>
-            </div>
-            <div class="mode">
-              <label for="mode" class="active">MODE</label>
-              <label>
-                <input type="radio" class="with-gap" name="mode" value="live" checked />
-                <span>live</span>
-              </label>
-              <label>
-                <input type="radio" class="with-gap" name="mode" value="rtc" />
-                <span>rtc</span>
-              </label>
-            </div>
-            <div class="codec">
-              <label for="codec" class="active">CODEC</label>
-              <label>
-                <input type="radio" class="with-gap" name="codec" value="h264" checked />
-                <span>h264</span>
-              </label>
-
-              <label>
-                <input type="radio" class="with-gap" name="codec" value="vp8" />
-                <span>vp8</span>
-              </label>
-            </div>
-          </div>
-        </li>
-      </div>
-      <div class="col s7">
-        <div class="video-grid" id="video">
-          <div class="video-view">
-            <div id="local_stream" class="video-placeholder"></div>
-            <div id="local_video_info" class="video-profile hide"></div>
-            <div id="video_autoplay_local" class="autoplay-fallback hide"></div>
-          </div>
-        </div>
-      </div>
+<body>
+    <h1>
+        Video Call<br><small style="font-size: 14pt;">Powered by Agora.io</small>
+    </h1>
+    <h4>Local video</h4>
+    <div id="me"></div>
+    <h4>Remote video</h4>
+    <div id="remote-container">
     </div>
-  </form>
+    <script src="./js/meeting.js"></script>
 </body>
-
 </html>

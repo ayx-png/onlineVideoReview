@@ -28,4 +28,17 @@ public interface UserMapper {
      * @return
      */
     public int insertUser(User user);
+
+    /**
+     * 更新用户信息
+     * @param user
+     * @return
+     */
+    public int updateUser(User user);
+
+    /**
+     * 修改用户密码
+     * @param user
+     */
+    public void updateUserPass(User user);
 }

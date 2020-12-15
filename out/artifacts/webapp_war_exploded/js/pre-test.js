@@ -1,8 +1,10 @@
-// -------------------------- 当前网速检测 --------------------------------
-
+// -------------------------- 当前网速检测 ------------------------------------------------------------
 let times1 = 0;//用来计数图片下载次数，防止缓存过多
 let interval1 = setInterval("getSpeed()", 1000);
 
+/**
+ * 获取当前网速
+ */
 function getSpeed(){
     let startTime = new Date().getTime();
     let img = new Image();
@@ -19,7 +21,7 @@ function getSpeed(){
             speed = (speed / 1024).toFixed(2);
             unit = "MB/S";
         }
-        document.getElementById("network-downspeed").innerHTML = "当前带宽："+ speed + unit + "<br/>请求用时：" + (endTime - startTime) / 1000 + "s";
+        document.getElementById("network-downspeed").innerHTML = "当前带宽："+ speed + unit + ",请求用时：" + (endTime - startTime) / 1000 + "s";
     };
     times1++;
     if(times1 == 300){
@@ -27,7 +29,7 @@ function getSpeed(){
     }
 }
 
-// ------------------------ 浏览器版本检测 -------------------------
+// ------------------------ 浏览器版本检测 ------------------------------------------------------------
 //获取浏览器信息
 let browser = getBrowserInfo();
 //根据正则将所有数字、‘.’‘/’全部去掉，剩下浏览器名
@@ -94,71 +96,33 @@ function getBrowserInfo() {
     }
 }
 
-// ------------------------ 摄像头打开与关闭 ----------------------------
+// ------------------------ 摄像头打开与关闭 -----------------------------------------------------------
 let mediaStream;
 let recorderFile;
 let stopRecordCallback;
 let openBtn = document.getElementById("openCamera");
 let closeBtn = document.getElementById("closeCamera");
 let microphoneBtn = document.getElementById("microphone");
-// let startBtn = document.getElementById("start-recording");
-// let saveBtn = document.getElementById("save-recording");
+let mediaRecorder;
+let videosContainer = document.getElementById('videos-container');
+let microphoneContainer = document.getElementById("microphone-container");
 openBtn.onclick = function () {
     // this.disabled = true;   // 打开摄像头按钮禁用
     // startBtn.disabled = false;      //开始录制按钮解除禁用
     openCamera(true, false);   // 打开摄像头
+    setTimeout(cameraStatus, 1000);
 };
 closeBtn.onclick = function () {
     // this.disabled = true;
     closeCamera();
-}
-// ----------------- 麦克风 关&&闭 --------------
-microphoneBtn.onclick = function (){    // I标签不能点击
-    let icon = microphoneBtn.childNodes[0];
-    icon.classList.toggle("icon-ziyuan");
-    icon.classList.toggle("icon-ziyuan1");
-    if(icon.classList.contains("icon-ziyuan1")){
-        // icon.classList.remove("icon-ziyuan1");
-        // icon.classList.add("icon-ziyuan");
-        openMicrophone(false, true);
-    }else{
-        // icon.classList.remove("icon-ziyuan");
-        // icon.classList.add("icon-ziyuan1");
-        closeMicrophone();
-    }
-}
-/*
-startBtn.onclick = function () {
-    this.disabled = true;
-    startRecord();
+    setTimeout(cameraStatus, 1000);
 };
 
-saveBtn.onclick = function () {
-    saver();
-    // alert('Drop WebM file on Chrome or Firefox. Both can play entire file. VLC player or other players may not work.');
-};
+/**
+ * 打开摄像头
+ * @param videoEnable
+ * @param audioEnable
  */
-
-let mediaRecorder;
-let videosContainer = document.getElementById('videos-container');
-// ------------- 摄像头状态检测 -----------------
-cameraStatus();
-function cameraStatus(){
-    if(videosContainer.childNodes){
-        let cameraMsg = document.getElementsByClassName("cameraStatus");
-        cameraMsg.innerHTML = "目前检测到摄像头已打开，可点击右上角方框下--关闭摄像头文字--以关闭摄像头。"
-    }
-}
-// ------------- 麦克风状态检测 -----------------
-microphoneStatus();
-function microphoneStatus(){
-    let iconfont = microphoneBtn.childNodes[0];
-    if(iconfont.classList.contains("icon-ziyuan1")){
-        let microphoneMsg = document.getElementsByClassName("microphoneStatus");
-        microphoneMsg.innerHTML = "目前检测到麦克风已打开，可点击上方--麦克风图标--以关闭麦克风。"
-    }
-}
-//---------------打开摄像头----------------------
 function openCamera(videoEnable, audioEnable) {
     let len = videosContainer.childNodes.length;
     for (let i = 0; i < len; i++) { // 删除视频框的子节点
@@ -167,8 +131,8 @@ function openCamera(videoEnable, audioEnable) {
 
     // 创建视频标签，并设置属性
     let video = document.createElement('video');
-    let videoWidth = 320;
-    let videoHeight = 240;
+    let videoWidth = 218;
+    let videoHeight = 182;
     video.controls = false;
     video.muted = true;
     video.width = videoWidth;
@@ -207,7 +171,9 @@ function openCamera(videoEnable, audioEnable) {
     });
 }
 
-//---------------------关闭摄像头-----------------
+/**
+ * 关闭摄像头
+ */
 function closeCamera() { // 删除摄像头容器内的所有节点
     let len = videosContainer.childNodes.length;
     for (let i = 0; i < len; i++) { // 删除视频框的子节点
@@ -215,8 +181,44 @@ function closeCamera() { // 删除摄像头容器内的所有节点
     }
 }
 
-// ------------ 打开麦克风 ------------------
-let microphoneContainer = document.getElementsByClassName("microphone-container");
+/**
+ * 摄像头状态检测
+ */
+function cameraStatus(){
+    let cameraCheck = document.getElementById("cameraStatus");
+    let cameraMsg = document.getElementById("cameraMsg");
+    if(videosContainer.childNodes.length){
+        cameraCheck.innerHTML = "检测到摄像头已打开"
+        cameraMsg.innerHTML = "可点击右侧方框下--关闭摄像头按钮--以关闭摄像头。"
+    }else{
+        cameraCheck.innerHTML = "检测到摄像头已关闭"
+        cameraMsg.innerHTML = "可点击右侧方框下--打开摄像头按钮--以打开摄像头。"
+    }
+}
+
+// ----------------- 麦克风 打开&&关闭 ----------------------------------------------------------------=
+microphoneBtn.onclick = function (){    // I标签不能点击
+    let icon = microphoneBtn.childNodes[0];
+    icon.classList.toggle("icon-ziyuan");
+    icon.classList.toggle("icon-ziyuan1");
+    if(icon.classList.contains("icon-ziyuan1")){
+        // icon.classList.remove("icon-ziyuan1");
+        // icon.classList.add("icon-ziyuan");
+        openMicrophone(false, true);
+        microphoneStatus();
+    }else{
+        // icon.classList.remove("icon-ziyuan");
+        // icon.classList.add("icon-ziyuan1");
+        closeMicrophone();
+        microphoneStatus();
+    }
+};
+
+/**
+ * 打开麦克风
+ * @param videoEnable
+ * @param audioEnable
+ */
 function openMicrophone(videoEnable, audioEnable){
     let audio = document.createElement("audio");
     audio.width = 100 + "px";
@@ -253,11 +255,29 @@ function openMicrophone(videoEnable, audioEnable){
                     stopRecordCallback();
                 }
             };
+
+            // 音量大小提醒
+            // let audioContext = window.AudioContext || window.webkitAudioContext;
+            // let context = new audioContext();
+            // let liveSource = context.createMediaStreamSource(stream);
+            // let levelChecker = context.createScriptProcessor(4096,1,1);
+            // liveSource.connect(levelChecker);
+            // levelChecker.onaudioprocess = function (e) {
+            //     let buffer = e.inputBuffer.getChannelData(0);
+            //     let maxVal = 0;
+            //     for(let i=0; i<buffer.length; i++){
+            //         if(maxVal < buffer[i]){
+            //             maxVal = buffer[i];
+            //         }
+            //     }
+            // }
         }
     });
 }
 
-// ------------- 关闭麦克风 -----------------------
+/**
+ * 关闭麦克风
+ */
 function closeMicrophone(){
     let len = microphoneContainer.childNodes.length;
     for (let i = 0; i < len; i++) { // 删除音频框的子节点
@@ -265,16 +285,17 @@ function closeMicrophone(){
     }
 }
 
-// 停止录制
-/*
-function stopRecord(callback) {
-    stopRecordCallback = callback;
-    // 终止录制器
-    mediaRecorder.stop();
-    // 关闭媒体流
-    MediaUtils.closeStream(mediaStream);
+
+// ------------- 麦克风状态检测 -----------------
+function microphoneStatus(){
+    let iconfont = microphoneBtn.childNodes[0];
+    let microphoneMsg = document.getElementById("microphoneStatus");
+    if(iconfont.classList.contains("icon-ziyuan1")){
+        microphoneMsg.innerHTML = "目前检测到麦克风已打开，可点击下方--麦克风图标--以关闭";
+    }else {
+        microphoneMsg.innerHTML = "目前检测到未开麦克风，请点击下方--麦克风图标--以启用";
+    }
 }
- */
 
 let MediaUtils = {
     /**
@@ -345,6 +366,7 @@ let MediaUtils = {
     }
     */
 };
+
 /*
 function startRecord() {
     mediaRecorder.start();
@@ -379,15 +401,3 @@ function send() {
     req.send(data);
 }
  */
-
-//--------------网速实时刷新--------------------
-/*
-function refreshData() {
-
-    $.post("url",{},function(data){
-        if (data.res == 1) {
-            $("#network-speed").text(data);
-        }
-    });
-}
-*/

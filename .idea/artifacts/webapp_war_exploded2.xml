@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="webapp:war exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/webapp_war_exploded2</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webapp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-codec-1.15.jar" />
+          <element id="library" level="project" name="lib2" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="webapp/web/Web" />
+    </root>
+  </artifact>
+</component>
