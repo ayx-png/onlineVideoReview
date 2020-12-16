@@ -59,3 +59,7 @@
     color: #ff0000;
     text-align: center;
 }
+.close{
+    float: right;
+    margin-right: 10px;
+}

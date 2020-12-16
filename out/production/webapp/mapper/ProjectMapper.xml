@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.ProjectMapper">
+    <!-- 查找项目 -->
+    <select id="queryProjectByProjectName" parameterType="String" resultType="model.Project">
+        select * from projects_table where projectName = #{projectName}
+    </select>
+
+    <insert id="insertProject" parameterType="model.Project" useGeneratedKeys="true" keyProperty="projectID">
+        insert into projects_table(projectName, projectHost)
+            value(#{projectName}, #{projectHost})
+    </insert>
+
+</mapper>

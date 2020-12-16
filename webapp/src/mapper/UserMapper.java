@@ -41,4 +41,10 @@ public interface UserMapper {
      * @param user
      */
     public void updateUserPass(User user);
+
+    /**
+     * 修改权限
+     * @param user
+     */
+    public void updateUserAuthority(User user);
 }

@@ -60,27 +60,19 @@
     justify-content: space-around;
     align-items: flex-start;
 }
-.userForm label{
-    display:block;
-    margin-left:50px;
-    margin-top:20px;
-}
-.userForm label span{
-    display:inline-block;
-    width:80px;
-    text-align:center;
-}
-.userForm label input{
-    margin-left:30px;
-}
+
 .projectForm{
     background-color:white;
     opacity: 0.8;
     width:650px;
     height:150px;
+    padding-left: 50px;
     margin-top:20px;
     margin-left:300px;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
 }
 .histroyForm{
     background-color:white;

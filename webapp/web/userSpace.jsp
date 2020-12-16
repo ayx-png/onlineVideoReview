@@ -12,7 +12,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width,inital-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./fonts/css/font-awesome.css" />
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/userSpace.css" />
     <link rel="stylesheet" href="./css/common.css">
     <script src="./js/jquery-3.5.1.min.js"></script>
@@ -35,7 +35,7 @@
             <a href="infoChange.jsp">
                 <button class="button" type="button">信息修改</button>
             </a>
-            <ul class="userForm clearfix">
+            <ul class="userForm">
                 <li><span>用户名:</span>&nbsp&nbsp&nbsp&nbsp${user.username}</li>
 
                 <li><span>手机号:</span>&nbsp&nbsp&nbsp&nbsp${user.phoneNumber}</li>
@@ -50,19 +50,15 @@
             <a href="projectSign.html">
                 <button class="button" type="button">项目报名</button>
             </a>
-            <form class="projectForm clearfix" >
-                <br />
-                <br />
-                <br />
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-            </form>
+            <a href="projectCreate.jsp">
+                <button class="button" type="button">创建项目</button>
+            </a>
+            <ul class="projectForm">
+            </ul>
         </div>
         <div class="histroyInform">
             <span class="headone">历史会议</span>
             <form class="histroyForm">
-
             </form>
         </div>
     </div>

@@ -7,188 +7,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded2_archive.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/ChangeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/ChangePass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/GetMeetingMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/ChangeInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/ChangePassService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/GetMeetingMsgService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-beanutils-1.9.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-collections-3.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-lang-2.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/ezmorph-1.0.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/taglibs-standard-compat-1.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/taglibs-standard-jstlel-1.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/lib/taglibs-standard-spec-1.2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/infoChange.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/projectSign.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/userSpace.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/infoChange.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/infoChange.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/changeInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/rem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/js/userSpace.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/projectSign.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/userSpace.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/userSpace.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/webapp_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/CreateProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/model/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/CreateProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/projectCreate.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/创建会议思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/创建评审项目思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/注册思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/登录思路" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PackContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PackContent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PrivilegeMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$PrivilegeMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$Privileges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken$Privileges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/AccessToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/ByteBuf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/ByteBuf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$DynamicKey5Content.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$DynamicKey5Content.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5$Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKey5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKeyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/DynamicKeyUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Packable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Packable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/PackableEx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/PackableEx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder$Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder$Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/RtcTokenBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/agoraMedia/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/MeetingCreateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/MeetingCreateServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/ÓÃ»§µÇÂ¼Ë¼Â·" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/ÓÃ»§×¢²áË¼Â·" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/Meeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/Meeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/MeetingMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/MeetingMember.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/valueObject/MessageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/valueObject/MessageModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/MeetingCreateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/MeetingCreateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/RegisterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/UpdateToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/UpdateToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/getSessionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/getSessionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/GetSqlSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/GetSqlSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/utils/StringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/pre-test.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/pre-test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meetingCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meetingCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/pre-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/pre-test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/用户注册思路" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/用户登录思路" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/管理员创建会议思路" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/META-INF/webapp.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PackContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PackContent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PrivilegeMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$PrivilegeMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$Privileges.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken$Privileges.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/AccessToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/ByteBuf.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/ByteBuf.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$DynamicKey5Content.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$DynamicKey5Content.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5$Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKey5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKeyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/DynamicKeyUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Packable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Packable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/PackableEx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/PackableEx.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder$Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder$Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/RtcTokenBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/agoraMedia/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/MeetingCreateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/MeetingCreateServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/infoChange.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/infoChange.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/projectSign.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/projectSign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/userSpace.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/userSpace.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/infoChange.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/infoChange.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/infoChange.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/infoChange.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/projectSign.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/projectSign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/userSpace.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/userSpace.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/¹ÜÀíÔ±´´½¨»áÒéË¼Â·" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/Meeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/Meeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/MeetingMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/MeetingMember.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/valueObject/MessageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/valueObject/MessageModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/MeetingCreateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/MeetingCreateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/RegisterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/test/UpdateToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/test/UpdateToken.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/test/getSessionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/test/getSessionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/utils/GetSqlSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/utils/GetSqlSession.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/utils/StringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssl/client.cer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssl/client.jks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssl/client_trust.jks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssl/server.cer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssl/server.jks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssl/server_trust.jks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/AccessToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/AccessToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/ByteBuf.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/ByteBuf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey3.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey4.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey5.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKey5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKeyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/DynamicKeyUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/Packable.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/Packable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/PackableEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/PackableEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/RtcTokenBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/RtcTokenBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/agoraMedia/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/agoraMedia/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/model/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/Meeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/model/MeetingMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/MeetingMember.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/pre-test.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/pre-test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/joinMeeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/meeting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/js/meetingCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/meetingCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/pre-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/meetingCreate.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meetingCreate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/meetingCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meetingCreate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/pre-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/pre-test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/用户注册思路" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/用户登录思路" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/管理员创建会议思路" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/webapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/webapp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/ÓÃ»§µÇÂ¼Ë¼Â·" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/ÓÃ»§×¢²áË¼Â·" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/infoChange.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/infoChange.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/projectSign.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/projectSign.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/userSpace.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/userSpace.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/infoChange.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/infoChange.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/infoChange.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/infoChange.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/projectSign.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/projectSign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/userSpace.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/userSpace.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/¹ÜÀíÔ±´´½¨»áÒéË¼Â·" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -307,15 +183,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="FxmlFile" />
-        <option value="Tag Library Descriptor" />
         <option value=" mybatis-cfg.xml" />
         <option value="CSS File" />
         <option value="HTML File" />
-        <option value="Jsp File" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Tag Library Descriptor" />
+        <option value="Mapper" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -529,19 +406,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.40" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/onlineMeeting/index.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -684,7 +548,10 @@
       <workItem from="1607227016129" duration="1059000" />
       <workItem from="1607228301903" duration="1632000" />
       <workItem from="1607908108161" duration="17681000" />
-      <workItem from="1607993960095" duration="16334000" />
+      <workItem from="1607993960095" duration="18475000" />
+      <workItem from="1608020368935" duration="7868000" />
+      <workItem from="1608086137487" duration="5703000" />
+      <workItem from="1608097989858" duration="334000" />
     </task>
     <servers />
   </component>

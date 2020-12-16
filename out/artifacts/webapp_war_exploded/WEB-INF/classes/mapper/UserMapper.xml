@@ -23,4 +23,9 @@
         update users_table
             set password = #{password} where username = #{username}
     </update>
+    <!-- 修改用户权限 -->
+    <update id="updateUserAuthority" parameterType="model.User">
+        update users_table
+            set authority = #{authority} where username = #{username}
+    </update>
 </mapper>
