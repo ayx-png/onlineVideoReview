@@ -47,4 +47,10 @@ public interface UserMapper {
      * @param user
      */
     public void updateUserAuthority(User user);
+
+    /**
+     * 用户添加项目
+     * @param user
+     */
+    public void updateProject(User user);
 }

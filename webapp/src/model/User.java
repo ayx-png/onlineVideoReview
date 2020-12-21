@@ -13,21 +13,19 @@ public class User {
     private int project;
     private int meeting;
     private String authority = "user";
+    private int projectIn = 0;
 
     public User() {
 
     }
 
-    public User(int id, String username, String password, String companyName, String phoneNumber, String mail, int project, int meeting, String authority) {
+    public User(int id, String username, String password, String companyName, String phoneNumber, String mail) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.companyName = companyName;
         this.phoneNumber = phoneNumber;
         this.mail = mail;
-        this.project = project;
-        this.meeting = meeting;
-        this.authority = authority;
     }
 
     /*User参数的 getter 和 setter方法*/
@@ -49,6 +47,8 @@ public class User {
 
     public String  getAuthority() { return authority; }
 
+    public int getProjectIn() { return projectIn; }
+
 
     public void setId(int id) { this.id = id; }
 
@@ -68,7 +68,7 @@ public class User {
 
     public void setAuthority(String authority) { this.authority = authority; }
 
-
+    public void setProjectIn(int projectIn) { this.projectIn = projectIn; }
 
     @Override
     public String toString() {

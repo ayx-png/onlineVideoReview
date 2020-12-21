@@ -32,11 +32,11 @@
     margin-left:150px;
 }
 
-.signForm div:nth-last-child(1) button {
-        font-size: 18px;
-        background-color: #FF9900;
-        border-radius:5px;
-        margin-left:190px;
+.signForm .submitBtn {
+    font-size: 18px;
+    background-color: #FF9900;
+    border-radius:5px;
+    margin-left:190px;
 }
 .signForm .input label{
     margin-left:50px;

@@ -28,4 +28,10 @@
         update users_table
             set authority = #{authority} where username = #{username}
     </update>
+
+    <!-- 添加项目编号 -->
+    <update id="updateProject" parameterType="model.User">
+        update users_table
+            set project = #{project} where username = #{username}
+    </update>
 </mapper>

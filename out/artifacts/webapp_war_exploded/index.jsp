@@ -29,8 +29,6 @@
             <a href="register.jsp"><input type="button" value="注册"></a>
         </div>
     </div>
-    <div class="body">
-        <img src="./images/IMG_20200915_155804.jpg" alt="background-image" class="background-image blur">
-    </div>
+    <div class="body"></div>
 </body>
 </html>

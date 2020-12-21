@@ -5,6 +5,7 @@ import service.UserService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -42,6 +43,8 @@ public class UserServlet extends HttpServlet {
         // 3. 判断消息模型状态码
         if(messageModel.getCode() == 1){ // 成功
             //将消息模型中的用户信息设置到session作用域中，重定向到userSpace.jsp页面
+            Cookie cookie = new Cookie("user", username);
+            response.addCookie(cookie);
             request.getSession().setAttribute("user", messageModel.getObject());
             response.sendRedirect("userSpace.jsp");
         }

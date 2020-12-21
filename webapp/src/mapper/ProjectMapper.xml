@@ -6,9 +6,12 @@
         select * from projects_table where projectName = #{projectName}
     </select>
 
-    <insert id="insertProject" parameterType="model.Project" useGeneratedKeys="true" keyProperty="projectID">
-        insert into projects_table(projectName, projectHost)
-            value(#{projectName}, #{projectHost})
-    </insert>
+    <select id="queryProjectByProjectID" parameterType="int" resultType="model.Project">
+        select * from projects_table where projectID = #{projectID}
+    </select>
 
+    <insert id="insertProject" parameterType="model.Project" useGeneratedKeys="true" keyProperty="projectID">
+        insert into projects_table(projectName, projectHost, meetingID)
+            value(#{projectName}, #{projectHost}, 0)
+    </insert>
 </mapper>

@@ -40,6 +40,7 @@ public class RegisterServlet extends HttpServlet {
 
         // 2. 调用service层的方法，返回消息模型对象
         MessageModel messageModel = registerService.userRegister(username, password, passwordConf, companyName, phoneNumber, mail);
+        System.out.println(messageModel.getObject());
 
         // 3. 判断消息模型状态码
         if(messageModel.getCode() == 1){ // 成功

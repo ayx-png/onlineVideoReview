@@ -30,6 +30,7 @@ public class RegisterService {
 
         // 回显对象
         User u= new User();
+        System.out.println("Authority1:" + u.getAuthority());
         u.setUsername(username);
         u.setPassword(password);
         u.setCompanyName(companyName);
@@ -83,8 +84,9 @@ public class RegisterService {
         }
 
         // 4. 将用户数据存入数据库
+        System.out.println("Authority2:" + u.getAuthority());
         userMapper.insertUser(u);
-        System.out.println(u);
+        System.out.println("Authority3:" + u.getAuthority());
         session.commit();
 
         // 5. 注册成功， 将成功状态、提示信息、用户对象设置消息模型对象，返回return

@@ -37,17 +37,14 @@
             </a>
             <ul class="userForm">
                 <li><span>用户名:</span>&nbsp&nbsp&nbsp&nbsp${user.username}</li>
-
                 <li><span>手机号:</span>&nbsp&nbsp&nbsp&nbsp${user.phoneNumber}</li>
-
                 <li><span>邮&nbsp箱:</span>&nbsp&nbsp&nbsp&nbsp${user.mail}</li>
-
                 <li><span>企业名:</span>&nbsp&nbsp&nbsp&nbsp${user.companyName}</li>
             </ul>
         </div>
         <div class="projectInform">
             <span class="headone">已报名项目</span>
-            <a href="projectSign.html">
+            <a href="projectSign.jsp">
                 <button class="button" type="button">项目报名</button>
             </a>
             <a href="projectCreate.jsp">
@@ -58,6 +55,7 @@
         </div>
         <div class="histroyInform">
             <span class="headone">历史会议</span>
+            <a href="pre-test.html">测试</a>
             <form class="histroyForm">
             </form>
         </div>

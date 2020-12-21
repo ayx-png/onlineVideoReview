@@ -7,64 +7,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/CreateProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/model/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/CreateProjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/projectCreate.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/创建会议思路" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/创建评审项目思路" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/注册思路" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/登录思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/GetUserProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/SignProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/GetUserProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/SignProjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/test/UserAuthority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/approvalCompany.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/approvalCompany.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/meetingJoin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/waitForMeeting.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/projectSign.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/waitForMeeting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/waitForMeeting.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/会议等待思路" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/ÓÃ»§µÇÂ¼Ë¼Â·" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/ÓÃ»§×¢²áË¼Â·" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/Project.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/infoChange.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/infoChange.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/CreateProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/CreateProjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/RegisterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meetingCreate.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meetingCreate.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/projectSign.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/projectSign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/userSpace.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/userSpace.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/fonts/font/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/infoChange.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/infoChange.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/infoChange.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/infoChange.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/userSpace.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/userSpace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/pre-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/pre-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/projectCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/projectCreate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/projectSign.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/projectSign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/userSpace.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/userSpace.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/¹ÜÀíÔ±´´½¨»áÒéË¼Â·" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/创建评审项目思路" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/创建评审项目思路" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/RegisterServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/Project.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/CreateProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/CreateProjectService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/RegisterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/RegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/Project.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/ÓÃ»§µÇÂ¼Ë¼Â·" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/ÓÃ»§×¢²áË¼Â·" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/infoChange.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/infoChange.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/service/CreateProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/CreateProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/service/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/RegisterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/meetingCreate.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/meetingCreate.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/css/projectSign.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/projectSign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/userSpace.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/userSpace.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/css/font-awesome.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/fonts/font/fontawesome-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/infoChange.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/infoChange.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/infoChange.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/infoChange.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/joinMeeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/meeting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/pre-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/js/userSpace.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/userSpace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/pre-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/pre-test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/projectCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/projectCreate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/projectSign.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/projectSign.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/userSpace.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/userSpace.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/¹ÜÀíÔ±´´½¨»áÒéË¼Â·" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/创建评审项目思路" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/创建评审项目思路" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,14 +205,14 @@
       <list>
         <option value="FxmlFile" />
         <option value=" mybatis-cfg.xml" />
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
         <option value="Mapper" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -406,6 +426,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserAuthority" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.UserAuthority" />
+      <module name="webapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.40" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/onlineMeeting/index.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -498,10 +544,12 @@
     <list>
       <item itemvalue="Application.RtcTokenBuilderSample" />
       <item itemvalue="Application.UpdateToken" />
+      <item itemvalue="Application.UserAuthority" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.40" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserAuthority" />
         <item itemvalue="Application.UpdateToken" />
         <item itemvalue="Application.RtcTokenBuilderSample" />
       </list>
@@ -551,7 +599,12 @@
       <workItem from="1607993960095" duration="18475000" />
       <workItem from="1608020368935" duration="7868000" />
       <workItem from="1608086137487" duration="5703000" />
-      <workItem from="1608097989858" duration="334000" />
+      <workItem from="1608097989858" duration="548000" />
+      <workItem from="1608267800647" duration="8151000" />
+      <workItem from="1608278770708" duration="2000000" />
+      <workItem from="1608281421775" duration="1326000" />
+      <workItem from="1608512664680" duration="8023000" />
+      <workItem from="1608528499454" duration="10899000" />
     </task>
     <servers />
   </component>

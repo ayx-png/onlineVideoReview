@@ -10,7 +10,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width,inital-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/userSpace.css" />
@@ -83,7 +83,7 @@
                     <input type="text" name="projectName" id="projectName" />
                 </div>
                 <div>
-                    <button type="submit">确认创建</button>
+                    <button type="submit" class="submitBtn">确认创建</button>
                 </div>
             </form>
             <div class="errMsg">${messageModel.msg}</div>

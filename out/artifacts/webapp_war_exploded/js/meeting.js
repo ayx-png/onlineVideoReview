@@ -1,7 +1,6 @@
-
 let xhr = new XMLHttpRequest();
 
-xhr.open("GET", 'http://localhost:8080/onlineMeeting/getMeetingMsg');
+xhr.open("GET", 'getMeetingMsg');
 xhr.responseType = 'json';
 xhr.send();
 
