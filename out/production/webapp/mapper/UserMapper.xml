@@ -8,6 +8,10 @@
     <select id="queryUserByUsername" parameterType="String" resultType="model.User">
 		select * from users_table where userName = #{username}
     </select>
+    <!-- 根据用户ID查询用户 -->
+    <select id="queryUserByUserID" parameterType="int" resultType="model.User">
+        select * from users_table where id = #{id}
+    </select>
     <!-- 根据项目查询用户 -->
     <select id="queryUserByProject" parameterType="int" resultType="model.User">
         select * from users_table where project = #{projectID}
@@ -37,5 +41,10 @@
     <update id="updateProject" parameterType="model.User">
         update users_table
             set project = #{project} where username = #{username}
+    </update>
+    <!-- 更新报名项目是否通过 -->
+    <update id="updateProjectIn" parameterType="model.User">
+        update users_table
+            set projectIn = #{projectIn} where username = #{username}
     </update>
 </mapper>

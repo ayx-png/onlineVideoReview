@@ -68,3 +68,10 @@ body{
 .approvalContainer .companiesContainer span{
     color: #ff0000;
 }
+.body .errMsg{
+    width: 250px;
+    padding-top: 70px;
+    color: #ff0000;
+    margin: 0 auto;
+    text-align: center;
+}

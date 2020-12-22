@@ -20,13 +20,14 @@
         </div>
     </div>
     <div class="body">
+        <div class="errMsg" style="padding-top: 10px;color: #ff0000; margin: 0 auto;">未选中任何企业，请重新审批！</div>
         <div class="approvalContainer">
-            <div class="btn">
-                <span>请从下列企业中选择合格的企业参加评审：</span>
-                <button type="button" id="submitBtn">提交</button>
-            </div>
             <div class="companies">
                 <form action="approvalCompany" id="approvalForm" method="post">
+                <div class="btn">
+                    <span>请从下列企业中选择合格的企业参加评审：</span>
+                    <button type="submit" id="submitBtn">提交</button>
+                </div>
                     <div class="companiesContainer">
 
                     </div>

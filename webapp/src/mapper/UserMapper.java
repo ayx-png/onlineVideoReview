@@ -14,6 +14,7 @@ public interface UserMapper {
      */
     public User queryUserByUsername(String username);
 
+    public User queryUserByUserID(int id);
     /**
      * 根据用户名和密码进行查询用户信息
      * @param username
@@ -59,5 +60,11 @@ public interface UserMapper {
      * @param projectID
      * @return
      */
-    User[] queryUserByProject(int projectID);
+    public User[] queryUserByProject(int projectID);
+
+    /**
+     * 更新报名项目是否通过
+     * @param user
+     */
+    public void updateProjectIn(User user);
 }

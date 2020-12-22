@@ -23,14 +23,17 @@
         </div>
         <div class="col-lg-6 header-title">科云评审系统</div>
         <div class="userKey" >
-            欢迎您，${user.username}
+            <a href="userSpace.jsp">
+                欢迎您，${user.username}
+            </a>
         </div>
     </div>
     <div class="body">
+        <div class="errMsg">${messageModel.msg}</div>
         <div class="approvalContainer">
             <div class="btn">
                 <span>请从下列企业中选择合格的企业参加评审：</span>
-                <button type="button" id="submitBtn">提交</button>
+                <button type="submit" id="submitBtn" form="approvalForm">提交</button>
             </div>
             <div class="companies">
                 <form action="approvalCompany" id="approvalForm" method="post">
