@@ -53,4 +53,11 @@ public interface UserMapper {
      * @param user
      */
     public void updateProject(User user);
+
+    /**
+     * 根据项目名查询用户
+     * @param projectID
+     * @return
+     */
+    User[] queryUserByProject(int projectID);
 }

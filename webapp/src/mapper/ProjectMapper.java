@@ -7,5 +7,7 @@ public interface ProjectMapper {
 
     public Project queryProjectByProjectID(int projectID);
 
+    public Project queryProjectByProjectHost(String username);
+
     public int insertProject(Project project);
 }

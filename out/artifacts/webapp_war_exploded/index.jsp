@@ -14,8 +14,6 @@
     <title>科云评审系统</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="./js/jquery-3.5.1.js"></script>
-    <script src="./js/login.js"></script>
 </head>
 <body>
     <div class="header">

@@ -5,7 +5,7 @@ xhr.responseType = 'json';
 xhr.send();
 
 xhr.onerror = function (){
-    console.log("会议信息请求失败")
+    console.log("会议信息请求失败！");
 }
 xhr.onload = function () {
     if(xhr.status !== 200){

@@ -7,84 +7,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/GetUserProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/SignProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/GetUserProjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/SignProjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/test/UserAuthority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/approvalCompany.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/approvalCompany.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/meetingJoin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/css/waitForMeeting.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/projectSign.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/waitForMeeting.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/waitForMeeting.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/会议等待思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/ApprovalCompany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/GetCompany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/GetCompanyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/css/approvalCompany.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/approvalCompany.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/UserServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/CreateProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/CreateProjectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/RegisterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/approvalCompany.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/approvalCompany.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/approvalCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/approvalCompany.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meetingCreate.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meetingCreate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/projectSign.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/projectSign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/userSpace.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/userSpace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/pre-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/pre-test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/projectCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/projectCreate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/projectSign.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/projectSign.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/userSpace.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/userSpace.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/创建评审项目思路" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/创建评审项目思路" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/UserServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/CreateProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/CreateProjectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/RegisterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/RegisterService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/UserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/service/CreateProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/CreateProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/service/RegisterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/RegisterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/approvalCompany.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/approvalCompany.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/approvalCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/approvalCompany.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/meetingCreate.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/meetingCreate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/projectSign.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/projectSign.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/register.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/joinMeeting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/meeting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/pre-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/js/userSpace.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/userSpace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/pre-test.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/pre-test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/projectCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/projectCreate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/projectSign.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/projectSign.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/userSpace.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/userSpace.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/创建评审项目思路" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/创建评审项目思路" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,14 +155,14 @@
       <list>
         <option value="FxmlFile" />
         <option value=" mybatis-cfg.xml" />
-        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Tag Library Descriptor" />
         <option value="Mapper" />
-        <option value="Class" />
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -439,15 +389,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -605,6 +553,7 @@
       <workItem from="1608281421775" duration="1326000" />
       <workItem from="1608512664680" duration="8023000" />
       <workItem from="1608528499454" duration="10899000" />
+      <workItem from="1608600067720" duration="9412000" />
     </task>
     <servers />
   </component>

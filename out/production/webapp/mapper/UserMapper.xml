@@ -8,6 +8,10 @@
     <select id="queryUserByUsername" parameterType="String" resultType="model.User">
 		select * from users_table where userName = #{username}
     </select>
+    <!-- 根据项目查询用户 -->
+    <select id="queryUserByProject" parameterType="int" resultType="model.User">
+        select * from users_table where project = #{projectID}
+    </select>
     <!-- 添加用户-->
     <insert id="insertUser" parameterType="model.User" useGeneratedKeys="true" keyProperty="id">
         insert into users_table(username, password, companyName, phoneNumber, mail)
