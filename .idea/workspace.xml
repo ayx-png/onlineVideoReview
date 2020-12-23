@@ -7,24 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/ApprovalCompanyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/test/approvalCompany.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/ApprovalCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/ApprovalCompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/approvalCompany.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/approvalCompany.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/approvalCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/approvalCompany.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/approvalCompany.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/approvalCompany.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/approvalCompany.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/approvalCompany.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/ApprovalCompany.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/ApprovalCompany.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/ApprovalCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/ApprovalCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/GetCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/GetCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/service/GetCompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/GetCompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/approvalCompany.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/approvalCompany.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/approvalCompany.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/approvalCompany.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/approvalCompany.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/approvalCompany.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/js/approvalCompany.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/approvalCompany.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/pre-test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -392,13 +376,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -496,8 +482,8 @@
       <item itemvalue="Application.RtcTokenBuilderSample" />
       <item itemvalue="Application.UpdateToken" />
       <item itemvalue="Application.UserAuthority" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.40" />
       <item itemvalue="Application.approvalCompany" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.40" />
     </list>
     <recent_temporary>
       <list>
@@ -560,7 +546,8 @@
       <workItem from="1608528499454" duration="10899000" />
       <workItem from="1608600067720" duration="13973000" />
       <workItem from="1608621959920" duration="513000" />
-      <workItem from="1608622606520" duration="4483000" />
+      <workItem from="1608622606520" duration="5354000" />
+      <workItem from="1608699901408" duration="1652000" />
     </task>
     <servers />
   </component>

@@ -404,7 +404,7 @@ function send() {
 let submitBtn = document.querySelector(".submit");
 submitBtn.onclick = function (){
     if(document.referrer.includes("joinMeeting")){
-        window.location.href = 'joinMeeting.jsp';
+        window.location.href = 'joinMeeting.html';
     }
     else{
         window.location.href = 'meetingCreate.jsp';
