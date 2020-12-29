@@ -49,7 +49,7 @@ public class MeetingCreateServlet extends HttpServlet {
             // 将消息模型中的用户信息设置到session作用域中，重定向到meeting.jsp页面
             request.getSession().setAttribute("message", messageModel.getMsg());
             request.getSession().setAttribute("meeting", messageModel.getObject());
-            response.sendRedirect("meeting.html");
+            response.sendRedirect("meeting2.html");
         }
         else{   // 失败
             request.setAttribute("messageModel", messageModel);

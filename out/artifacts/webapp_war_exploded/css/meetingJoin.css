@@ -30,3 +30,7 @@ body{
 .joinTitle{
     font-size: larger;
 }
+.errMsg{
+    color: #ff0000;
+    margin: 20px auto;
+}

@@ -47,4 +47,9 @@
         update users_table
             set projectIn = #{projectIn} where username = #{username}
     </update>
+    <!-- 更新meeting字段 -->
+    <update id="updateMeeting" parameterType="model.User">
+        update users_table
+            set meeting = #{meeting} where username = #{username}
+    </update>
 </mapper>

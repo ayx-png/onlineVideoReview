@@ -67,4 +67,10 @@ public interface UserMapper {
      * @param user
      */
     public void updateProjectIn(User user);
+
+    /**
+     * 更新用户会议号字段
+     * @param user
+     */
+    public void updateMeeting(User user);
 }

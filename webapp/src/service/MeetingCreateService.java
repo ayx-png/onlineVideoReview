@@ -95,11 +95,11 @@ public class MeetingCreateService {
         System.out.println("meeting after updating:" + m.getToken());
         session.commit();   // 数据库每次操作后必须commit一下
 
-        // 6. 数据库生成该会议成员表，并将会议管理员加入表
-//        MeetingMember meetingMember = new MeetingMember();
-//        meetingMember.setMemberName(admin);
-//        meetingMember.setMeetingID(m.getMeetingID());
-//        meetingMapper.insertMeetingMember(meetingMember);
+        // 6. 用户表中更新主持人meeting字段会议成员表
+        user.setMeeting(m.getMeetingID());
+        userMapper.updateMeeting(user);
+        session.commit();
+
 
         // 7. 将会议数据存入数据库，会议成员存入数据库表，返回return
         messageModel.setMsg("会议创建成功！");

@@ -7,8 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/webapp/src/controller/JoinMeeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/src/service/JoinMeetingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/WEB-INF/普通用户加入会议思路" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/joinMeeting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/meeting2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/pre-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/MeetingCreateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/MeetingCreateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meetingJoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meetingJoin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/MeetingCreateServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/MeetingCreateServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/meeting2.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/meeting2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/css/meetingJoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/meetingJoin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/joinMeeting.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/meeting2.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meeting2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,19 +392,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.40" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/onlineMeeting/index.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -547,7 +550,10 @@
       <workItem from="1608600067720" duration="13973000" />
       <workItem from="1608621959920" duration="513000" />
       <workItem from="1608622606520" duration="5354000" />
-      <workItem from="1608699901408" duration="1652000" />
+      <workItem from="1608699901408" duration="2487000" />
+      <workItem from="1609218301365" duration="9342000" />
+      <workItem from="1609230358973" duration="1981000" />
+      <workItem from="1609232476608" duration="1342000" />
     </task>
     <servers />
   </component>
