@@ -16,7 +16,7 @@
 }
 .shade .signForm{
     width:500px;
-    height:170px;
+    height:200px;
     background-color:white;
     margin:20% auto;
 }
@@ -32,13 +32,17 @@
     margin-left:150px;
 }
 
-.signForm div:nth-last-child(1) button {
-        font-size: 18px;
-        background-color: #FF9900;
-        border-radius:5px;
-        margin-left:190px;
+.signForm .submitBtn {
+    font-size: 18px;
+    background-color: #FF9900;
+    border-radius:5px;
+    margin-left:190px;
 }
 .signForm .input label{
     margin-left:50px;
     margin-right:50px;
+}
+.errMsg{
+    text-align: center;
+    color: #ff0000;
 }

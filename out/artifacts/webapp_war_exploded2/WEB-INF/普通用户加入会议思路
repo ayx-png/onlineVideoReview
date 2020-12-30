@@ -1,0 +1,7 @@
+主持人：一直坚监听是否有人加入相同channel频道，有人则将画面加入次要屏幕；
+普通用户：
+    1. 点击加入会议按钮
+    2. js和后端joinMeeting.java非空判断
+    3. 会议号非空，将会议号更新到users_table普通用户表中，重定向到meeting.jsp页面
+    4. meeting.js发送xml(getUserMeeting.java)请求获取会议信息；
+    5. 加入会议,同时监听是否有人在同一频道，自己视频画面放在主屏幕，其他放在次要屏幕；

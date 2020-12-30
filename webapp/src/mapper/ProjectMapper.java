@@ -10,4 +10,6 @@ public interface ProjectMapper {
     public Project queryProjectByProjectHost(String username);
 
     public int insertProject(Project project);
+
+    public void updateProject(Project project);
 }

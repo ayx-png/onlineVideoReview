@@ -18,4 +18,10 @@
         insert into projects_table(projectName, projectHost, meetingID)
             value(#{projectName}, #{projectHost}, 0)
     </insert>
+    <update id="updateProject" parameterType="model.Project">
+        update projects_table
+            set projectName = #{projectName},
+                projectHost = #{projectHost},
+                meetingID = #{meetingID} where projectID = #{projectID}
+    </update>
 </mapper>

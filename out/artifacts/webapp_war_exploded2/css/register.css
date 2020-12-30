@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 .header {
     height: 80px;
     background-color: rgb(46,95,208);
@@ -7,7 +10,7 @@
     display: block;
     width: 126px;
     height: 70px;
-    margin: 5px 0px 5px 100px;
+    margin: 5px 0 5px 100px;
 }
 .header .header-title {
     float: left;
@@ -35,8 +38,8 @@
     height: 848px;
 }
 .body .registerbox {
-    width: 258px;
-    margin-top: 200px;
+    width: 450px;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     /* background-color: cyan; */
@@ -49,9 +52,19 @@
 .body .registerbox .info{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
+}
+.body .registerbox .info input{
+    width: 250px;
 }
 .body .registerbox .errorMsg{
     width: 257px;
     color: #ff0000;
     text-align: center;
+}
+.formBackground{
+    width: 350px;
+    padding: 50px 50px 20px 50px;
+    background: #ffffff;
+    border-radius: 10px;
 }

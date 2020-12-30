@@ -2,9 +2,13 @@ package service;
 
 import agoraMedia.RtcTokenBuilder;
 import mapper.MeetingMapper;
+import mapper.ProjectMapper;
 import mapper.UserMapper;
+import mapper.UserMeetingMapper;
 import model.Meeting;
+import model.Project;
 import model.User;
+import model.UserMeeting;
 import model.valueObject.MessageModel;
 import org.apache.ibatis.session.SqlSession;
 import utils.GetSqlSession;
@@ -32,7 +36,7 @@ public class MeetingCreateService {
      * @param video
      * @return
      */
-    public MessageModel createMeeting(String admin, String topic, Integer memberNum, Integer hour, Integer minute, Boolean audio, Boolean video) {
+    public MessageModel createMeeting(String admin, String topic, Integer memberNum, Integer hour, Integer minute, String audio, String video) {
         MessageModel messageModel = new MessageModel();
 
         // 回现对象
@@ -75,8 +79,6 @@ public class MeetingCreateService {
         // 4.将会议信息存入数据库表并获取会议ID
         System.out.println(user.getId());
         m.setAdminID(user.getId());
-        String tmpToken = "";
-        m.setToken(tmpToken);
         meetingMapper.insertMeeting(m);
         System.out.println(m);
         session.commit();
@@ -88,12 +90,26 @@ public class MeetingCreateService {
         String result = token.buildTokenWithUid(m.getAppID(), m.getAppCertificate(), channel, user.getId(), RtcTokenBuilder.Role.Role_Publisher, timestamp);
         System.out.println("token:" + result);
         System.out.println("channel:" + channel);
-        System.out.println("meeting before:" + m.getToken());
-        m.setToken(result);
-        // 更新数据库会议条目
-        meetingMapper.updateMeeting(m);
-        System.out.println("meeting after updating:" + m.getToken());
-        session.commit();   // 数据库每次操作后必须commit一下
+
+        // userMeetingMsg_table更新
+        UserMeeting userMeeting = new UserMeeting();
+        userMeeting.setUsername(user.getUsername());
+        userMeeting.setUid(user.getId());
+        userMeeting.setMeetingID(m.getMeetingID());
+        userMeeting.setAppID(m.getAppID());
+        userMeeting.setToken(result);
+        userMeeting.setAudio(audio);
+        userMeeting.setVideo(video);
+        UserMeetingMapper userMeetingMapper = session.getMapper(UserMeetingMapper.class);
+        userMeetingMapper.insertUserMeeting(userMeeting);
+        session.commit();
+
+        // projects_table存入项目相关会议号
+        ProjectMapper projectMapper = session.getMapper(ProjectMapper.class);
+        Project project = projectMapper.queryProjectByProjectHost(user.getUsername());
+        project.setMeetingID(m.getMeetingID());
+        projectMapper.updateProject(project);
+        session.commit();
 
         // 6. 用户表中更新主持人meeting字段会议成员表
         user.setMeeting(m.getMeetingID());

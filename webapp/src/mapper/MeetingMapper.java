@@ -17,9 +17,6 @@ public interface MeetingMapper {
      */
     public int insertMeeting(Meeting meeting);
 
-    /**
-     * 更新meeting的token值
-     * @param meeting
-     */
-    public int updateMeeting(Meeting meeting);
+
+    public Meeting queryMeetingByMeetingID(Integer meetingID);
 }

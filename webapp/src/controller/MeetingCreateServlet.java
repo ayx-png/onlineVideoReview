@@ -38,8 +38,8 @@ public class MeetingCreateServlet extends HttpServlet {
         Integer memberNum = Integer.parseInt(request.getParameter("memberNum"));
         Integer hour = Integer.parseInt(request.getParameter("hour"));
         Integer minute = Integer.parseInt(request.getParameter("minute"));
-        Boolean audio = Boolean.parseBoolean(request.getParameter("audio"));
-        Boolean video = Boolean.parseBoolean(request.getParameter("video"));
+        String audio = request.getParameter("audio");
+        String video = request.getParameter("video");
 
         // 2. 调用service层的方法，返回消息模型对象
         MessageModel messageModel = meetingCreateService.createMeeting(admin, topic, memberNum, hour, minute, audio, video);

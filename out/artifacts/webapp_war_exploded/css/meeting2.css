@@ -337,7 +337,7 @@
   width:186px;
   word-wrap:break-word;
 }
-.otherVideo{
+.otherVideo1{
     position: absolute;
     top:580px;
     left:260px;
@@ -346,6 +346,20 @@
     z-index: 0;
     display: flex;
     justify-content: space-between;
+    border: 1px solid #ffffff;
+}
+.otherVideo2{
+  position: absolute;
+  top: 80px;
+  left: 1270px;
+  width: 173px;
+  height: 610px;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ffffff;
+  overflow: scroll;
 }
 .u40{
     width: 171px;

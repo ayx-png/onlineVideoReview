@@ -32,7 +32,7 @@ xhr.onload = function (){
                 + "<a href='approvalCompany.jsp'><button type='button'>审批企业</button></a>";
         }
         else{
-            projectNode.innerHTML = "<a href='joinMeeting.html'>" + projectName + "</a>" + "    (点击项目名可加入会议)";
+            projectNode.innerHTML = "<a href='joinMeeting.jsp'>" + projectName + "</a>" + "    (点击项目名可加入会议)";
         }
         projectContainer.append(projectNode);
     }

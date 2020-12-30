@@ -8,12 +8,11 @@
     </select>
     <!-- 添加会议 -->
     <insert id="insertMeeting" parameterType="model.Meeting" useGeneratedKeys="true" keyProperty="meetingID">
-        insert into meetings_table(admin, adminID, topic, memberNum, timeInMinutes, appID, appCertificate, token)
-            value(#{admin}, #{adminID}, #{topic}, #{memberNum}, #{timeInMinutes}, #{appID}, #{appCertificate}, #{token})
+        insert into meetings_table(admin, adminID, topic, memberNum, timeInMinutes, appID, appCertificate)
+            value(#{admin}, #{adminID}, #{topic}, #{memberNum}, #{timeInMinutes}, #{appID}, #{appCertificate})
     </insert>
-    <!-- 更新meeting的token值 -->
-    <update id="updateMeeting" parameterType="model.Meeting">
-        update meetings_table
-            set token = #{token} where meetingID = #{meetingID}
-    </update>
+
+    <select id="queryMeetingByMeetingID" parameterType="int" resultType="model.Meeting">
+        select * from meetings_table where meetingID = #{meetingID}
+    </select>
 </mapper>

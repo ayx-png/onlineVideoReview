@@ -401,3 +401,12 @@ function send() {
     req.send(data);
 }
  */
+let submitBtn = document.querySelector(".submit");
+submitBtn.onclick = function (){
+    if(document.referrer.includes("joinMeeting")){
+        window.location.href = 'joinMeeting.jsp';
+    }
+    else{
+        window.location.href = 'meetingCreate.jsp';
+    }
+}

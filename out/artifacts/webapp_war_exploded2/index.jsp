@@ -14,8 +14,6 @@
     <title>科云评审系统</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="./js/jquery-3.5.1.js"></script>
-    <script src="./js/login.js"></script>
 </head>
 <body>
     <div class="header">
@@ -29,8 +27,6 @@
             <a href="register.jsp"><input type="button" value="注册"></a>
         </div>
     </div>
-    <div class="body">
-        <img src="./images/IMG_20200915_155804.jpg" alt="background-image" class="background-image blur">
-    </div>
+    <div class="body"></div>
 </body>
 </html>

@@ -1,6 +1,6 @@
 let xhr = new XMLHttpRequest();
 
-xhr.open("GET", 'getMeetingMsg');
+xhr.open("GET", 'getUserMeeting');
 xhr.responseType = 'json';
 xhr.send();
 
@@ -16,7 +16,7 @@ xhr.onload = function () {
     let appID = String(meetingInfo.appID);
     let channel = String(meetingInfo.meetingID);
     let token = String(meetingInfo.token);
-    let uid = Number(meetingInfo.adminID);
+    let uid = Number(meetingInfo.uid);
     console.log('appID' + appID);
     console.log('token' + token);
     console.log('channel' + channel);
@@ -40,7 +40,7 @@ xhr.onload = function () {
             // 处理镜像问题
             streamDiv.style.transform = "rotateY(180deg)";
             // 将 div 添加到容器
-            if(remoteContainer.childNodes.length === 5){
+            if(remoteContainer.childNodes && remoteContainer.childNodes.length === 5){
                 remoteContainer = document.getElementById("otherVideo2");
             }
             remoteContainer.appendChild(streamDiv);

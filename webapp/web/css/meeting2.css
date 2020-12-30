@@ -359,6 +359,7 @@
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid #ffffff;
+  overflow: scroll;
 }
 .u40{
     width: 171px;
