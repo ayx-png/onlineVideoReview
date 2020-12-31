@@ -2,62 +2,18 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="webapp:war" />
       <artifact name="webapp:war exploded" />
-      <artifact name="webapp:war exploded2" />
-      <artifact name="webapp:war exploded2 archive" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/GetUserMeeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMeetingMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMeetingMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/model/UserMeeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/GetUserMeetingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/joinMeeting.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war/webapp_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war/webapp_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/JoinMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/JoinMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/MeetingMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/mapper/ProjectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/model/MeetingMember.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/JoinMeetingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/JoinMeetingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/MeetingCreateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/MeetingCreateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/普通用户加入会议思路" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/普通用户加入会议思路" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting2.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting2.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/pre-test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting2.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/JoinMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/JoinMeeting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/MeetingMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/mapper/ProjectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/model/MeetingMember.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/JoinMeetingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/JoinMeetingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/service/MeetingCreateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/MeetingCreateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/JoinMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/JoinMeeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/ProjectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/model/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/model/Meeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/model/MeetingMember.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/service/JoinMeetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/JoinMeetingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/css/meeting2.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/meeting2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/meetingJoin.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/meetingJoin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/meeting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/js/meeting2.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/meeting2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/js/pre-test.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/pre-test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/js/userSpace.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/userSpace.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meeting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/meeting2.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meeting2.html" afterDir="false" />
     </list>
@@ -427,17 +383,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.40" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/onlineMeeting/index.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -603,7 +548,9 @@
       <workItem from="1609292714509" duration="8659000" />
       <workItem from="1609308078765" duration="57000" />
       <workItem from="1609308226971" duration="3176000" />
-      <workItem from="1609311722711" duration="7749000" />
+      <workItem from="1609311722711" duration="8360000" />
+      <workItem from="1609376686885" duration="3310000" />
+      <workItem from="1609381935451" duration="1853000" />
     </task>
     <servers />
   </component>

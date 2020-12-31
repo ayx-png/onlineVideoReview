@@ -28,7 +28,10 @@ xhr.onload = function () {
         };
 
         // 定义远端视频画面的容器
-        let remoteContainer = document.getElementById("otherVideo1");
+        let remoteContainer = document.getElementsByClassName("otherVideo1")[0];
+        if(remoteContainer.hasChildNodes() && remoteContainer.childNodes.length === 5){
+            remoteContainer = document.getElementsByClassName("otherVideo2")[0];
+        }
 
         // 将视频流添加到远端视频画面容器的函数
         function addVideoStream(elementId){
@@ -40,9 +43,6 @@ xhr.onload = function () {
             // 处理镜像问题
             streamDiv.style.transform = "rotateY(180deg)";
             // 将 div 添加到容器
-            if(remoteContainer.childNodes && remoteContainer.childNodes.length === 5){
-                remoteContainer = document.getElementById("otherVideo2");
-            }
             remoteContainer.appendChild(streamDiv);
         }
 

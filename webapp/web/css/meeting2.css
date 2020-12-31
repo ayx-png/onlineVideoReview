@@ -361,6 +361,12 @@
   border: 1px solid #ffffff;
   overflow: scroll;
 }
+.otherVideo1 video{
+  left: 0;
+}
+.otherVideo2 video{
+  left: 0;
+}
 .u40{
     width: 171px;
     height: 108px;
