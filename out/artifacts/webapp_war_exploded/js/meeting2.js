@@ -9,10 +9,12 @@ xhr.onerror = function (){
 }
 xhr.onload = function () {
     if(xhr.status !== 200){
-        alert('Error' + xhr.status);
+        alert('Error:' + xhr.status);
         return;
     }
-    let meetingInfo = xhr.response;
+
+// -------- 创建视频 -----------------------------------
+    let meetingInfo = xhr.response[0];
     let appID = String(meetingInfo.appID);
     let channel = String(meetingInfo.meetingID);
     let token = String(meetingInfo.token);
@@ -104,4 +106,24 @@ xhr.onload = function () {
         });
     }
     handler(appID, channel, token, uid);
+
+// --------- 显示页面信息 -------------------------------
+    let meetingShowMsg = xhr.response[1];
+    let projectMsg = xhr.response[2];
+    let host = meetingShowMsg.admin;
+    let topic = meetingShowMsg.topic;
+    let project = projectMsg.projectName;
+    let username = meetingInfo.username;
+    let hostContainer = document.querySelector(".host");
+    let topicContainer = document.querySelector(".topic");
+    let projectContainer = document.querySelector(".project");
+    let userContainer = document.querySelector(".user");
+    let meetingTitleContainer = document.querySelector(".meetingTitle");
+
+    hostContainer.innerHTML = "会议主持人：" + host;
+    topicContainer.innerHTML = "会议主题：" + topic + "/";
+    projectContainer.innerHTML = "项目名称：" + project + "/";
+    userContainer.innerHTML = username;
+    meetingTitleContainer.innerHTML = topic;
+
 };

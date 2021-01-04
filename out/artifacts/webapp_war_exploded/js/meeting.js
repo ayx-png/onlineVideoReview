@@ -9,18 +9,19 @@ xhr.onerror = function (){
 }
 xhr.onload = function () {
     if(xhr.status !== 200){
-        alert('Error' + xhr.status);
+        alert('Error:' + xhr.status);
         return;
     }
-    let meetingInfo = xhr.response;
+// -------- 创建视频 -----------------------------------
+    let meetingInfo = xhr.response[0];
     let appID = String(meetingInfo.appID);
     let channel = String(meetingInfo.meetingID);
     let token = String(meetingInfo.token);
     let uid = Number(meetingInfo.uid);
-    console.log('appID' + appID);
-    console.log('token' + token);
-    console.log('channel' + channel);
-    console.log('uid' + uid);
+    // console.log('appID' + appID);
+    // console.log('token' + token);
+    // console.log('channel' + channel);
+    // console.log('uid' + uid);
 
     function handler(appID, channel, token, uid){
         let handleError = function(err){
@@ -104,4 +105,52 @@ xhr.onload = function () {
         });
     }
     handler(appID, channel, token, uid);
+
+// --------- 显示页面信息 -------------------------------
+    let meetingShowMsg = xhr.response[1];
+    let projectMsg = xhr.response[2];
+    let host = meetingShowMsg.admin;
+    let topic = meetingShowMsg.topic;
+    let project = projectMsg.projectName;
+    let username = meetingInfo.username;
+    let hostContainer = document.querySelector(".host");
+    let topicContainer = document.querySelector(".topic");
+    let projectContainer = document.querySelector(".project");
+    let userContainer = document.querySelector(".user");
+    let meetingTitleContainer = document.querySelector(".meetingTitle");
+
+    hostContainer.innerHTML = "会议主持人：" + host;
+    topicContainer.innerHTML = "会议主题：" + topic + "/";
+    projectContainer.innerHTML = "项目名称：" + project + "/";
+    userContainer.innerHTML = username;
+    meetingTitleContainer.innerHTML = topic;
+
+// -------- 用户列表 ------------------------------------
+    let userListContainer = document.querySelector(".userList");
+    let users = xhr.response[3];
+    if(users.includes(host)){
+        users.splice(users.indexOf(host),1);
+        users.unshift(host);
+    }
+    if(meetingInfo.username !== host){ // 普通用户的用户列表，仅展示用户名
+        for(let user of users){
+            let node = document.createElement("div");
+            node.classList.add("u11");
+            node.innerHTML = "<div><p><span>" + user + "</span></p></div>";
+            userListContainer.append(node);
+        }
+    }
+    else{
+        for(let user of users){
+            let node = document.createElement("div");
+            node.classList.add("u11");
+            node.innerHTML = "<div><p><span>" + user + "</span></p></div>" +
+                                "<select><option value=''>--用户管理--</option>" +
+                                "<option value='开启麦克风'>开启麦克风</option>" +
+                                "<option value='开启摄像头'>开启摄像头</option>" +
+                                "<option value='查看用户信息'>查看用户信息</option></select>"
+            userListContainer.append(node);
+        }
+    }
+
 };

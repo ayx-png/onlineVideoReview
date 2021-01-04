@@ -2,7 +2,7 @@ package controller;
 
 import model.User;
 import model.valueObject.MessageModel;
-import net.sf.json.JSONObject;
+import net.sf.json.JSONArray;
 import service.GetUserMeetingService;
 
 import javax.servlet.ServletException;
@@ -22,9 +22,10 @@ public class GetUserMeeting extends HttpServlet {
 
         MessageModel messageModel = getUserMeetingService.getUserMeeting(username);
 
+        response.setContentType("text/html;charset=UTF-8");
         if(messageModel.getCode() != 0){ // 成功
-            JSONObject jsonObj = JSONObject.fromObject(messageModel.getObject());
-            response.getWriter().write(jsonObj.toString());
+            JSONArray jsonArr = JSONArray.fromObject(messageModel.getObject());
+            response.getWriter().write(jsonArr.toString());
         }
     }
 }

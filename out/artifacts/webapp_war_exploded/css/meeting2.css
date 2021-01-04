@@ -264,17 +264,20 @@
   width:47px;
   word-wrap:break-word;
 }
-#u11 {
+.u11{
   width:200px;
-  height:34px;
+  height:50px;
   font-family:'Microsoft YaHei Regular', 'Microsoft YaHei';
   font-weight:400;
   font-style:normal;
   font-size:12px;
   color:rgba(255, 255, 255, 0.447058823529412);
-  text-align:left;
-  padding-bottom: 15px;
+  padding-left: 10px;
   border-bottom: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 #u30_div {
   border-width:0px;
@@ -337,6 +340,9 @@
   width:186px;
   word-wrap:break-word;
 }
+#u39 .meetingTitle{
+  font-size: larger;
+}
 .otherVideo1{
     position: absolute;
     top:580px;
@@ -351,7 +357,7 @@
 .otherVideo2{
   position: absolute;
   top: 80px;
-  left: 1270px;
+  left: 1265px;
   width: 173px;
   height: 610px;
   z-index: 0;
@@ -361,7 +367,10 @@
   border: 1px solid #ffffff;
   overflow: scroll;
 }
-.otherVideo1,.otherVideo2 video{
+.otherVideo1 video{
+  left: 0;
+}
+.otherVideo2 video{
   left: 0;
 }
 .u40{
@@ -430,6 +439,9 @@
   width:189px;
   white-space:nowrap;
 }
+#u44 p span{
+  color: #656565;
+}
 .clock{
     position:absolute;
     left:1052px;
@@ -451,7 +463,6 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
-
 html, body {
     height: 100%;
 }
@@ -508,18 +519,6 @@ div.intcaselink {
     background:#EEE none repeat scroll 0% 0%;
     border:1px solid #AAA;
     border-radius: 3px;
-}
-
-div.refpageimage {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    font-size: 0px;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    background-image: url(images/newwindow.gif);
-    background-repeat: no-repeat;
 }
 
 div.annnoteimage {

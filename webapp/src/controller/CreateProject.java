@@ -24,6 +24,7 @@ public class CreateProject extends HttpServlet {
 
         MessageModel messageModel = createProjectService.createProject(user, projectName);
 
+        response.setContentType("text/html;charset=UTF-8");
         if(messageModel.getCode() == 1){ // 成功
             //将消息模型中的新的信息设置到session作用域中，重定向到userSpace.jsp页面
             request.getSession().setAttribute("messageModel", messageModel);
