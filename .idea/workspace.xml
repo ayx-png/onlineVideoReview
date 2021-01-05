@@ -7,35 +7,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/web/help.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapp/web/js/AgoraRTC_N-4.2.1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/CreateProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/CreateProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/GetUserMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/controller/GetUserMeeting.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/GetUserMeetingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/service/GetUserMeetingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting2.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/UpdateToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/WEB-INF/classes/test/UpdateToken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/joinMeeting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting2.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting2.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting2.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2/css/meeting2.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2/css/meeting2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2/js/meeting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2/js/meeting2.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2/js/meeting2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2/meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2/meeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2/meeting2.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2/meeting2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2_archive/webapp_war exploded2 archive.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded2_archive/webapp_war exploded2 archive.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/CreateProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/CreateProject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/webapp/controller/GetUserMeeting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/controller/GetUserMeeting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meeting2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/meetingCreate.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/webapp/service/GetUserMeetingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/service/GetUserMeetingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/CreateProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/CreateProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/GetUserMeeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/GetUserMeeting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/controller/MeetingCreateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/webapp/test/UpdateToken.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/webapp/test/UpdateToken.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/service/GetUserMeetingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/GetUserMeetingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/service/MeetingCreateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/test/UpdateToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/css/meeting.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/meeting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/meeting2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/joinMeeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/joinMeeting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/meeting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/js/meeting2.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meeting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/meeting2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/web/meetingCreate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meetingCreate.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,10 +326,10 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/webapp/web/meeting2.html" />
   </component>
   <component name="RecentsManager">
@@ -400,19 +393,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -586,7 +566,10 @@
       <workItem from="1609376686885" duration="3310000" />
       <workItem from="1609381935451" duration="1853000" />
       <workItem from="1609723427600" duration="6956000" />
-      <workItem from="1609738974549" duration="4389000" />
+      <workItem from="1609738974549" duration="4566000" />
+      <workItem from="1609746040346" duration="3163000" />
+      <workItem from="1609809112149" duration="199000" />
+      <workItem from="1609809348556" duration="14726000" />
     </task>
     <servers />
   </component>

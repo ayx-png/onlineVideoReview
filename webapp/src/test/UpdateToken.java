@@ -22,7 +22,7 @@ public class UpdateToken {
         String appCertificate = "7b0418bbd36b402eb1e32f3ae7a6a646";
         String channelName = "test";
         int uid = 34;
-        int privilegeTs = (int)(System.currentTimeMillis() / 1000 + 20 * 60);
+        int privilegeTs = (int)(System.currentTimeMillis() / 1000 + 200 * 60);
         RtcTokenBuilder token = new RtcTokenBuilder();
         String result = token.buildTokenWithUid(appId, appCertificate, channelName, uid, RtcTokenBuilder.Role.Role_Publisher, privilegeTs);
         System.out.println("token:" + result);

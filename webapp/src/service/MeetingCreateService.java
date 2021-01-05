@@ -61,7 +61,7 @@ public class MeetingCreateService {
             return messageModel;
         }
 
-        // 2. 调用dao（mapper）层的查询方法，
+        // 2. 调用dao（mapper）层的查询会议收否存在，
         SqlSession session = GetSqlSession.createSqlSession();
         MeetingMapper meetingMapper = session.getMapper(MeetingMapper.class);
         Meeting meeting = meetingMapper.queryMeetingByAdmin(admin);

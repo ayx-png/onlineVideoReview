@@ -43,6 +43,7 @@ public class GetUserMeetingService {
         User[] users = userMapper.queryUserByProject(project.getProjectID());
         List<String> usersName = new ArrayList<String>();
         for(int i=0; i< users.length; i++){
+            usersName.add(String.valueOf(users[i].getId()));
             usersName.add(users[i].getUsername());
         }
 

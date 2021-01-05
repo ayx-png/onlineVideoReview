@@ -55,8 +55,8 @@
                         <option value="50">50分</option>
                     </select>
                 </div>
-                <input type="checkbox" id="audio" name="audio">入会时打开麦克风
-                <input type="checkbox" id="video" name="video">入会时打开摄像头
+                <input type="checkbox" id="audio" name="audio">入会时静音
+                <input type="checkbox" id="video" name="video">入会时关闭摄像头
                 <div id="createButton">
                         <button type="button" id="submitBtn">创建会议</button>
                 </div>

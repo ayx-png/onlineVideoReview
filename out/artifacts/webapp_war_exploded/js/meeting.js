@@ -12,100 +12,21 @@ xhr.onload = function () {
         alert('Error:' + xhr.status);
         return;
     }
-// -------- 创建视频 -----------------------------------
+
     let meetingInfo = xhr.response[0];
     let appID = String(meetingInfo.appID);
     let channel = String(meetingInfo.meetingID);
     let token = String(meetingInfo.token);
     let uid = Number(meetingInfo.uid);
-    // console.log('appID' + appID);
-    // console.log('token' + token);
-    // console.log('channel' + channel);
-    // console.log('uid' + uid);
-
-    function handler(appID, channel, token, uid){
-        let handleError = function(err){
-            console.log("Error: ", err);
-        };
-
-        // 定义远端视频画面的容器
-        let remoteContainer = document.getElementsByClassName("otherVideo1")[0];
-        if(remoteContainer.hasChildNodes() && remoteContainer.childNodes.length === 5){
-            remoteContainer = document.getElementsByClassName("otherVideo2")[0];
-        }
-
-        // 将视频流添加到远端视频画面容器的函数
-        function addVideoStream(elementId){
-            // 给每个流创建一个 div
-            let streamDiv = document.createElement("div");
-            streamDiv.classList.add('u40');
-            // 将 elementId 分配到 div
-            streamDiv.id = elementId;
-            // 处理镜像问题
-            streamDiv.style.transform = "rotateY(180deg)";
-            // 将 div 添加到容器
-            remoteContainer.appendChild(streamDiv);
-        }
-
-        // 将视频流从远端视频画面容器移除的函数
-        function removeVideoStream(elementId) {
-            let remoteDiv = document.getElementById(elementId);
-            if (remoteDiv) remoteDiv.parentNode.removeChild(remoteDiv);
-        }
-
-        // ------------------------------- 创建客户端 -------------------------------------
-        let client = AgoraRTC.createClient({
-            mode: "rtc",
-            codec: "vp8",
-        });
-
-        client.init(appID)
-
-        // 加入频道
-        client.join(token, channel, uid, (uid)=>{
-            // 创建本地媒体流
-            let localStream = AgoraRTC.createStream({
-                audio: true,
-                video: true,
-            });
-            // 初始化本地流
-            localStream.init(()=>{
-                // 播放本地流
-                localStream.play("u30_div");
-                // 发布本地流
-                client.publish(localStream, handleError);
-            }, handleError);
-        }, handleError);
-
-        // 有远端用户发布流时进行订阅
-        client.on("stream-added", function(evt){
-            client.subscribe(evt.stream, handleError);
-        });
-        // 订阅成功后播放远端用户的流
-        client.on("stream-subscribed", function(evt){
-            let stream = evt.stream;
-            let streamId = String(stream.getId());
-            addVideoStream(streamId);
-            stream.play(streamId);
-        });
-
-        // 远端用户取消发布流时，关闭及移除对应的流。
-        client.on("stream-removed", function(evt){
-            let stream = evt.stream;
-            let streamId = String(stream.getId());
-            stream.close();
-            removeVideoStream(streamId);
-        });
-        // 远端用户离开频道时，关闭及移除对应的流。
-        client.on("peer-leave", function(evt){
-            let stream = evt.stream;
-            let streamId = String(stream.getId());
-            stream.close();
-            removeVideoStream(streamId);
-        });
+    let audio = String(meetingInfo.audio) === ""; // meetingInfo.audio===""时，即audio为true，不静音
+    let video = String(meetingInfo.video) === ""; // meetingInfo.video===""时，即video为true，摄像头打开
+    let userArray = xhr.response[3];
+    let map = new Map();
+    let users = [];
+    for(let i=0; i<userArray.length; i+=2){ // 偶数id，奇数username
+        map.set(userArray[i], userArray[i+1]);
+        users.push(userArray[i+1]);
     }
-    handler(appID, channel, token, uid);
-
 // --------- 显示页面信息 -------------------------------
     let meetingShowMsg = xhr.response[1];
     let projectMsg = xhr.response[2];
@@ -127,17 +48,27 @@ xhr.onload = function () {
 
 // -------- 用户列表 ------------------------------------
     let userListContainer = document.querySelector(".userList");
-    let users = xhr.response[3];
     if(users.includes(host)){
-        users.splice(users.indexOf(host),1);
+        users.splice(users.indexOf(host),2);
         users.unshift(host);
     }
     if(meetingInfo.username !== host){ // 普通用户的用户列表，仅展示用户名
         for(let user of users){
-            let node = document.createElement("div");
-            node.classList.add("u11");
-            node.innerHTML = "<div><p><span>" + user + "</span></p></div>";
-            userListContainer.append(node);
+            if(user === meetingInfo.username){
+                let node = document.createElement("div");
+                node.classList.add("u11");
+                node.innerHTML = "<div><p><span>" + user + "</span></p></div>" +
+                    "<select id='userSelect'>" + "<option value=''>--音视频设置--</option>" +
+                    "<option value='microphone'>麦克风:开/关</option>" +
+                    "<option value='camera'>摄像头:开/关</option></select>>";
+                userListContainer.append(node);
+            }
+            else {
+                let node = document.createElement("div");
+                node.classList.add("u11");
+                node.innerHTML = "<div><p><span>" + user + "</span></p></div>";
+                userListContainer.append(node);
+            }
         }
     }
     else{
@@ -145,11 +76,192 @@ xhr.onload = function () {
             let node = document.createElement("div");
             node.classList.add("u11");
             node.innerHTML = "<div><p><span>" + user + "</span></p></div>" +
-                                "<select><option value=''>--用户管理--</option>" +
-                                "<option value='开启麦克风'>开启麦克风</option>" +
-                                "<option value='开启摄像头'>开启摄像头</option>" +
-                                "<option value='查看用户信息'>查看用户信息</option></select>"
+                "<select id='" + user + "Select" +"'><option value=''>--用户管理--</option>" +
+                "<option value='microphone'>麦克风:开/关</option>" +
+                "<option value='camera'>摄像头:开/关</option>" +
+                "<option value='userInfo'>查看用户信息</option></select>";
             userListContainer.append(node);
+        }
+    }
+
+// -------- 创建视频 -----------------------------------
+    // console.log('appID' + appID);
+    // console.log('token' + token);
+    // console.log('channel' + channel);
+    // console.log('uid' + uid);
+    handler(appID, channel, token, uid, audio, video);
+
+    function handler(appID, channel, token, uid, audio, video) {
+
+        // ------------------------------- 创建客户端 -------------------------------------
+        let rtc = {
+            client: null,
+            localAudioTrack: null,
+            localVideoTrack: null,
+            // remoteStreams: [],
+            // params: {}
+        }
+        let options = {
+            appId: appID,
+            channel: channel,
+            token: token,
+            uid: uid,
+            video: video,
+            audio: audio,
+        }
+
+        // 定义远端用户视频容器
+        let remoteContainer = document.getElementsByClassName("otherVideo1")[0];
+        let timeID= setInterval(function (){
+            if(remoteContainer.hasChildNodes() && remoteContainer.childNodes.length === 5){
+                remoteContainer = document.getElementsByClassName("otherVideo2")[0];
+                clearInterval(timeID);
+            }
+        }, 1);
+
+        startBasicCall();
+
+        async function startBasicCall() {
+            // 1. 创建本地客户端
+            rtc.client = AgoraRTC.createClient({
+                mode: "rtc",
+                codec: "vp8",
+            });
+
+            // 2. 订阅远端频道
+            rtc.client.on("user-published", async (user, mediaType) => {
+                // 开始订阅远端用户。
+                await rtc.client.subscribe(user, mediaType);
+                console.log("subscribe success");
+
+                // 表示本次订阅的是视频。
+                if (mediaType === "video") {
+                    // 订阅完成后，从 `user` 中获取远端视频轨道对象。
+                    const remoteVideoTrack = user.videoTrack;
+                    // 动态在远端用户容器插入一个 DIV 节点作为播放远端视频轨道。
+                    let remoteContainerForOne = document.createElement("div");
+                    remoteContainerForOne.classList.add("u40");
+                    const playerContainer = document.createElement("div");
+                    // 给这个 DIV 节点指定一个 ID，这里指定的是远端用户的 UID。
+                    playerContainer.id = user.uid.toString();
+                    let usernameForID = map.get(playerContainer.id);
+                    let pForName = document.createElement("p");
+                    pForName.innerHTML = usernameForID;
+                    pForName.style.width = "171px";
+                    pForName.style.height = "10px";
+                    pForName.style.textAlign = "center";
+                    playerContainer.style.width = "171px";
+                    playerContainer.style.height = "108px";
+                    remoteContainerForOne.append(playerContainer);
+                    remoteContainerForOne.append(pForName);
+                    remoteContainer.append(remoteContainerForOne);
+
+                    // 订阅完成，播放远端音视频。
+                    // 传入 DIV 节点，让 SDK 在这个节点下创建相应的播放器播放远端视频。
+                    remoteVideoTrack.play(playerContainer);
+
+                    // 也可以只传入该 DIV 节点的 ID。
+                    // remoteVideoTrack.play(playerContainer.id);
+                }
+
+                // 表示本次订阅的是音频。
+                if (mediaType === "audio") {
+                    // 订阅完成后，从 `user` 中获取远端音频轨道对象。
+                    const remoteAudioTrack = user.audioTrack;
+                    // 播放音频因为不会有画面，不需要提供 DOM 元素的信息。
+                    remoteAudioTrack.play();
+                }
+            });
+
+            rtc.client.on("user-unpublished", (user, mediaType) => {
+                if (mediaType === "video") {
+                    // 获取刚刚动态创建的 DIV 节点。
+                    const playerContainer = document.getElementById(user.uid.toString()).parentNode;
+                    // 销毁这个节点。
+                    playerContainer.remove();
+                }
+            });
+
+            // 3. 加入目标频道
+            await rtc.client.join(options.appId, options.channel, options.token, options.uid);
+
+            // 4. 创建并发布本地音视频轨道
+            // 4.1 通过麦克风采集的音频创建本地音频轨道对象。
+            rtc.localAudioTrack = await AgoraRTC.createMicrophoneAudioTrack();
+            // 4.2 通过摄像头采集的视频创建本地视频轨道对象。
+            rtc.localVideoTrack = await AgoraRTC.createCameraVideoTrack();
+            // 4.3 将这些音视频轨道对象发布到频道中。
+            await rtc.client.publish([rtc.localAudioTrack, rtc.localVideoTrack]);
+
+            console.log("publish success!");
+
+            // 4.5 播放本地流
+            let myContainer = document.querySelector(".mainVideo");
+            let myVideo = document.createElement("div");
+            myVideo.id = options.uid.toString();
+            myVideo.style.width = "982px";
+            myVideo.style.height = "483px";
+            myContainer.append(myVideo);
+            if(!options.video){
+                await rtc.localVideoTrack.play(myVideo);
+                await rtc.localVideoTrack.setEnabled(options.video);
+            }else {
+                await rtc.localVideoTrack.play(myVideo);
+            }
+            if(!options.audio){
+                await rtc.localAudioTrack.setEnabled(options.audio);
+            }else{
+                await rtc.localAudioTrack.play();
+            }
+
+
+            // 5. 用户自身离开频道
+            async function leaveCall() {
+                // 销毁本地音视频轨道。
+                rtc.localAudioTrack.close();
+                rtc.localVideoTrack.close();
+
+                // 遍历远端用户。
+                rtc.client.remoteUsers.forEach(user => {
+                    // 销毁动态创建的 DIV 节点。
+                    const playerContainer = document.getElementById(user.uid);
+                    playerContainer && playerContainer.remove();
+                });
+
+                // 离开频道。
+                await rtc.client.leave();
+            }
+
+            // 摄像头、麦克风禁用与开启
+            let AVSelect = document.querySelector("#userSelect");
+            if(AVSelect){
+                let selections = AVSelect.options;
+                AVSelect.onchange = function() {
+                    let index = AVSelect.selectedIndex;
+                    if(selections[index].value === "camera"){
+                        options.video = !options.video;
+                        rtc.localVideoTrack.setEnabled(options.video);
+                    }else if(selections[index].value === "microphone"){
+                        options.audio = !options.audio;
+                        rtc.localAudioTrack.setEnabled(options.audio);
+                    }
+                }
+            }
+            let hostSelectClass = "#" + host + "Select";
+            let hostSelect = document.querySelector(hostSelectClass);
+            if(hostSelect){
+                let hostSelections = hostSelect.options;
+                hostSelect.onchange = function(){
+                    let index = hostSelect.selectedIndex;
+                    if(hostSelections[index].value === "camera"){
+                        options.video = !options.video;
+                        rtc.localVideoTrack.setEnabled(options.video);
+                    }else if(hostSelections[index].value === "microphone"){
+                        options.audio = !options.audio;
+                        rtc.localAudioTrack.setEnabled(options.audio);
+                    }
+                }
+            }
         }
     }
 
