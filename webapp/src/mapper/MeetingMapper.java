@@ -17,6 +17,17 @@ public interface MeetingMapper {
      */
     public int insertMeeting(Meeting meeting);
 
-
+    /**
+     * meetingID查询会议
+     * @param meetingID
+     * @return
+     */
     public Meeting queryMeetingByMeetingID(Integer meetingID);
+
+    /**
+     * 按会议ID删除会议
+     * @param meetingID
+     */
+    public void deleteMeetingByMeetingID(int meetingID);
+
 }

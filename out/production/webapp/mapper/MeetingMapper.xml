@@ -15,4 +15,8 @@
     <select id="queryMeetingByMeetingID" parameterType="int" resultType="model.Meeting">
         select * from meetings_table where meetingID = #{meetingID}
     </select>
+
+    <delete id="deleteMeetingByMeetingID" parameterType="int">
+        delete from meetings_table where meetingID = #{meetingID}
+    </delete>
 </mapper>
