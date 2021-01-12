@@ -22,16 +22,25 @@
 
 }
 .body {
+<<<<<<< HEAD
     float: left;
     display: block;
     width: 100%;
     height: 800px;
     background: url(../images/IMG_20200915_155804.jpg) no-repeat;
+=======
+    /*float: left;*/
+    /*display: block;*/
+    width: 100%;
+    /*height: 855px;*/
+    /*background: url(../images/IMG_20200915_155804.jpg) no-repeat;*/
+>>>>>>> meeting
     background-size: 100% 100%;
 }
 .body > .background-image {
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     height: 800px;
 }
 .blur {    
@@ -39,6 +48,20 @@
        -moz-filter: blur(10px);
         -ms-filter: blur(10px);    
             filter: blur(10px);    
+=======
+    height: 855px;
+}
+.blur {
+    -webkit-filter: blur(10px);
+       -moz-filter: blur(10px);
+        -ms-filter: blur(10px);
+            filter: blur(10px);
+}
+.body .registerMsg{
+    margin: 0 auto;
+    color: red;
+    font-size: larger;
+>>>>>>> meeting
 }
 .body .body-form{
     position: absolute;
@@ -71,7 +94,10 @@
     float: right;
     padding-top:20px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> meeting
 .body-form > .lo_form_center table{
     vertical-align: top;
     text-align: center;
@@ -89,7 +115,12 @@
     display: block;
     width: 50px;
     height: 32px;
+<<<<<<< HEAD
     text-align: right;
+=======
+    text-align: left;
+    margin-left: 12px;
+>>>>>>> meeting
 }
 .body-form > .lo_form_center table tr .td_right{
     float: left;
@@ -110,6 +141,7 @@
     height: 40px;
     padding-top: 2px;
 }
+<<<<<<< HEAD
 .body-form > .lo_form_center .td_mm {
     display: block;
     width: 80px;
@@ -127,10 +159,38 @@
     text-align: center;
     background-color: rgb(187,201,217);
     border-radius:2px;
+=======
+/*.body-form > .lo_form_center .td_submit{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
+.body-form > .lo_form_center .td_submit .submit{
+    display: block;
+    width: 80px;
+    height: 28px;
+    margin-left: 75px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgb(187,201,217);
+    border-radius:2px;
+}
+.body-form .lo_form_center .td_submit #errorMsg{
+    color: red;
+    margin-left: 75px;
+}
+.body-form > .lo_form_center .td_mm {
+    display: block;
+    width: 80px;
+    height: 28px;
+    margin-top: 40px;
+    margin-left: 75px;
+    text-align: center;
+>>>>>>> meeting
 }
 .footer {
     position: absolute;
     top: 75%;
+<<<<<<< HEAD
     left: 70%;
     float: left;
     width: 100%;
@@ -157,3 +217,39 @@
 .footer > .footer-third ul{
     margin-top: 2ch;
 }
+=======
+    left: 78%;
+    float: left;
+    height: 200px;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer .footer-line{
+    margin-left: 25px;
+}
+.footer .footer-line h4{
+    margin-bottom: 10px;
+}
+/*.footer > .footer-first {*/
+/*    float: left;*/
+/*}*/
+/*.footer > .footer-first ul{*/
+/*    margin-top: 2ch;*/
+/*}*/
+/*.footer > .footer-second{*/
+/*    float: left;*/
+/*    margin-left: 8ch;*/
+/*}*/
+/*.footer > .footer-second ul{*/
+/*    margin-top: 2ch;*/
+/*}*/
+/*.footer > .footer-third{*/
+/*    float: left;*/
+/*    margin-left: 8ch;*/
+/*}*/
+/*.footer > .footer-third ul{*/
+/*    margin-top: 2ch;*/
+/*}*/
+>>>>>>> meeting

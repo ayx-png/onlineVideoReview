@@ -1,94 +1,62 @@
-<!DOCTYPE html>
-<html lang="zh">
-
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>创建会议</title>
-    <link rel="stylesheet" href="./css/meetingcreate.css">
+    <link rel="stylesheet" href="./css/meetingCreate.css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/meetingCreate.js"></script>
 </head>
-
 <body>
-    <div class="header">
-        <div>
-            <img src="images/logo2.a2ebc408.png" alt="logo" class="header-logo">
-        </div>
+<!----------------  网站标题  ------------------>
+<div class="header">
+    <div>
+        <img src="images/logo2.a2ebc408.png" alt="logo" class="header-logo">
     </div>
-    <div class="body">
-        <form action="meetingsetting">
-            <div class="joinmeeting">
-                <p style="text-align: center;font-size: larger;">加入会议</p>
-                <div class="joinbody">
-                    会议号：<input type="text">
-                    <button id="fastjoinmeeting">快速入会</button>
-                    <tr>
-                        <td>
-                            <br><br>
-                            &nbsp&nbsp
-                            <input type="checkbox" />入会时静音
-                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                            <input type="checkbox" />入会时关闭视频
-                        </td>
-                    </tr>
-                </div>
-                <p style="text-align: center;">*************************************************************************
-                </p>
-                <div class="creatbody">
-                    <p style="text-align: center;font-size: larger;">创建会议</p>
-                    <tr>
-                        <td>会议主题:</td>
-                        <td><input type="text" placeholder="评审组xx的会议" /></td>
-                    </tr>
-                    <tr>
-                        <td>会议方数:</td>
-                        <td><input type="text" , placeholder="10" /></td>
-                    </tr>
-                    <br><br>
-                    <tr>
-                        <td>会议时长:</td>
-                        <td>
-                            <select>
-                                <option value="0">2小时</option>
-                                <option value="1">3小时</option>
-                                <option value="2">4小时</option>
-                                <option value="3">5小时</option>
-                                <option value="4">6小时</option>
-                                <option value="5">7小时</option>
-                                <option value="6">8小时</option>
-                                <option value="7">9小时</option>
-                                <option value="8">10小时</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select>
-                                <option value="0">0分</option>
-                                <option value="1">10分</option>
-                                <option value="2">20分</option>
-                                <option value="3">30分</option>
-                                <option value="4">40分</option>
-                                <option value="5">50分</option>
-                                <option value="6">60分</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <br><br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    <input type="checkbox" />入会时打开麦克风
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                    <input type="checkbox" />入会时打开摄像头
-                    <br>
-                    <br>
-                    <div id="createbutton" style="margin-left: 40%;">
-                        <td class="td-submit">
-                            <button type="submit" class="submit">创建会议</button>
-                        </td>
-                    </div>
-                </div>
+</div>
+<!----------------  创建会议  ------------------>
+<div class="meetingBody">
+    <form action="meetingCreate" id="meetingForm" method="post">
+        <!------------------------ 创建会议 -------------------->
+        <div class="createBody">
+            <p class="createBody_P">创建会议</p>
+            会议主题:
+            <input type="text" placeholder="评审组xx的会议" id="topic">
+            会议人数:
+            <<input type="text" placeholder="不超过17人" id="memberNum">
+            <div class="meetingTime">
+                会议时长:
+                <select class="hour" id="hour">
+                    <option value="0">0小时</option>
+                    <option value="1">1小时</option>
+                    <option value="2">2小时</option>
+                    <option value="3">3小时</option>
+                    <option value="4">4小时</option>
+                    <option value="5">5小时</option>
+                    <option value="6">6小时</option>
+                    <option value="7">7小时</option>
+                    <option value="8">8小时</option>
+                </select>
+                <select class="minute" id="minute">
+                    <option value="0">0分</option>
+                    <option value="10">10分</option>
+                    <option value="20">20分</option>
+                    <option value="30">30分</option>
+                    <option value="40">40分</option>
+                    <option value="50">50分</option>
+                </select>
             </div>
-        </form>
-
-    </div>
+            <input type="checkbox" id="audio">入会时打开麦克风
+            <input type="checkbox" id="video">入会时打开摄像头
+            <div id="createButton">
+                <button type="button" class="submit" id="submit">创建会议</button>
+            </div>
+            <div>
+                <p id="err">${messageModel.msg}</p>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
-
 </html>

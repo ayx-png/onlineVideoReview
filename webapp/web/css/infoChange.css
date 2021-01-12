@@ -1,0 +1,65 @@
+﻿.clearfix:before,
+.clearfic:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+.shade{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background-color:rgba(0,0,0,.3);
+}
+.changeForm{
+    width:500px;
+    height:300px;
+    background-color:white;
+    margin:4%  auto;
+}
+.changeForm div,
+.changeForm1 div{
+    margin:20px ;
+}
+.changeForm div:nth-child(1) span,
+.changeForm1 div:nth-child(1) span{
+        margin-left: 190px;
+        font-size:20px;
+}
+.changeForm div:nth-child(1) i,
+.changeForm1 div:nth-child(1) i{
+    font-size:22px;
+    margin-left:150px;
+}
+.changeForm div:nth-last-child(1) button,
+.changeForm1 div:nth-last-child(1) button{
+        margin-left:190px;
+        border-radius: 3px;
+        background-color:#FF9900;
+        font-size:18px;
+}
+.changeForm .input label,
+.changeForm1 .input label{
+       margin-left:50px;
+       margin-right:50px;
+}
+.changeForm1{
+    width:500px;
+    height:250px;
+    background-color:white;
+    margin:0 auto;
+}
+
+.infoErrMsg{
+    color: #ff0000;
+    text-align: center;
+}
+.passErrMsg{
+    color: #ff0000;
+    text-align: center;
+}
+.close{
+    float: right;
+    margin-right: 10px;
+}

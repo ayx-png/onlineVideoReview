@@ -8,6 +8,7 @@
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <title>Pre-Test</title>
     <link rel="stylesheet" href="css/common.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/pretest.css">
 
     <!-- Bootstrap -->
@@ -358,4 +359,106 @@
     </script>
 </body>
 
+=======
+    <link rel="stylesheet" href="css/pre-test.css">
+    <link rel="stylesheet" href="fonts/iconfont/iconfont.css">
+    <script src="js/rem.js"></script>
+</head>
+
+<body>
+    <!-------------------------------  网站标题  ---------------------------------------->
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo2.a2ebc408.png" alt="logo" class="header-logo">
+        </div>
+        <div class="title">科云评审系统</div>
+    </div>
+
+    <div class="content">
+        <!--------------------------------  网络环境测试  ------------------------------------>
+        <div class="testBody"> <!------------- 测试提醒和摄像头框 --------------->
+            <div class="box1">
+                <!----------------测试标题------------------>
+                <div class="testInfo">
+                    <p>评审系统环境测试</p>
+                    <p>开放时间：长期有效</p>
+                    <p>测试说明：为保证参与会议的质量，本次测试将依次针对网络质量、浏览器版本、摄像头、麦克风等进行测试，请按相关提示进行测试！</p>
+                </div>
+                <!----------------打开摄像头------------------>
+            </div>
+            <div class="box2">  <!---------------- 网速、浏览器版本测试 ------------------>
+                <div class="leftBox">
+                    <div class="box2Left">
+                        <div class="testBox">
+                            <div class="testName">
+                                <p>网络质量检测</p>
+                            </div>
+                            <div class="testContent">
+                                <span><b>问题说明：</b></span>
+                                <span>目前检测到网络质量：</span>
+                                <span id="network-downspeed"></span>
+                            </div>
+                        </div>
+                        <div class="testBox">
+                            <div class="testName">
+                                <p>浏览器版本检测</p>
+                            </div>
+                            <div class="testContent">
+                                <span><b>问题说明：</b></span>
+                                <span id="b-information">目前检测到浏览器是</span>
+                                <span>若不是最新版本可能不支持视频会议，请升级浏览器版本.</span>
+                            </div>
+                        </div>
+                        <div class="testBox">
+                            <div class="testName">
+                                <p>调试摄像头</p>
+                            </div>
+                            <div class="testContent">
+                                <span><b>问题说明：</b></span>
+                                <span id="cameraStatus">检测到摄像头已关闭</span>
+                                <span id="cameraMsg">可点击右侧方框下--打开摄像头按钮--以打开摄像头</span>
+                            </div>
+                        </div>
+                        <div class="testBox">
+                            <div class="testName">
+                                <p>调试麦克风</p>
+                            </div>
+                            <div class="testContent">
+                                <span><b>问题说明：</b></span>
+                                <!----------------- 打开麦克风 ------------------------>
+                                <div class="body-microphone">
+                                    <span id="microphoneStatus">目前检测到未开麦克风，请点击下方--麦克风图标--以启用；</span>
+                                    <section class="experiment1">
+                                        <span id="microphone"><i class="iconfont icon-ziyuan"></i></span>
+                                        <div id="microphone-container"></div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testBox">
+                            <button type="button" class="submit" id="create">完成检测，下一步</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightBox">
+                    <div class="body-camera">
+                        <section class="experiment1">
+                            <div id="videos-container"></div>
+                        </section>
+                        <div class="experiment2">
+                            <button id="openCamera">打开摄像头</button>
+                            <button id="closeCamera">关闭摄像头</button>
+                            <!-- <button id="start-recording" disabled> </button>-->
+                            <!-- <button id="save-recording" disabled> </button>-->
+                            <!-- <a href="javascript:void(0)" onclick="send()">发送</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/fileSaver.js"></script>
+<script src="./js/pre-test.js"></script>
+>>>>>>> meeting
 </html>

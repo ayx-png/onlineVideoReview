@@ -1,0 +1,23 @@
+{
+  "id": "2192504",
+  "name": "onlineVideoReview",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11177751",
+      "name": "麦克风-静音",
+      "font_class": "ziyuan",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "11177753",
+      "name": "麦克风",
+      "font_class": "ziyuan1",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    }
+  ]
+}

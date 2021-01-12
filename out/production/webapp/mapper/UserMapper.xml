@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 首先来解析 namespace: 命名空间,此属性通常用来映射Dao（Mapper）层接口. -->
+<mapper namespace="mapper.UserMapper">
+    <!-- 查找用户-->
+    <!-- id: 对应Dao（Mapper）层接口方法名 parameterType：指定输入参数类型 -->
+    <!-- useGeneratedKeys="true"把新增加的主键赋值到自己定义的keyProperty（id）中 -->
+    <select id="queryUserByUsername" parameterType="String" resultType="model.User">
+		select * from users_table where userName = #{username}
+    </select>
+    <!-- 根据用户ID查询用户 -->
+    <select id="queryUserByUserID" parameterType="int" resultType="model.User">
+        select * from users_table where id = #{id}
+    </select>
+    <!-- 根据项目查询用户 -->
+    <select id="queryUserByProject" parameterType="int" resultType="model.User">
+        select * from users_table where project = #{projectID}
+    </select>
+    <!-- 添加用户-->
+    <insert id="insertUser" parameterType="model.User" useGeneratedKeys="true" keyProperty="id">
+        insert into users_table(username, password, companyName, phoneNumber, mail)
+            values(#{username}, #{password}, #{companyName}, #{phoneNumber}, #{mail})
+    </insert>
+    <!-- 更新用户信息 -->
+    <update id="updateUser" parameterType="model.User">
+        update users_table
+            set phoneNumber = #{phoneNumber}, mail = #{mail}, companyName = #{companyName} where username = #{username}
+    </update>
+    <!-- 修改用户密码 -->
+    <update id="updateUserPass" parameterType="model.User">
+        update users_table
+            set password = #{password} where username = #{username}
+    </update>
+    <!-- 修改用户权限 -->
+    <update id="updateUserAuthority" parameterType="model.User">
+        update users_table
+            set authority = #{authority} where username = #{username}
+    </update>
+
+    <!-- 添加项目编号 -->
+    <update id="updateProject" parameterType="model.User">
+        update users_table
+            set project = #{project} where username = #{username}
+    </update>
+    <!-- 更新报名项目是否通过 -->
+    <update id="updateProjectIn" parameterType="model.User">
+        update users_table
+            set projectIn = #{projectIn} where username = #{username}
+    </update>
+    <!-- 更新meeting字段 -->
+    <update id="updateMeeting" parameterType="model.User">
+        update users_table
+            set meeting = #{meeting} where username = #{username}
+    </update>
+</mapper>

@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+body{
+    margin: 0;
+}
+>>>>>>> meeting
 .header {
     height: 80px;
     background-color: rgb(46,95,208);
@@ -7,6 +13,7 @@
     display: block;
     width: 126px;
     height: 70px;
+<<<<<<< HEAD
     margin: 5px 0px 5px 100px;
 }
 
@@ -18,6 +25,9 @@
     height: 900px;
     background: url(../images/IMG_20200915_155804.jpg) no-repeat;
     background-size: 100% 100%;
+=======
+    margin: 5px 0 5px 100px;
+>>>>>>> meeting
 }
 .header .header-title {
     float: left;
@@ -29,11 +39,24 @@
     text-align: center;
     letter-spacing: 1.45em;
     color: white;
+<<<<<<< HEAD
 
+=======
+}
+.body {
+    position: relative;
+    float: left;
+    display: block;
+    width: 100%;
+    height: 848px;
+    background: url(../images/IMG_20200915_155804.jpg) no-repeat;
+    background-size: 100% 100%;
+>>>>>>> meeting
 }
 .body > .background-image {
     position: relative;
     width: 100%;
+<<<<<<< HEAD
     height: 900px;
 }
 .registerbox {
@@ -42,4 +65,38 @@
     margin-left: auto;
     margin-right: auto;
     /* background-color: cyan; */
+=======
+    height: 848px;
+}
+.body .registerbox {
+    width: 450px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: cyan; */
+}
+
+.body .registerbox .btn{
+    width: 100%;
+    text-align: center;
+}
+.body .registerbox .info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.body .registerbox .info input{
+    width: 250px;
+}
+.body .registerbox .errorMsg{
+    width: 257px;
+    color: #ff0000;
+    text-align: center;
+}
+.formBackground{
+    width: 350px;
+    padding: 50px 50px 20px 50px;
+    background: #ffffff;
+    border-radius: 10px;
+>>>>>>> meeting
 }

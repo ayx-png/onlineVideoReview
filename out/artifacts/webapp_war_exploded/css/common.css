@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 * @Author: WCM
 * @Date:   2018-01-27 15:13:13
@@ -5,6 +6,8 @@
 * @Last Modified time: 2018-01-27 15:17:57
 */
 
+=======
+>>>>>>> meeting
 /*css 初始化 */
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
     margin: 0;
@@ -20,7 +23,11 @@ fieldset, img, input, button {
     outline-style: none;  /*外面环绕线*/
 }
 
+<<<<<<< HEAD
 ul, ol {
+=======
+ul, ol ,li{
+>>>>>>> meeting
     list-style: none;
 }
 
@@ -49,6 +56,7 @@ table {
     border-collapse: collapse; /*合并外连线*/
 }
 
+<<<<<<< HEAD
 .clearfix:before, .clearfix:after {
     content: "";
     display: table;
@@ -60,6 +68,20 @@ table {
 }
 a {
     text-decoration: none;
+=======
+/*.clearfix:before, .clearfix:after {*/
+/*    content: "";*/
+/*    display: table;*/
+/*    clear: both;*/
+/*}*/
+
+/*.clearfix {*/
+/*    *zoom: 1; !*IE/7/6*!  !*兼容IE6下的写法*!*/
+/*}*/
+a {
+    text-decoration: none;
+    color: #333333;
+>>>>>>> meeting
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -175,7 +197,11 @@ h1, h2, h3, h4, h5, h6 {
 
 :-ms-input-placeholder {
     /* Internet Explorer 10+ */
+<<<<<<< HEAD
     font-size: 12x;
+=======
+    font-size: 12px;
+>>>>>>> meeting
 }
 
 .hot_pic,
@@ -324,3 +350,14 @@ h1, h2, h3, h4, h5, h6 {
 .pageNum ul .threeword {
   width: 75px;
 }
+<<<<<<< HEAD
+=======
+
+.clean:after{
+    content: ".";
+    clear: both;
+    display: block;
+    line-height: 0;
+    visibility: hidden;
+}
+>>>>>>> meeting

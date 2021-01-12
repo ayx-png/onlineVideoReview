@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.UserMeetingMapper">
+    <insert id="insertUserMeeting" parameterType="model.UserMeeting" useGeneratedKeys="true" keyProperty="id">
+        insert into userMeetingMsgs_table(username, uid, meetingID, appID, token, audio, video)
+            value(#{username}, #{uid}, #{meetingID}, #{appID}, #{token}, #{audio}, #{video})
+    </insert>
+
+    <select id="queryUserMeetingByUsername" parameterType="String" resultType="model.UserMeeting">
+        select * from userMeetingMsgs_table where username = #{username}
+    </select>
+    <delete id="deleteUserMeetingByMeetingID" parameterType="int">
+        delete from userMeetingMsgs_table where meetingID = #{meetingID}
+    </delete>
+    <delete id="deleteUserMeetingByUsername">
+        delete from userMeetingMsgs_table where username = #{username}
+    </delete>
+</mapper>

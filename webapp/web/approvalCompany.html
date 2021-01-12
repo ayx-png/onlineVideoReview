@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>企业审批</title>
+    <link rel="stylesheet" href="./css/approvalCompany.css">
+    <script type="application/javascript" src="./js/approvalCompany.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="col-lg-3 ">
+            <img src="images/logo2.a2ebc408.png" alt="logo" class="header-logo">
+        </div>
+        <div class="col-lg-6 header-title">科云评审系统</div>
+        <div class="userKey" >
+            欢迎您，${user.username}
+        </div>
+    </div>
+    <div class="body">
+        <div class="errMsg" style="padding-top: 10px;color: #ff0000; margin: 0 auto;">未选中任何企业，请重新审批！</div>
+        <div class="approvalContainer">
+            <div class="companies">
+                <form action="approvalCompany" id="approvalForm" method="post">
+                <div class="btn">
+                    <span>请从下列企业中选择合格的企业参加评审：</span>
+                    <button type="submit" id="submitBtn">提交</button>
+                </div>
+                    <div class="companiesContainer">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
