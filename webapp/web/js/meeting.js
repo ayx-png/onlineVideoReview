@@ -234,7 +234,7 @@ xhr.onload = function () {
             rtc.client.on("user-left", (user, reason) => {
                 console.log("user-left");
                 if(reason === "Quit"){
-                    if(map.get(user.id) === host){
+                    if(map.get(user.uid.toString()) === host){
                         rtc.client.leave();
                         window.location = "userSpace.jsp";
                     }

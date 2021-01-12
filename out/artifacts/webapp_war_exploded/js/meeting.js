@@ -231,10 +231,10 @@ xhr.onload = function () {
             });
 
             // 远端用户离开根本不会进来
-            rtc.client.on("peer-leave", (user, reason) => {
+            rtc.client.on("user-left", (user, reason) => {
                 console.log("user-left");
                 if(reason === "Quit"){
-                    if(map.get(user.id) === host){
+                    if(map.get(user.uid.toString()) === host){
                         rtc.client.leave();
                         window.location = "userSpace.jsp";
                     }

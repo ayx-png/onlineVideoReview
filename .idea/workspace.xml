@@ -7,19 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8753a186-e508-4d84-85ac-8bb22ae5b0cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/webapp/src/controller/CloseMeeting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/src/service/CloseMeetingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webapp/web/会议页面关闭思路" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/css/meeting.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/webapp_war_exploded/js/meeting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/MeetingMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMeetingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMeetingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/mapper/UserMeetingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/mapper/UserMeetingMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/css/meeting.css" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/css/meeting.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/web/js/meeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/js/meeting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/web/meeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/web/meeting.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,17 +284,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.40" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/onlineMeeting/index.jsp" />
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -482,6 +461,7 @@
       <workItem from="1609895381853" duration="9078000" />
       <workItem from="1609910537706" duration="8227000" />
       <workItem from="1610328168235" duration="20051000" />
+      <workItem from="1610414596408" duration="512000" />
     </task>
     <servers />
   </component>
