@@ -32,7 +32,7 @@ public class ChangePass extends HttpServlet {
         }
         else{ // 失败
             //将消息模型对象将消息模型对象设置到request作用域中，请求跳转到登录页面,login.jsp
-            request.setAttribute("messageModel", messageModel);
+            request.setAttribute("changePassMessageModel", messageModel);
             request.getRequestDispatcher("infoChange.jsp").forward(request, response);
         }
     }

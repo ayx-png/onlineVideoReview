@@ -51,7 +51,7 @@ public class RegisterServlet extends HttpServlet {
         }
         else{ // 失败
             //将消息模型对象将消息模型对象设置到request作用域中，请求转发到注册页面,register.jsp
-            request.setAttribute("messageModel", messageModel);
+            request.setAttribute("registerMessageModel", messageModel);
             request.getRequestDispatcher("register.jsp").forward(request, response);
         }
 

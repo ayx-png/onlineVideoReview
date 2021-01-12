@@ -30,7 +30,6 @@ public class RegisterService {
 
         // 回显对象
         User u= new User();
-        System.out.println("Authority1:" + u.getAuthority());
         u.setUsername(username);
         u.setPassword(password);
         u.setCompanyName(companyName);

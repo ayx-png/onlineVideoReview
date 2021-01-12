@@ -46,9 +46,9 @@ body{
 
 /*设置元素字体大小 */
 .switch{
-position: relative;
-line-height: 24px;
-color: #fff;
+    position: relative;
+    line-height: 24px;
+    color: #fff;
 }
 .switch .open,.switch .close{
     position: absolute;

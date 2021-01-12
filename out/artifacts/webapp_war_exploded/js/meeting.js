@@ -40,11 +40,13 @@ xhr.onload = function () {
     let userContainer = document.querySelector(".user");
     let meetingTitleContainer = document.querySelector(".meetingTitle");
     let meetingIDContainer = document.querySelector(".meetingID");
+    let userSpaceContainer = document.querySelector(".user");
 
     hostContainer.innerHTML = "会议主持人：" + host;
     topicContainer.innerHTML = "会议主题：" + topic + "/";
     meetingIDContainer.innerHTML = "会议ID：" + channel + "/";
     projectContainer.innerHTML = "项目名称：" + project + "/";
+    userSpaceContainer.innerHTML = username;
 
     userContainer.innerHTML = username;
     meetingTitleContainer.innerHTML = topic;
@@ -120,14 +122,21 @@ xhr.onload = function () {
     }
     else{ // 主持人会议界面用户列表
         for(let user of users){
-            let node = document.createElement("div");
-            node.classList.add("u11");
-            node.innerHTML = "<div><p><span>" + user + "</span></p></div>" +
-                "<select id='" + user + "Select" +"'><option value=''>--用户管理--</option>" +
-                "<option value='microphone'>麦克风:开/关</option>" +
-                "<option value='camera'>摄像头:开/关</option>" +
-                "<option value='userInfo'>查看用户信息</option></select>";
-            userListContainer.append(node);
+            if(user === host){
+                let node = document.createElement("div");
+                node.classList.add("u11");
+                node.innerHTML = "<div><p><span>" + user + "</span></p></div>" +
+                    "<select id='" + user + "Select" +"'><option value=''>--用户管理--</option>" +
+                    "<option value='microphone'>麦克风:开/关</option>" +
+                    "<option value='camera'>摄像头:开/关</option>" +
+                    "<option value='userInfo'>查看用户信息</option></select>";
+                userListContainer.append(node);
+            }else {
+                let node = document.createElement("div");
+                node.classList.add("u11");
+                node.innerHTML = "<div><p><span>" + user + "</span></p></div>";
+                userListContainer.append(node);
+            }
         }
     }
 
@@ -373,8 +382,10 @@ xhr.onload = function () {
                     data:{
                         user: username,
                         admin: host,
+                        meetingID: channel,
                     },
                 });
+                console.log("sent");
                 return "";
             }
 

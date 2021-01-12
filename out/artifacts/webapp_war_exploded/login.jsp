@@ -51,7 +51,7 @@
                                 <label for="username">用户名</label>
                             </td>
                             <td class="td_right">
-                                <input type="text" id="username" name="username" placeholder="请输入账号" value="${messageModel.object.username}">
+                                <input type="text" id="username" name="username" placeholder="请输入账号" value="${SignInMessageModel.object.username}">
                             </td>
                         </tr>
                         <tr>
@@ -59,12 +59,12 @@
                                 <label for="password">密码</label>
                             </td>
                             <td class="td_right">
-                                <input type="password" id="password" name="password" placeholder="请输入密码" value="${messageModel.object.password}">
+                                <input type="password" id="password" name="password" placeholder="请输入密码" value="${signInMessageModel.object.password}">
                             </td>
                         </tr>
                         <tr>
                             <td class="td_submit">
-                                <span id="errorMsg">${messageModel.msg}</span>
+                                <span id="errorMsg">${signInMessageModel.msg}</span>
                                 <button type="button" class="submit" id="enter">登&nbsp&nbsp&nbsp&nbsp录</button>
                             </td>
                         </tr>

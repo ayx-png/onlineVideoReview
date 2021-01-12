@@ -1,0 +1,21 @@
+会议关闭思路
+    前端：
+        js：
+            请求：
+                - window.onbeforeunload事件；
+                - 发送同步httpXMlRequest，
+                - 请求方式为get
+            主持人关闭会议：
+                - 普通用户监听远端用户离开，判断是否为支持人
+                    - 若是主持人，client.leave()；
+
+    后端：
+        利用session判断是否为主持人
+            - 若为主持人
+                - 所有与主持人相同meetingID的userMeeting删除
+                - 主持人相同meetingID的Meeting删除
+                - 更新projects_table该项目meetingID
+                - users_table中所有用户的meeting字段删除
+            - 若为非主持人
+                - 删除个人userMeeting信息
+                - 更新users_table中该用户的meeting字段

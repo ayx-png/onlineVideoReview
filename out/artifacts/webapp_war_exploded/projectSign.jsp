@@ -74,7 +74,7 @@
                     <button type="submit" class="submitBtn">确认报名</button>
                 </div>
             </form>
-            <div class="errMsg">${messageModel.msg}</div>
+            <div class="errMsg">${projectSignMessageModel.msg}</div>
         </div>
     </div>
 </body>

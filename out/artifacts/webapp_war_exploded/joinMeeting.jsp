@@ -35,7 +35,7 @@
                 </td>
             </tr>
         </form>
-        <div class="errMsg">${messageModel.msg}</div>
+        <div class="errMsg">${joinMeetingMessageModel.msg}</div>
         <div class="networkTest">
             <span>进入会议前请点击网络测试按钮，测试网络和设备状况！</span>
             <a href="pre-test.html"><button id="pre-test">网络测试</button></a>

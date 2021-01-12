@@ -50,7 +50,7 @@ public class UserServlet extends HttpServlet {
         }
         else{ // 失败
             //将消息模型对象将消息模型对象设置到request作用域中，请求跳转到登录页面,login.jsp
-            request.setAttribute("messageModel", messageModel);
+            request.setAttribute("signInMessageModel", messageModel);
             request.getRequestDispatcher("login.jsp").forward(request, response);
         }
     }

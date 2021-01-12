@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,17 +18,17 @@
 </div>
 <!----------------  创建会议  ------------------>
 <div class="meetingBody">
-    <form action="meetingCreate" id="meetingForm" method="post">
+    <form id="meetingForm" action="meetingCreate" method="post">
         <!------------------------ 创建会议 -------------------->
         <div class="createBody">
             <p class="createBody_P">创建会议</p>
             会议主题:
-            <input type="text" placeholder="评审组xx的会议" id="topic">
+            <input type="text" placeholder="评审组xx的会议" name="topic" id="topic">
             会议人数:
-            <<input type="text" placeholder="不超过17人" id="memberNum">
+            <input type="text" placeholder="不超过17人" name="memberNum" id="memberNum">
             <div class="meetingTime">
                 会议时长:
-                <select class="hour" id="hour">
+                <select class="hour" id="hour" name="hour">
                     <option value="0">0小时</option>
                     <option value="1">1小时</option>
                     <option value="2">2小时</option>
@@ -38,7 +39,7 @@
                     <option value="7">7小时</option>
                     <option value="8">8小时</option>
                 </select>
-                <select class="minute" id="minute">
+                <select class="minute" id="minute" name="minute">
                     <option value="0">0分</option>
                     <option value="10">10分</option>
                     <option value="20">20分</option>
@@ -47,10 +48,10 @@
                     <option value="50">50分</option>
                 </select>
             </div>
-            <input type="checkbox" id="audio">入会时打开麦克风
-            <input type="checkbox" id="video">入会时打开摄像头
+            <input type="checkbox" id="audio" name="audio">入会时静音
+            <input type="checkbox" id="video" name="video">入会时关闭摄像头
             <div id="createButton">
-                <button type="button" class="submit" id="submit">创建会议</button>
+                <button type="button" id="submitBtn">创建会议</button>
             </div>
             <div>
                 <p id="err">${messageModel.msg}</p>

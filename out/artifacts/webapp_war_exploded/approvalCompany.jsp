@@ -29,7 +29,7 @@
         </div>
     </div>
     <div class="body">
-        <div class="errMsg">${messageModel.msg}</div>
+        <div class="errMsg">${approvalCompanyMessageModel.msg}</div>
         <div class="approvalContainer">
             <div class="btn">
                 <span>请从下列企业中选择合格的企业参加评审：</span>

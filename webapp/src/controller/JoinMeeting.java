@@ -28,7 +28,7 @@ public class JoinMeeting extends HttpServlet {
             response.sendRedirect("meeting.html");
         }
         else { // 失败
-            request.setAttribute("messageModel", messageModel);
+            request.setAttribute("joinMeetingMessageModel", messageModel);
             request.getRequestDispatcher("joinMeeting.jsp").forward(request,response);
         }
     }

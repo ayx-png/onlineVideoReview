@@ -87,13 +87,13 @@
                     <button type="button" id="infoChangeBtn">确认修改</button>
                 </div>
             </form>
-            <div class="infoErrMsg">${Modelmessage.msg}</div>
+            <div class="infoErrMsg">${changeInfoModelmessage.msg}</div>
         </div>
         <!-- 修改密码 -->
         <div class="changeForm1 clearfix">
             <div>
                 <span>密码修改</span>
-                <a href="userSpace.html">
+                <a href="userSpace.jsp">
                     <i class="fa fa-close"></i>
                 </a>
             </div>
@@ -110,7 +110,7 @@
                     <button type="button" id="passChangeBtn">确认修改</button>
                 </div>
             </form>
-            <div class="passErrMsg">${Modelmessage.msg}</div>
+            <div class="passErrMsg">${changeInfoModelmessage.msg}</div>
         </div>
     </div>
 </body>

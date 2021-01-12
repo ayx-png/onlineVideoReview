@@ -26,12 +26,12 @@ public class SignProject extends HttpServlet {
 
         if(messageModel.getCode() == 1){ // 成功
             //将消息模型中的新的信息设置到session作用域中，重定向到projectSign.jsp页面
-            request.getSession().setAttribute("messageModel", messageModel);
+            request.getSession().setAttribute("projectSignMessageModel", messageModel);
             response.sendRedirect("projectSign.jsp");
         }
         else{ // 失败
             //将消息模型对象将消息模型对象设置到request作用域中，请求跳转到登录页面,projectSign.jsp
-            request.setAttribute("messageModel", messageModel);
+            request.setAttribute("projectSignMessageModel", messageModel);
             request.getRequestDispatcher("projectSign.jsp").forward(request, response);
         }
     }

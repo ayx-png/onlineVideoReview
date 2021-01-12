@@ -61,7 +61,7 @@
                         <button type="button" id="submitBtn">创建会议</button>
                 </div>
                 <div>
-                    <p id="err">${messageModel.msg}</p>
+                    <p id="err">${meetingCreateMessageModel.msg}</p>
                 </div>
             </div>
         </form>

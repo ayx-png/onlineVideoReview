@@ -56,7 +56,7 @@
                     注册完毕：<a href="./login.jsp">立即登录</a>
                 </div>
                 <div class="errorMsg">
-                    <span id="err">${messageModel.msg}</span>
+                    <span id="err">${registerMessageModel.msg}</span>
                 </div>
             </form>
         </div>

@@ -9,5 +9,10 @@
     <select id="queryUserMeetingByUsername" parameterType="String" resultType="model.UserMeeting">
         select * from userMeetingMsgs_table where username = #{username}
     </select>
-
+    <delete id="deleteUserMeetingByMeetingID" parameterType="int">
+        delete from userMeetingMsgs_table where meetingID = #{meetingID}
+    </delete>
+    <delete id="deleteUserMeetingByUsername">
+        delete from userMeetingMsgs_table where username = #{username}
+    </delete>
 </mapper>
